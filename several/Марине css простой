@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+body
+{
+background-color:red;
+}
+#sp1
+{
+width:10%;
+height:30%;
+background-color:white;
+}
+#sp2
+{
+width:10%;
+height:30%;
+background-color:blue;
+}
+#sp3
+{
+width:10%;
+height:30%;
+background-color:green;
+}
+</style>
+</head>
+
+<body>
+<div id="sp1">
+11111
+</div>
+<div id="sp2">
+22222222
+</div>
+<div id="sp3">
+3333333
+</div>
+</body>
+</html>
