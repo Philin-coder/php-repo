@@ -1,9 +1,9 @@
 <?php
 if (! defined ('BASEPATH')) exit('No Page');
-class usver_Modek extends CI_Model{
+class usver_Model extends CI_Model{
    public function get_user()
     {
-        $this->db->select('pass,login, mailer');
+        $this->db->select('usver_id,pass,login, mailer');
         $this->db->from('usver');
         $sql=$this->db->get()
         return  $sql->reset_array();  
