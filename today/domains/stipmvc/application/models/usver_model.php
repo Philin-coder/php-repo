@@ -18,5 +18,19 @@ class usver_Modek extends CI_Model{
     );
     $this->db->insert('usver',$data);
     }
+    public function upd_usver($id, $pass,$login, $mailer){
+if(!empty($_POST))
+{
+    $data=array(
+        'pass'=>$pass,
+        'login'=>$login, 
+        'mailer'=>$mailer
+
+    );
+    $this->db->where('usver_id',$data);
+    $this->db->update('usver',$data);
+    
+}
+}
 
 }
