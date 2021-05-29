@@ -1,6 +1,7 @@
 <?php
 if (! defined ('BASEPATH')) exit('No Page');
-class usver_Model extends CI_Model{
+class usver_Model extends CI_Model
+{
    public function get_user()
     {
         $this->db->select('usver_id,pass,login, mailer');
@@ -18,7 +19,8 @@ class usver_Model extends CI_Model{
     );
     $this->db->insert('usver',$data);
     }
-    public function upd_usver($id, $pass,$login, $mailer){
+    public function upd_usver($id, $pass,$login, $mailer)
+    {
 if(!empty($_POST))
 {
     $data=array(
@@ -33,4 +35,10 @@ if(!empty($_POST))
 }
 }
 
+public function del_usver($usver_id)
+{
+        $this->db->where('usver_id',$usver_id);
+        $this->db->delete('usver');
 }
+}
+
