@@ -36,9 +36,10 @@ class stud_Model extends CI_Model{
                 'usver_id'=>$usver_id
     
             );
+            $this->db->where('id_stud',$data);
+            $this->db->update('stud',$data);
         }
-        $this->db->where('id_stud',$data);
-        $this->db->update('stud',$data);
+        
     }
     public function del_stud($id_stud)
     {

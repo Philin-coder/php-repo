@@ -4,7 +4,7 @@ class grupp_model extends CI_Model{
     public function get_grupp()
         {
             $sql=$this->db->select('gruppa.grupp_id, gruppa.naim, gruppa.opis, spec.opis, social.fio');
-            $this->db->from('from  gruppa');
+            $this->db->from('  gruppa');
             $this->db->join('spec','spec.spec_id=gruppa.spec_id');
             $this->db->join('social','social.soc_id=gruppa.soc_id');
             $this->db->where('1=1');
