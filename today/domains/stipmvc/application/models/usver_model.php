@@ -4,10 +4,10 @@ class usver_Model extends CI_Model
 {
    public function get_user()
     {
-        $this->db->select('usver_id,pass,login, mailer');
+        $sql=$this->db->select('usver_id,pass,login, mailer');
         $this->db->from('usver');
-        $sql=$this->db->get()
-        return  $sql->reset_array();  
+        $this->db->get()
+        return  $sql->result_array();  
     }
     public function ins_usver($pass,$login, $mailer )
     {
@@ -40,5 +40,6 @@ public function del_usver($usver_id)
         $this->db->where('usver_id',$usver_id);
         $this->db->delete('usver');
 }
+ 
 }
 
