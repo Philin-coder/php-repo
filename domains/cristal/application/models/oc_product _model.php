@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_model extends CI_Model
 {
 public function get_oc_product()
@@ -68,6 +68,7 @@ public function del_oc_product()
 
 
 
-}
+
+
 
 ?>
