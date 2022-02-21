@@ -13,11 +13,61 @@ public function get_oc_product()
     $this->db->from('oc_product');
     $this->db->get('oc_product');
     }
-public function ins_ocproduct
+    public function ins_oc_product($model, $sku,$upc,$ean,$Jan,$isbn,$mpn,$location,$quality,$stock_status_id,$image,$manufacturer_id,$shipping,$price,$points,$tax_class_id,$date_available,$weight,$weight_class_id,$length,$width,$height,$length_class_id,$subtract,$minimum,$sort_order,$status,$viewed,$date_added,$date_modified)
+    {
+        if(!empty($_POST))
+        {
+            $data=array(
+                'model'=> $model, 
+                'sku'=>$sku,
+                'upc'=>$upc,
+                'ean'=>$ean,
+                'Jan'=>$Jan,
+                'isbn'=>$isbn,
+                'mpn'=>$mpn,
+                'location'=>$location,
+                'quality'=>$quality,
+                'stock_status_id'=>$stock_status_id,
+                'image,$manufacturer_id'=>$image,$manufacturer_id,
+                'shipping'=>$shipping,
+                'price'=> $price,
+                'points'=>$points,
+                'tax_class_id'=> $tax_class_id,
+                'date_available'=> $date_available,
+                'weight'=>$weight,
+                'weight_class_id'=> $weight_class_id,
+                'length'=>$length,
+                'width'=>$width,
+                'height'=>$height,
+                'length_class_id'=> $length_class_id,
+                'subtract'=>$subtract,
+                'minimum'=>$minimum,
+                'sort_order'=>$sort_order,
+                'status'=>$status,
+                'viewed'=>$viewed,
+                '$date_added'=>$date_added,
+                'date_modified'=>$date_modified
+            );
+            $this->db->insert('oc_product',$data);
+
+        }
+    }
+public function upd_oc_product($model, $sku,$upc,$ean,$Jan,$isbn,$mpn,$location,$quality,$stock_status_id,$image,$manufacturer_id,$shipping,$price,$points,$tax_class_id,$date_available,$weight,$weight_class_id,$length,$width,$height,$length_class_id,$subtract,$minimum,$sort_order,$status,$viewed,$date_added,$date_modified)
 {
+    $sql = "UPDATE oc_product set model=?, sku=?,upc=?,ean=?,Jan=?,isbn=?,mpn=?,location=?,quality=?,stock_status_id=?,image=?,manufacturer_id=?,$shipping,$price,$points,$tax_class_id,$date_available,weight=?,weight_class_id=?,length=?,width=?,height=?,length_class_id=?,subtract=?,minimum=?,sort_order?,status=?,viewed=?,date_added=?,date_modified=?";
+    $this->db->query($sql,array($model, $sku,$upc,$ean,$Jan,$isbn,$mpn,$location,$quality,$stock_status_id,$image,$manufacturer_id,$shipping,$price,$points,$tax_class_id,$date_available,$weight,$weight_class_id,$length,$width,$height,$length_class_id,$subtract,$minimum,$sort_order,$status,$viewed,$date_added,$date_modified));
     
+
+}
+
+public function del_oc_product()
+{
+    $this->db->empty_table('oc_product');
+
 }
 
 
+
 }
+
 ?>
