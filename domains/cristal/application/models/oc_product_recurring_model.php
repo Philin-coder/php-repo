@@ -10,12 +10,15 @@ class oc_product_recurring_model extends CI_Model {
     }
     public function ins_oc_product_recurring($recurring_id,$customer_group_id)
     {
+        if(!empty($_POST))
+        {
         $data=array(
             'recurring_id'=>$recurring_id,
             'customer_group_id'=>$customer_group_id
 
         );
         $this->db->insert('oc_product_recurring',$data);
+    }
     }
     public function upd_oc_product_recurring($recurring_id,$customer_group_id)
     {

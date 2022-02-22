@@ -17,7 +17,7 @@ class oc_product_attribute_model extends CI_Model {
                 'text'=>$text
 
             );
-            $this->db->insert('oc_product_attribute, $data');
+            $this->db->insert('oc_product_attribute', $data');
         }
         
 
