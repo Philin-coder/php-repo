@@ -1,6 +1,6 @@
 <?php
 if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
-class oc_product_model extends CI_Model
+class Oc_product_model extends CI_Model
 {
 public function get_oc_product()
 
