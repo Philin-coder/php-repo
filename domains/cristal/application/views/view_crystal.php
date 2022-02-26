@@ -35,7 +35,9 @@
 		</tr>
 	</thead>
 		<tbody>
-			<!--<?php foreach  ($oc_product as $row):?>
+			<?php 
+			
+			foreach  ($oc_product as $row):?>
 				<tr>
 						<td><?=$row["product_id"];?></td>
 						<td><?=$row["model"];?></td>
@@ -69,6 +71,6 @@
 						<td><?=$row["date_added"];?></td>
 						<td><?=$row["date_modified"];?></td>
 					</tr>
-					<?php endforeach; ?>-->
+					<?php endforeach; ?>
 				</tbody>
 </table>
