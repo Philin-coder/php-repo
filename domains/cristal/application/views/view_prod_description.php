@@ -5,24 +5,29 @@
             <th>Language_id</th>
             <th>Name</th>
             <th>Discripton</th>
-			
+			<th>tag</th>
+			<th>meta_title</th>
+			<th>meta_description</th>
+			<th>meta_keywords</th>
 		</tr>
 					</thead>
 				<tbody>
-				<?php $oc_product_discription='';?>
-				<?php if( is_array($oc_product_discription)): ?>
 					
-                <?php foreach  ($oc_product_discription as $row):?>
-				  <h3><? echo $row->title; ?></h3>  
-				  <p><? echo $row->text; ?></p>
+                <?php foreach  ($oc_product_description as $row):?>
+				 
+		
 					<tr>
 						<td><?=$row["product_id"];?></td>
 						<td><?=$row["language_id"];?></td>
 						<td><?=$row["name"];?></td>
-                        <td><?=$row["discription"];?></td>
+                        <td><?=$row["description"];?></td>
+						<td><?=$row["tag"];?></td>
+						<td><?=$row["meta_title"];?></td>
+						<td><?=$row["meta_description"];?></td>
+						<td><?=$row["meta_keyword"];?></td>
 					</tr>
 					<?php endforeach;?>
-					<?php endif;?>
+					
 				</tbody>
 </table>
 <?php echo("Таблица oc_product_discription"); ?>

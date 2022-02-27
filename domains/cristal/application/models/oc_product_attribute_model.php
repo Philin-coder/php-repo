@@ -4,12 +4,11 @@ class oc_product_attribute_model extends CI_Model{
     public function get_oc_product_attribute_model()
     {
         
-    //    $this->db->select('oc_product_attribute.product_id,
-    //    oc_product_attribute.attribute_id, oc_product_attribute.language_id,oc_product_attribute.text');
-    //    $this->db->from('oc_product_attribute');
-    //    $this->db->get('oc_product_attribute');
-
-        $sql=$this->db->get('oc_product_attribute');
+       $this->db->select('oc_product_attribute.product_id, 
+       oc_product_attribute.attribute_id, oc_product_attribute.language_id,
+       oc_product_attribute.text');
+       $this->db->from('oc_product_attribute');
+        $sql=$this->db->get();
         return $sql->result_array();
 
     }

@@ -1,4 +1,4 @@
-<!--<table id="example" class="display" cellspacing="0" width="100%">
+<table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
             <th>Product_image_id</th>

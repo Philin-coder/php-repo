@@ -1,11 +1,19 @@
 <?php
 if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_discount_model extends CI_Model {
-    public function get_oc_product_discount_model()
+    public function get_oc_product_discount()
     {
-        $this->db->select('product_discount.product_discount_id, oc_product_discount.product_id, product_discount.customer_group_id,product_discount.quantity,product_discount.priority,product_discount.price, product_discount.date_start,product_discount.date_end');
-        $this->db->from('product_discount');
-        $this->db->get('product_discount');
+        $this->db->select('oc_product_discount.product_discount_id, 
+        oc_product_discount.product_id, 
+        oc_product_discount.customer_group_id,
+         oc_product_discount.quantity,
+         oc_product_discount.priority,
+         oc_product_discount.price, 
+         oc_product_discount.date_start,
+         oc_product_discount.date_end');
+        $this->db->from('oc_product_discount');
+        $sql=$this->db->get();
+        return $sql->result_array();
     }
     public function ins_product_discount($customer_group_id,$quantity,$priority,$price, $date_start,$date_end)
     {

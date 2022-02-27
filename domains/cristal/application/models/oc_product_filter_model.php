@@ -1,11 +1,12 @@
 <?php
 if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
-class oc_product_filter extends CI_Model{
+class oc_product_filter_model extends CI_Model{
     public function get_oc_product_filter()
     {
         $this->db->select('oc_product_filter.product_id, oc_product_filter.filter_id');
         $this->db->from('oc_product_filter');
-        $this->db->get('oc_product_filter');
+        $sql=$this->db->get();
+        return $sql->result_array();
 
     }
     public function ins_oc_product_filter($filter_id)
