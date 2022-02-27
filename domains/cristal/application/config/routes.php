@@ -51,6 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 //$route['default_controller'] = 'welcome';
 //$route['default_controller'] = 'cont_crystal';
-$route['default_controller'] = 'oc_product_cont';
+//$route['default_controller'] = 'oc_product_cont';
+$route['default_controller'] ='oc_product_description_cont';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

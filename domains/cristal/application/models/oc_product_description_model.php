@@ -3,7 +3,7 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_description_model extends CI_Model {
     public function get_oc_product_description()
     {
-        // $this->db->select(' oc_product_description.product_id,
+        // $this->db->select('oc_product_description.product_id,
         // oc_product_description.language_id, 
         // oc_product_description.name,
         // oc_product_description.description,
