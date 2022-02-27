@@ -7,13 +7,9 @@ class oc_product_attribute_model extends CI_Model{
         $this->db->from('oc_product_attribute');
         $this->db->get('oc_product_attribute');
     }
-
-
-
-
-    public function ins_oc_product_attribute($attribute_id,$language_id,$text)
-    {
-
+    
+    
+    public function ins_oc_product_attribute($attribute_id,$language_id,$text){
         if(!empty($_POST))
         {
             $data=array(
@@ -22,31 +18,24 @@ class oc_product_attribute_model extends CI_Model{
                 'text'=>$text
 
             );
-            $this->db->insert('oc_product_attribute', $data');
-        }  
+            $this->db->insert('oc_product_attribute');
+
+        }
     }
-
-        
-    
-    
-    
-    
-public function upd_oc_product_attribute($attribute_id,$language,$text)
-{
-$sql='update oc_product_attribute set attribute_id=?,language=?,$text=?';
- $this->db->query($sql,array($attribute_id,$language,$text));
-}
-
+    public function upd_oc_product_attribute($attribute_id,$language,$text)
+    {
+        $sql='update oc_product_attribute set attribute_id=?,language=?,$text=?';
+        $this->db->query($sql,array($attribute_id,$language,$text));
+    }
 
     public function  del_oc_product_attribute()
     {
         $this->db->empty_table('oc_product_attribute');
         
     }
+   
 }
-
-
-
+   
 
     
 ?>
