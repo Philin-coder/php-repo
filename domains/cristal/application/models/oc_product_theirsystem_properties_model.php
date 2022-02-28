@@ -7,7 +7,9 @@ class oc_product_theirsystem_properties_model extends CI_Model {
         oc_product_theirsystem_properties.language_id, 
         oc_product_theirsystem_properties.properties');
         $this->db->from('oc_product_theirsystem_properties');
-        $this->db->get('oc_product_theirsystem_properties');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_theirsystem_properties.product_id');
+        $sql=$this->db->get();
+        return $sql->result_array();
     }
     public function ins_oc_product_theirsystem_properties($language_id, $properties)
     {

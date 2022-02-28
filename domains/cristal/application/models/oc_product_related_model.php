@@ -5,7 +5,10 @@ class oc_product_related_model extends CI_Model {
     {
         $this->db->select('oc_product_related.product_id, oc_product_related.related_id');
         $this->db->from('oc_product_related');
-        $this->db->get('oc_product_related');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_related.product_id');
+        $sql=$this->db->get();
+        return $sql->result_array();
+        
     }
     public function ins_oc_product_related($related_id)
     {

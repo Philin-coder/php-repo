@@ -1,4 +1,4 @@
-<!--<table id="example" class="display" cellspacing="0" width="100%">
+<table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
             <th>Product_special_id</th>
@@ -24,5 +24,5 @@
 					</tr>
 					<?php endforeach; ?>
 				</tbody>
-</table>-->
+</table>
 <?php echo("Таблица oc_product_special"); ?>

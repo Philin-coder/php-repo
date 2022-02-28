@@ -19,5 +19,5 @@
 					</tr>
 					<?php endforeach; ?>
 				</tbody>
-</table>-->
+</table>
 <?php echo("Таблица oc_product_image"); ?>

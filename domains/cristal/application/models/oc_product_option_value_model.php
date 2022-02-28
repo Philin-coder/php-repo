@@ -3,13 +3,12 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_option_value_model extends CI_Model {
     public function get_oc_product_option_value_model()
     {
-        $this->db->select('oc_product_option_value.product_option_value_id,
-        oc_product_option_value.product_option_id,
+        $this->db->select('oc_product_option_value.product_option_id,
         oc_product_option_value.product_id,
         oc_product_option_value.option_id,
         oc_product_option_value.option_value_id,
         oc_product_option_value.quantity,
-        oc_product_option_value.subtract
+        oc_product_option_value.subtract,
         oc_product_option_value.price,
         oc_product_option_value.price_prefix,
         oc_product_option_value.points, 
@@ -17,7 +16,10 @@ class oc_product_option_value_model extends CI_Model {
         oc_product_option_value.weight,
         oc_product_option_value.weight_prefix');
         $this->db->from('oc_product_option_value');
-        $this->db->get('oc_product_option_value');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_option_value.product_id');
+        $this->db->join('oc_product_option','oc_product_option_value.option_id=oc_product_option.option_id');
+        $sql=$this->db->get();
+        return $sql->result_array();
 
     }
     public function ins_oc_product_option_value($product_option_id,$product_id,$option_id,$option_value_id,$quantity,$subtract,$price,$price_prefix,$points, $points_prefix,$weight,$weight_prefix)

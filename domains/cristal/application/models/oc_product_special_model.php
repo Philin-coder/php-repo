@@ -4,14 +4,16 @@ class oc_product_special_model extends CI_Model {
     public function get_oc_product_special()
     {
         $this->db->select('oc_product_special.product_special_id, 
-        oc_product_special.product_special_id, 
+        oc_product_special.product_id, 
         oc_product_special.customer_group_id, 
         oc_product_special.priority,
         oc_product_special.price,
         oc_product_special.date_start,
         oc_product_special.date_end');
         $this->db->from('oc_product_special');
-        $this->db->get('oc_product_special');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_special.product_id');
+        $sql=$this->db->get();
+        return $sql->result_array();
     }
     public function ins_oc_product_special($product_id, $customer_group_id, $priority,$price,$date_start,$date_end)
     {

@@ -3,9 +3,15 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_option_model extends CI_Model {
     public function get_oc_product_option()
     {
-        $this->db->select('oc_product_option.product_option_id, oc_product_option.product_id,oc_product_option.option_id,oc_product_option.value, oc_product_option.requested');
+        $this->db->select('oc_product_option.product_option_id,
+         oc_product_option.product_id,
+         oc_product_option.option_id,
+         oc_product_option.value, 
+         oc_product_option.required');
         $this->db->from('oc_product_option');
-        $this->db->get('oc_product_option');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_option.product_id');
+        $sql=$this->db->get();
+        return $sql->result_array();
 
     }
     public function ins_oc_product_option($product_id,$option_id,$value, $requested)

@@ -3,9 +3,11 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_to_category_model extends CI_Model{
     public function get_oc_product_to_category()
     {
-        $this->select('oc_product_to_category.product_id,oc_product_to_category.category_id');
-        $this->from('oc_product_category');
-        $this->get('oc_product_category');
+        $this->db->select('oc_product_to_category.product_id,oc_product_to_category.category_id');
+        $this->db->from('oc_product_to_category');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_to_category.product_id');
+        $sql=$this->db->get();
+        return $sql->result_array();
     }
     public function ins_oc_product_to_category($category_id)
     {
