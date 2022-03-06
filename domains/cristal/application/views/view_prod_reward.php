@@ -2,7 +2,7 @@
 	<thead>
 		<tr>
             <th>Product_reward_id</th>
-            <th>Product_id</th>
+            <th>Model</th>
             <th>Customer_group_id</th>
             <th>Pointsr</th>
 			
@@ -13,7 +13,7 @@
 					foreach  ($oc_product_reward as $row):?>
 					<tr>
 					    <td><?=$row["product_reward_id"];?></td>	
-                        <td><?=$row["product_id"];?></td>
+                        <td><?=$row["model"];?></td>
 						<td><?=$row["customer_group_id"];?></td>
                         <td><?=$row["points"];?></td>
 					</tr>

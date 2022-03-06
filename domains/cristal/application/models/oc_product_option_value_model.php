@@ -4,8 +4,8 @@ class oc_product_option_value_model extends CI_Model {
     public function get_oc_product_option_value_model()
     {
         $this->db->select('oc_product_option_value.product_option_id,
-        oc_product_option_value.product_id,
-        oc_product_option_value.option_id,
+        model,
+        value,
         oc_product_option_value.option_value_id,
         oc_product_option_value.quantity,
         oc_product_option_value.subtract,

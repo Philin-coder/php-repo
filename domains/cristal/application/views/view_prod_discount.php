@@ -3,7 +3,7 @@
 		<tr>
 			
             <th>Product_discount_id</th>
-            <th>Product_id</th>
+            <th>Model</th>
             <th>Customer_group_id</th>
             <th>Quantity</th>
             <th>Priority</th>
@@ -18,7 +18,7 @@
 					foreach  ($oc_product_discount as $row):?>
 					<tr>
 						<td><?=$row["product_discount_id"];?></td>
-						<td><?=$row["product_id"];?></td>
+						<td><?=$row["model"];?></td>
 						<td><?=$row["customer_group_id"];?></td>
                         <td><?=$row["quantity"];?></td>
                         <td><?=$row["priority"];?></td>

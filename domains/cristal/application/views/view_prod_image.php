@@ -2,7 +2,7 @@
 	<thead>
 		<tr>
             <th>Product_image_id</th>
-            <th>Product_id</th>
+            <th>Model</th>
             <th>Image</th>
             <th>Sort_order</th>
 			
@@ -13,7 +13,7 @@
 					foreach  ($oc_product_image as $row):?>
 					<tr>
 					    <td><?=$row["product_image_id"];?></td>	
-                        <td><?=$row["product_id"];?></td>
+                        <td><?=$row["model"];?></td>
 						<td><?=$row["image"];?></td>
                         <td><?=$row["sort_order"];?></td>
 					</tr>

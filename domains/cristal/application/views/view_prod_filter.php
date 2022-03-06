@@ -1,7 +1,7 @@
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
-            <th>Product_id</th>
+            <th>Model</th>
             <th>filter_id</th>
 			
 		</tr>
@@ -10,7 +10,7 @@
                 <?php
 					foreach  ($oc_product_filter as $row):?>
 					<tr>
-						<td><?=$row["product_id"];?></td>
+						<td><?=$row["model"];?></td>
 						<td><?=$row["filter_id"];?></td>
 					</tr>
 					<?php endforeach; ?>

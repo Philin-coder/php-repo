@@ -4,12 +4,12 @@ class oc_product_reward_model  extends CI_Model {
     public function get_oc_product_reward()
     {
         $this->db->select('oc_product_reward.product_reward_id, 
-        oc_product_reward.product_id, 
+        model, 
         oc_product_reward.customer_group_id,
         oc_product_reward.points');
         $this->db->from('oc_product_reward');
-        $sql=$this->db->get();
         $this->db->join('oc_product','oc_product.product_id=oc_product_reward.product_id');
+        $sql=$this->db->get();
         return $sql->result_array();
     }
     public function ins_oc_product_reward($product_id, $customer_group_id,$points)

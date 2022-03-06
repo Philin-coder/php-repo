@@ -3,7 +3,7 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_related_model extends CI_Model {
     public function get_oc_product_related()
     {
-        $this->db->select('oc_product_related.product_id, oc_product_related.related_id');
+        $this->db->select('model, oc_product_related.related_id');
         $this->db->from('oc_product_related');
         $this->db->join('oc_product','oc_product.product_id=oc_product_related.product_id');
         $sql=$this->db->get();

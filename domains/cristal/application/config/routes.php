@@ -65,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] ='oc_product_special_cont';
 // $route['default_controller'] ='oc_product_theirsystem_properties_cont';
 //$route['default_controller'] ='oc_product_to_category_cont';
-// $route['default_controller'] ='oc_product_to_download_cont';
+//$route['default_controller'] ='oc_product_to_download_cont';
 //$route['default_controller'] ='oc_product_to_layout_cont';
 $route['default_controller'] ='oc_product_to_store_cont';
 $route['404_override'] = '';

@@ -2,8 +2,8 @@
 	<thead>
 		<tr>
             <th>Product_option_value_id</th>
-            <th>Product_option_id</th>
-            <th>Product_id</th>
+            <th>Value</th>
+            <th>Model</th>
             <th>Option_id</th>
             <th>Option_value_id</th>
 			<th>Quantity</th>
@@ -21,8 +21,8 @@
 					foreach  ($oc_product_option_value as $row):?>
 					<tr>
 					    <td><?=$row["product_option_value_id"];?></td>	
-                        <td><?=$row["product_option_id"];?></td>
-                        <td><?=$row["product_id"];?></td>
+                        <td><?=$row["value"];?></td>
+                        <td><?=$row["model"];?></td>
 						<td><?=$row["option_id"];?></td>
                         <td><?=$row["option_value_id"];?></td>
                         <td><?=$row["quantity"];?></td>	

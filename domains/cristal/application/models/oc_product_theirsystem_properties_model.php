@@ -3,7 +3,7 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_theirsystem_properties_model extends CI_Model {
     public function get_oc_product_theirsystem_properties()
     {
-        $this->db->select('oc_product_theirsystem_properties.product_id, 
+        $this->db->select('model, 
         oc_product_theirsystem_properties.language_id, 
         oc_product_theirsystem_properties.properties');
         $this->db->from('oc_product_theirsystem_properties');

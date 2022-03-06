@@ -3,7 +3,7 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_to_layout_model extends CI_Model {
     public function get_oc_product_to_layout_model()
     {
-        $this->db->select('oc_product_to_layout.product_id,
+        $this->db->select('model,
         oc_product_to_layout.store_id, 
         oc_product_to_layout.layout_id');
         $this->db->from('oc_product_to_layout');

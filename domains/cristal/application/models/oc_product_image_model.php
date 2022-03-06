@@ -5,7 +5,7 @@ class oc_product_image_model extends CI_Model
     public function get_oc_product_image()
     {
         $this->db->select('oc_product_image.product_image_id,
-        oc_product_image.product_id,
+        model,
         oc_product_image.image,
         oc_product_image.sort_order');
         $this->db->from('oc_product_image');

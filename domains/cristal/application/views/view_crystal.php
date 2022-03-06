@@ -1,7 +1,6 @@
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
-			<th>Product_id</th>
 			<th>Model</th>
 			<th>Sku</th>
 			<th>Upc</th>
@@ -39,7 +38,6 @@
 			
 			foreach  ($oc_product as $row):?>
 				<tr>
-						<td><?=$row["product_id"];?></td>
 						<td><?=$row["model"];?></td>
 						<td><?=$row["sku"];?></td>
 						<td><?=$row["upc"];?></td>

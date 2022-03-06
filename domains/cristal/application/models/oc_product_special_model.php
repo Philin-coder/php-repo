@@ -4,7 +4,7 @@ class oc_product_special_model extends CI_Model {
     public function get_oc_product_special()
     {
         $this->db->select('oc_product_special.product_special_id, 
-        oc_product_special.product_id, 
+        model, 
         oc_product_special.customer_group_id, 
         oc_product_special.priority,
         oc_product_special.price,

@@ -4,7 +4,7 @@ class oc_product_discount_model extends CI_Model {
     public function get_oc_product_discount()
     {
         $this->db->select('oc_product_discount.product_discount_id, 
-        oc_product_discount.product_id, 
+        model, 
         oc_product_discount.customer_group_id,
          oc_product_discount.quantity,
          oc_product_discount.priority,
@@ -12,6 +12,7 @@ class oc_product_discount_model extends CI_Model {
          oc_product_discount.date_start,
          oc_product_discount.date_end');
         $this->db->from('oc_product_discount');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_discount.product_id');
         $sql=$this->db->get();
         return $sql->result_array();
     }

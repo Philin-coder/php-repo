@@ -3,10 +3,11 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class oc_product_recurring_model extends CI_Model {
     public function get_oc_product_recurring_model()
     {
-        $this->db->select('oc_product_recurring.product_id, 
+        $this->db->select('model, 
         oc_product_recurring.recurring_id,
         oc_product_recurring.customer_group_id');
         $this->db->from('oc_product_recurring');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_recurring.product_id');
         $sql=$this->db->get();
         return $sql->result_array();
 
