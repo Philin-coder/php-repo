@@ -12,4 +12,13 @@ class Cont_crystal extends CI_Controller {
 		$this->load->view('view_crystal',$data);
 		$this->load->view('footer');
 	}
+	public function oc_product_model_get_report()
+	{
+		$this->load->dbutil();
+		$this->load->model('oc_product_model');
+		$report=$this->oc_product_model->oc_product_model_get_xml();
+		$new_report=$this->dbutil()->xml_from_result($report);
+		write_file(oc_product_model_xml.xml,$new_report);
+		$this->index();
+	}
 }
