@@ -16,6 +16,6 @@
 					<?php endforeach; ?>
 				</tbody>
 </table>
-
-		
+&nbsp;
+<button type="submit">  Импорт в xml</button>	
 <?php echo("Таблица oc_product_to_download"); ?>

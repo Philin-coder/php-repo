@@ -72,3 +72,5 @@
 					<?php endforeach; ?>
 				</tbody>
 </table>
+&nbsp;
+<button type="submit">  Импорт в xml</button>
