@@ -20,4 +20,7 @@
 					<?php endforeach; ?>
 				</tbody>
 </table>
+<button type="submit">
+            Импорт xml
+        </buton>
 <?php echo("Таблица oc_product_image"); ?>

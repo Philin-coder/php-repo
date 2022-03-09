@@ -39,6 +39,7 @@ class oc_product_attribute_model extends CI_Model{
         $this->db->empty_table('oc_product_attribute');
         
     }
+    
    
 }
    

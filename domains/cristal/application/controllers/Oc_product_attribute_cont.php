@@ -10,5 +10,7 @@ class Oc_product_attribute_cont extends CI_Controller {
         $this->load->view('view_prod_attribute',$data);
         $this->load->view('footer');
     }
+    
+    
 }
 ?>

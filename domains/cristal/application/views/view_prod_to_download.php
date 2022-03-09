@@ -16,4 +16,6 @@
 					<?php endforeach; ?>
 				</tbody>
 </table>
+
+		
 <?php echo("Таблица oc_product_to_download"); ?>

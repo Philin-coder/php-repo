@@ -19,4 +19,5 @@
 					<?php endforeach; ?>
 				</tbody>
 </table>
+
 <?php echo("Таблица oc_product_theirsystem_properties"); ?>

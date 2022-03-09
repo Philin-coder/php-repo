@@ -1,3 +1,4 @@
+
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
@@ -20,4 +21,5 @@
 					<?php endforeach; ?>
 				</tbody>
 </table>
+	
 <?php echo("oc_product_attribute"); ?>

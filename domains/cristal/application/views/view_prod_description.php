@@ -30,4 +30,5 @@
 					
 				</tbody>
 </table>
+
 <?php echo("Таблица oc_product_discription"); ?>
