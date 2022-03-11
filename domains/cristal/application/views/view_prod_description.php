@@ -1,3 +1,4 @@
+<form  method="POST"  role="form" class="FormLine" action="" >
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
@@ -31,5 +32,7 @@
 				</tbody>
 </table>
 &nbsp;
+
 <button type="submit">  Импорт в xml</button>
+</form>
 <?php echo("Таблица oc_product_discription"); ?>

@@ -1,4 +1,5 @@
-<form  method="POST"  role="form" class="FormLine" action="index.php/cont_crystal/oc_product_model_get_report/index.php" >
+<form  method="POST"  role="form" class="FormLine" action="" >
+
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
@@ -75,4 +76,5 @@
 </table>
 &nbsp;
 <button type="submit">  Импорт в xml</button>
-<form >
+
+			</form >
