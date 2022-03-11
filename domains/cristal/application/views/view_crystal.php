@@ -1,4 +1,4 @@
-<form  method="POST"  role="form" class="FormLine" action="index.php/cont_crystal/oc_product_model_get_report" >
+<form  method="POST"  role="form" class="FormLine" action="index.php/cont_crystal/oc_product_model_get_report/index.php" >
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
