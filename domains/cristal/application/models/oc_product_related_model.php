@@ -29,6 +29,15 @@ class oc_product_related_model extends CI_Model {
     {
         $this->db->empty_table('oc_product_related');
     }
+    public function oc_product_related_model_get_xml()
+    {
+        $this->db->select('model, oc_product_related.related_id');
+        $this->db->from('oc_product_related');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_related.product_id');
+        $sql=$this->db->get();
+        return $sql;
+
+    }
 
 
 

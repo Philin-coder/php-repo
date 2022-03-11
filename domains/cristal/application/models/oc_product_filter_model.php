@@ -30,6 +30,15 @@ class oc_product_filter_model extends CI_Model{
     {
         $this->db->empty_table('oc_product_filter');
     }
+    public function oc_product_filter_model_xml()
+    {
+        $this->db->select('model, oc_product_filter.filter_id');
+        $this->db->from('oc_product_filter');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_filter.product_id');
+        $sql=$this->db->get();
+        return $sql;
+
+    }
 
 }
 ?>

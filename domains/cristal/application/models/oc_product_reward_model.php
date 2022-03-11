@@ -33,6 +33,17 @@ class oc_product_reward_model  extends CI_Model {
     public function del_oc_product_reward(){
         $this->db->empty_table('oc_product_reward');
     }
+    public function oc_product_reward_model_get_xml()
+    {
+        $this->db->select('oc_product_reward.product_reward_id, 
+        model, 
+        oc_product_reward.customer_group_id,
+        oc_product_reward.points');
+        $this->db->from('oc_product_reward');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_reward.product_id');
+        $sql=$this->db->get();
+        return $sql;
+    }
 
 }
 ?>

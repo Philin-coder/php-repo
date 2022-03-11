@@ -39,7 +39,15 @@ class oc_product_attribute_model extends CI_Model{
         $this->db->empty_table('oc_product_attribute');
         
     }
-    
+    public function oc_product_attribute_model_get_xml(){
+        $this->db->select('model, 
+        oc_product_attribute.attribute_id, oc_product_attribute.language_id,
+        oc_product_attribute.text');
+        $this->db->from('oc_product_attribute');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_attribute.product_id');
+         $sql=$this->db->get();
+         return $sql;      
+    }
    
 }
    

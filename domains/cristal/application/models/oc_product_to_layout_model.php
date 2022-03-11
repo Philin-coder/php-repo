@@ -35,7 +35,16 @@ public function del_oc_product_to_layout()
 {
     $this->db->empty_table('oc_product_to_layout');
 }
-
+public function oc_product_to_layout_model_get_xml()
+{
+    $this->db->select('model,
+    oc_product_to_layout.store_id, 
+    oc_product_to_layout.layout_id');
+    $this->db->from('oc_product_to_layout');
+    $this->db->join('oc_product','oc_product.product_id=oc_product_to_layout.product_id');
+    $sql=$this->db->get();
+    return $sql;  
+}
 
 }
 ?>

@@ -32,5 +32,13 @@ public function del_oc_product_to_category()
 {
     $this->db->empty_table('oc_product_to_category');
 }
+public function oc_product_to_category_model_get_xml()
+{
+    $this->db->select('model,oc_product_to_category.category_id');
+    $this->db->from('oc_product_to_category');
+    $this->db->join('oc_product','oc_product.product_id=oc_product_to_category.product_id');
+    $sql=$this->db->get();
+    return $sql;  
+}
 }
 ?>

@@ -37,6 +37,19 @@ class oc_product_option_model extends CI_Model {
     {
         $this->db->empty_table('oc_product_option');
     }
+    public function oc_product_option_model_get_xml()
+    {
+        $this->db->select('oc_product_option.product_option_id,
+         model,
+         oc_product_option.option_id,
+         oc_product_option.value, 
+         oc_product_option.required');
+        $this->db->from('oc_product_option');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_option.product_id');
+        $sql=$this->db->get();
+        return $sql;
+
+    }
 
 }
 

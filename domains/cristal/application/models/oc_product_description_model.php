@@ -44,6 +44,22 @@ class oc_product_description_model extends CI_Model {
     {
         $this->db->empty_table('oc_product_description');
     }
+    public function oc_product_description_model_get_xml()
+    {
+        $this->db->select('model,
+        oc_product_description.language_id, 
+        oc_product_description.name,
+        oc_product_description.description,
+        oc_product_description.tag, 
+        oc_product_description.meta_title,
+        oc_product_description.meta_description, 
+        oc_product_description.meta_keyword');
+        $this->db->from('oc_product_description' );
+        $this->db->join('oc_product', 'oc_product.product_id = oc_product_description.product_id');
+        $sql=$this->db->get();
+        return $sql;
+      
+    }
 
 }
 ?>

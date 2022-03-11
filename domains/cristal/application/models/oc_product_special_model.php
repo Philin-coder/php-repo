@@ -41,6 +41,21 @@ class oc_product_special_model extends CI_Model {
   {
       $this->db->empty_table('oc_product_special');
   }
+  public function oc_product_special_model_get_xml()
+  {
+    $this->db->select('oc_product_special.product_special_id, 
+    model, 
+    oc_product_special.customer_group_id, 
+    oc_product_special.priority,
+    oc_product_special.price,
+    oc_product_special.date_start,
+    oc_product_special.date_end');
+    $this->db->from('oc_product_special');
+    $this->db->join('oc_product','oc_product.product_id=oc_product_special.product_id');
+    $sql=$this->db->get();
+    return $sql;
+
+  }
 
 }
 ?>

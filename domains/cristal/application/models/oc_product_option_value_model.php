@@ -59,5 +59,26 @@ public function del_oc_product_option_value()
 {
     $this->db->empty_table('oc_product_option_value');
 }
+public function oc_product_option_value_model_get_xml()
+{
+    $this->db->select('oc_product_option_value.product_option_id,
+    model,
+    value,
+    oc_product_option_value.option_value_id,
+    oc_product_option_value.quantity,
+    oc_product_option_value.subtract,
+    oc_product_option_value.price,
+    oc_product_option_value.price_prefix,
+    oc_product_option_value.points, 
+    oc_product_option_value.points_prefix,
+    oc_product_option_value.weight,
+    oc_product_option_value.weight_prefix');
+    $this->db->from('oc_product_option_value');
+    $this->db->join('oc_product','oc_product.product_id=oc_product_option_value.product_id');
+    $this->db->join('oc_product_option','oc_product_option_value.option_id=oc_product_option.option_id');
+    $sql=$this->db->get();
+    return $sql;
+
+}
 }
 ?>

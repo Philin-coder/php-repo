@@ -42,7 +42,22 @@ class oc_product_discount_model extends CI_Model {
     {
         $this->db->empty_table('oc_product_discount');
     }
+public function oc_product_discount_model_get_xml()
+{
 
+    $this->db->select('oc_product_discount.product_discount_id, 
+    model, 
+    oc_product_discount.customer_group_id,
+     oc_product_discount.quantity,
+     oc_product_discount.priority,
+     oc_product_discount.price, 
+     oc_product_discount.date_start,
+     oc_product_discount.date_end');
+    $this->db->from('oc_product_discount');
+    $this->db->join('oc_product','oc_product.product_id=oc_product_discount.product_id');
+    $sql=$this->db->get();
+    return $sql;
+}
 
 
 }

@@ -33,6 +33,17 @@ class oc_product_recurring_model extends CI_Model {
     {
         $this->db->empty_table('oc_product_recurring');
     }
+    public function oc_product_recurring_model_get_xml()
+    {
+        $this->db->select('model, 
+        oc_product_recurring.recurring_id,
+        oc_product_recurring.customer_group_id');
+        $this->db->from('oc_product_recurring');
+        $this->db->join('oc_product','oc_product.product_id=oc_product_recurring.product_id');
+        $sql=$this->db->get();
+        return $sql;
+
+    }
 
 }
 ?>
