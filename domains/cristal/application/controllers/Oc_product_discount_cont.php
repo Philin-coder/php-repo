@@ -10,5 +10,15 @@ class Oc_product_discount_cont extends CI_Controller {
         $this->load->view('view_prod_discount', $data);
         $this->load->view('footer');
     }
+    public function oc_product_discount_cont_get_report()
+    {
+        $this->load->dbutil();
+        $this->load->model('oc_product_discount_model');
+        $report=$this->oc_product_discount_model->oc_product_discount_model_get_xml();
+        $new_report=$this->dbutil->xml_from_result($report);
+        write_file('oc_product_discount_xml',$new_report);
+        $this->index();
+
+    }
 }
 ?>

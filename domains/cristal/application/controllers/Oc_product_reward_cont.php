@@ -10,5 +10,14 @@ class Oc_product_reward_cont extends CI_Controller {
         $this->load->view('view_prod_reward',$data);
         $this->load->view('footer');
     }
+    public function oc_product_reward_cont_get_report()
+    {
+        $this->load->dbutil();
+        $this->load->model('oc_product_reward_model');
+        $report=$this->oc_product_reward_model->oc_product_reward_model_get_xml();
+        write_file('oc_product_reward_xml.xml',$new_report);
+        $this->index();
+
+    }
 }
 ?>
