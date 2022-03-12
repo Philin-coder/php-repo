@@ -13,6 +13,7 @@
             }
             public function oc_product_cont_get_report()
             {
+                $this->load->helper('file');
                 $this->load->dbutil();
                 $this->load->model('oc_product_model');
                 $report=$this->oc_product_model->oc_product_model_get_xml();
