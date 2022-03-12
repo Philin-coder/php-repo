@@ -16,6 +16,7 @@ class oc_product_to_download_cont extends CI_Controller {
         $this->load->model('oc_product_to_download_model');
         $report=$this->oc_product_to_download_model->oc_product_to_download_model_get_xml();
         $new_report=$this->dbutil->xml_from_result($report);
+        write_file('oc_product_to_downloadel_xml.xml',$new_report);
         $this->index();
     }
 }

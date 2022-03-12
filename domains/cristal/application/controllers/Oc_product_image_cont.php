@@ -16,9 +16,10 @@ class Oc_product_image_cont extends CI_Controller {
         $this->load->model('oc_product_image_model');
         $report=$this->oc_product_image_model->oc_product_image_model_get_xml();
         $new_report=$this->dbutil->xml_from_result($report);
-        write_file('c_product_image_xml.xml',new_report);
+        write_file('oc_product_image_xml.xml',$new_report);
         $this->index();
 
     }
+    
 }
 ?>

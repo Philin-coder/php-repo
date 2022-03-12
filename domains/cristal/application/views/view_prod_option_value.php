@@ -1,4 +1,4 @@
-<form  method="POST"  role="form" class="FormLine" action="" >
+<form  method="POST"  role="form" class="FormLine" action="/index.php/oc_product_option_value_cont/oc_product_option_value_cont_get_report" >
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
@@ -9,9 +9,9 @@
             <th>Option_value_id</th>
 			<th>Quantity</th>
             <th>Subtract</th>
-            <th>Price/th>
+            <th>Price</th>
             <th>Price_prefix</th>
-            <th>Points/th>
+            <th>Points</th>
             <th>Points_prefix</th>
             <th>Weight</th>
             <th>weight_prefix</th>

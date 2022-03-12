@@ -19,7 +19,6 @@ class Cont_crystal extends CI_Controller {
 		$report=$this->oc_product_model->oc_product_model_get_xml();
 		$new_report=$this->dbutil->xml_from_result($report);
 		write_file('oc_product_xml.xml',$new_report);
-		//write_file('xmlfile.xml',$new_report);
 		$this->index();
 	}
 }

@@ -12,12 +12,11 @@ class Oc_product_discount_cont extends CI_Controller {
     }
     public function oc_product_discount_cont_get_report()
     {
-        $this->load->helper('file');
         $this->load->dbutil();
         $this->load->model('oc_product_discount_model');
         $report=$this->oc_product_discount_model->oc_product_discount_model_get_xml();
         $new_report=$this->dbutil->xml_from_result($report);
-        write_file('oc_product_discount_xml',$new_report);
+        write_file('oc_product_discount_xml.xml',$new_report);
         $this->index();
 
     }

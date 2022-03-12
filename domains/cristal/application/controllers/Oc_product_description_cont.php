@@ -12,12 +12,11 @@ class Oc_product_description_cont extends CI_Controller {
     }
     public function oc_product_description_get_report()
     {
-        $this->load->helper('file');
         $this->load->dbutil();
         $this->load->model('oc_product_description_model');
-        $report=$this->oc_product_description_model->oc_product_model_get_xml();
+        $report=$this->oc_product_description_model->oc_product_description_model_get_xml();
         $new_report=$this->dbutil->xml_from_result($report);
-        write_file('oc_product_description.xml',$new_report);
+        write_file('oc_product_description_xml.xml',$new_report);
         $this->index();
     }
 }

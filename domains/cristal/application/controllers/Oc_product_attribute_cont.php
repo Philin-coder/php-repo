@@ -13,7 +13,6 @@ class Oc_product_attribute_cont extends CI_Controller {
     public function oc_product_attribute_cont_get_report()
     {
         
-        $this->load->helper('file');
         $this->load->dbutil();
         $this->load->model('oc_product_attribute_model');
         $report=$this->oc_product_attribute_model->oc_product_attribute_model_get_xml();

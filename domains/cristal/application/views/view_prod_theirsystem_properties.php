@@ -1,4 +1,4 @@
-<form  method="POST"  role="form" class="FormLine" action="" >
+<form  method="POST"  role="form" class="FormLine" action="/index.php/oc_product_theirsystem_properties_cont/oc_product_theirsystem_properties_cont_get_report" >
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
 		<tr>
