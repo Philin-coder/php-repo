@@ -18,7 +18,8 @@
                 $report=$this->oc_product_model->oc_product_model_get_xml();
                 $new_report=$this->dbutil->xml_from_result($report);
                 write_file('oc_product.xml',$new_report);
-                $this->index();
+                //`$this->index();
+                redirect('http://cristal:8080/','refresh');
             }
 
         }
