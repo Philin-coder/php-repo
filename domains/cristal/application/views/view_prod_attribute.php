@@ -1,4 +1,4 @@
-<form  method="POST"  role="form" class="FormLine" action="/index.php/oc_product_attribute_cont/oc_product_description_model_get_xml" >
+<form  method="POST"  role="form" class="FormLine" action="/index.php/oc_product_attribute_cont/oc_product_attribute_cont_get_report" >
 
 <table id="example" class="display" cellspacing="0" width="100%">
 	<thead>
