@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Oc_product_option_cont extends CI_Controller {
     public function index()
     {
+        $this->load->helper('url');
         $this->load->model('oc_product_option_model');
         $data['oc_product_option']=$this->oc_product_option_model->get_oc_product_option();
         $this->load->view('head');
@@ -13,6 +14,7 @@ class Oc_product_option_cont extends CI_Controller {
     }
     public function oc_product_option_cont_get_report()
     {
+        $this->load->helper('url');
         $this->load->dbutil();
         $this->load->model('oc_product_option_model');
         $report=$this->oc_product_option_model->oc_product_option_model_get_xml();

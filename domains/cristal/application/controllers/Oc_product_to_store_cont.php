@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Oc_product_to_store_cont extends CI_Controller {
     public function index()
-    {
+    {$this->load->helper('url');
         $this->load->model('oc_product_to_store_model');
         $data['oc_product_to_store']=$this->oc_product_to_store_model->get_oc_product_to_store();
         $this->load->view('head');
@@ -13,6 +13,7 @@ class Oc_product_to_store_cont extends CI_Controller {
     }
     public function oc_product_to_store_cont_get_report()
     {
+        $this->load->helper('url');
         $this->load->dbutil();
         $this->load->model('oc_product_to_store_model');
         $report=$this->oc_product_to_store_model->oc_product_to_store_model_get_xml();
