@@ -11,7 +11,7 @@ class Cont_test extends CI_Controller {
     }
     public function view_xml(){
         xml_header("Content-type:text/xml");
-        $xml_file=file_get_contents('oc_product_description_xml.xml');
+        $xml_file=read_file('./oc_product_description_xml.xml');
         echo xml_file;
 
     }
