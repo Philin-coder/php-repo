@@ -7,7 +7,7 @@ class Cont_test extends CI_Controller {
 
         $this->load->view('head');
         $this->load->view('header');
-        $this->load->view('view_test');
+        $this->load->view('view_nav_main');
         $this->load->view('footer');
     }
     

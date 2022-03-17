@@ -7,6 +7,7 @@ class Oc_product_attribute_cont extends CI_Controller {
         $data['oc_product_attribute']=$this->oc_product_attribute_model->get_oc_product_attribute_model();
         $this->load->view('head');
         $this->load->view('header');
+        $this->load->view('view_nav_main');
         $this->load->view('view_prod_attribute',$data);
         $this->load->view('footer');
     }

@@ -7,6 +7,7 @@ class Oc_product_description_cont extends CI_Controller {
         $data['oc_product_description']=$this->oc_product_description_model->get_oc_product_description();
         $this->load->view('head');
         $this->load->view('header');
+        $this->load->view('view_nav_main');
         $this->load->view('view_prod_description',$data);
         $this->load->view('footer');
     }

@@ -8,6 +8,7 @@ class Oc_product_to_category_cont extends CI_Controller {
         $data['oc_product_to_category']=$this->oc_product_to_category_model->get_oc_product_to_category();
         $this->load->view('head');
         $this->load->view('header');
+        $this->load->view('view_nav_main');
         $this->load->view('view_prod_to_category',$data);
         $this->load->view('footer');
     }

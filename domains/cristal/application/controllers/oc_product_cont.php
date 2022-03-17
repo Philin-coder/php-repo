@@ -7,6 +7,7 @@
             $data['oc_product']=$this->oc_product_model->get_oc_product();
             $this->load->view('head');
             $this->load->view('header');
+            $this->load->view('view_nav_main');
             $this->load->view('view_crystal',$data);
             $this->load->view('footer');
 
