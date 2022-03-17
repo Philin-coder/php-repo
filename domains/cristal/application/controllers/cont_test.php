@@ -9,6 +9,13 @@ class Cont_test extends CI_Controller {
         $this->load->view('view_nav_main');
         $this->load->view('footer');
     }
+    public function view_xml(){
+        xml_header("Content-type:text/xml");
+        $xml_file=file_get_contents('oc_product_description_xml.xml');
+        echo xml_file;
+
+    }
+
     
 }
 ?>

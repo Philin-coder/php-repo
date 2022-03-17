@@ -21,8 +21,8 @@ class Oc_product_attribute_cont extends CI_Controller {
         $report=$this->oc_product_attribute_model->oc_product_attribute_model_get_xml();
         $new_report=$this->dbutil->xml_from_result($report);
         write_file('oc_product_attribute.xml',$new_report);
-        redirect('http://cristal:8080/index.php/oc_product_attribute_cont/index','refresh');
-        //$this->index();
+        //redirect('http://cristal:8080/index.php/oc_product_attribute_cont/index','refresh');
+        $this->index();
 
     }
     
