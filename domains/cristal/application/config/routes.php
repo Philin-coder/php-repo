@@ -68,6 +68,6 @@ $route['default_controller'] = 'cont_crystal';
 //$route['default_controller'] ='oc_product_to_download_cont';
 //$route['default_controller'] ='oc_product_to_layout_cont';
 //$route['default_controller'] ='oc_product_to_store_cont';
-// $route['default_controller'] ='cont_test';
+//$route['default_controller'] ='cont_test';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
