@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 //$route['default_controller'] = 'welcome';
-//$route['default_controller'] = 'cont_crystal';
+$route['default_controller'] = 'cont_crystal';
 //$route['default_controller'] = 'oc_product_cont';
 //$route['default_controller'] ='oc_product_description_cont';
 //$route['default_controller'] ='oc_product_attribute_cont';
@@ -68,7 +68,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] ='oc_product_to_download_cont';
 //$route['default_controller'] ='oc_product_to_layout_cont';
 //$route['default_controller'] ='oc_product_to_store_cont';
+// чтение xml начмнается с Cont
 //$route['default_controller'] ='Cont_oc_product_description_xml_reader';
-$route['default_controller'] ='Cont_oc_product_xml_reader';
+//$route['default_controller'] ='Cont_oc_product_xml_reader';
+//$route['default_controller'] ='Cont_oc_product_attribute_xml_reader';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
