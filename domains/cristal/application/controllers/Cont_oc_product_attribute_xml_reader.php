@@ -4,7 +4,7 @@
     public function view_xml()
     {   
         header("Content-Type: application/xml; UTF-8");
-        $xml_file=read_file('./ooc_product_attribute.xml');
+        $xml_file=read_file('./oc_product_attribute.xml');
         echo $xml_file;
         return  $xml_file;
 
