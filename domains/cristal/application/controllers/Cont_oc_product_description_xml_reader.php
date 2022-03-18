@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Cont_oc_product_description_xml_reader extends CI_Controller {
     public function view_xml()
     {   
-        header("Content-Type: application/xml; windsows-1251");
+        header("Content-Type: application/xml; windows-1251");
         $xml_file=read_file('./oc_product_description_xml.xml');
         echo $xml_file;
         return  $xml_file;
