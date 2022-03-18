@@ -68,6 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] ='oc_product_to_download_cont';
 //$route['default_controller'] ='oc_product_to_layout_cont';
 //$route['default_controller'] ='oc_product_to_store_cont';
-$route['default_controller'] ='Cont_oc_product_description_xml_reader';
+//$route['default_controller'] ='Cont_oc_product_description_xml_reader';
+$route['default_controller'] ='Cont_oc_product_xml_reader';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
