@@ -13,7 +13,7 @@
       <a class="nav-item nav-link" href="/index.php/oc_product_option_value_cont/index">Значения опций</a>
       <a class="nav-item nav-link" href="/index.php/oc_product_option_cont/index">Опции</a>
       <a class="nav-item nav-link" href="/index.php/oc_product_recurring_cont/index">Повторы</a>
-      <a class="nav-item nav-link" href="/index.php/oc_product_related_cont/index">Связанне</a>
+      <a class="nav-item nav-link" href="/index.php/oc_product_related_cont/index">Связанные</a>
       <a class="nav-item nav-link" href="/index.php/oc_product_reward_cont/index">Отмеченные</a>
       <a class="nav-item nav-link" href="/index.php/oc_product_special_cont/index">Особые</a>
       <a class="nav-item nav-link" href="/index.php/oc_product_theirsystem_properties_cont/index">Система</a>
@@ -23,7 +23,7 @@
       <a class="nav-item nav-link" href="/index.php/oc_product_to_store_cont/index">Продаваемые</a>
       <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
       <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="https://www.php.net/manual/ru/simplexml.examples-basic.php" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Чтение xml
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -31,7 +31,16 @@
         <a class="dropdown-item" href="/index.php/Cont_oc_product_attribute_xml_reader/index">Аттрибуты</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_description_xml_reader/index">Описание</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_discount_xml_reader/index">Скидки</a>
-        
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_filter_xml_reader/index">Фильтр </a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_image_xml_reader/index">Картинки </a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_option_value_xml_reader/index">Значене опций</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_option_xml_reader/index">Опции</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_recurring_xml_reader/index">Повторы</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_related_xml_reader/index">Связанные</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_reward_xml_reader/index">Отмеченные</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_special_xml_reader/index">Особые</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_theirsystem_properties_xml_reader/index">Система</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_oc_product_to_category_xml_reader/index">Категория</a>
     </div>
 </li>
     </div>
