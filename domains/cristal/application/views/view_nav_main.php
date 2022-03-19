@@ -29,7 +29,9 @@
     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <a class="dropdown-item" href="/index.php/Cont_oc_product_xml_reader/index">Главная</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_attribute_xml_reader/index">Аттрибуты</a>
-        <a class="dropdown-item" href="#">Something else here</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_description_xml_reader/index">Описание</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_discount_xml_reader/index">Скидки</a>
+        
     </div>
 </li>
     </div>
