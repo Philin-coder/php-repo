@@ -41,6 +41,9 @@
         <a class="dropdown-item" href="/index.php/Cont_oc_product_special_xml_reader/index">Особые</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_theirsystem_properties_xml_reader/index">Система</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_oc_product_to_category_xml_reader/index">Категория</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_to_download_xml_reader/index">Скачать</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_to_layout_xml_reader/index">Отложенные</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_to_store_xml_reader/index">Продаваемые</a>
     </div>
 </li>
     </div>
