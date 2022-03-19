@@ -19,7 +19,7 @@ class Oc_product_filter_cont extends CI_Controller {
         $this->load->model('oc_product_filter_model');
         $report=$this->oc_product_filter_model->oc_product_filter_model_get_xml();
         $new_report=$this->dbutil->xml_from_result($report);
-        write_file('oc_product_filter_xml.xml',$new_report);
+        write_file('./xml_files/oc_product_filter_xml.xml',$new_report);
         // redirect('http://cristal:8080/index.php/oc_product_filter_cont/index','refresh');
         $this->index();
         
