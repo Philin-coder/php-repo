@@ -22,6 +22,16 @@
       <a class="nav-item nav-link" href="/index.php/oc_product_to_layout_cont/index">Отложенные</a>
       <a class="nav-item nav-link" href="/index.php/oc_product_to_store_cont/index">Продаваемые</a>
       <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
+      <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Чтение xml
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_xml_reader/index">Главная</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_attribute_xml_reader/index">Аттрибуты</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</li>
     </div>
   </div>
 </nav>
