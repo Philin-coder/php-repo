@@ -5,7 +5,7 @@ class Cont_oc_product_to_download_xml_reader extends CI_Controller {
         header("Content-Type: application/xml; UTF-8");
         $xml_file=read_file('./xml_files/oc_product_to_downloadel_xml.xml');
         echo $xml_file;
-        return  $xml_file;
+        //return  $xml_file;
 
        
 
