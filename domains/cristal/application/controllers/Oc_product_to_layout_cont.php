@@ -24,5 +24,15 @@ class Oc_product_to_layout_cont extends CI_Controller {
         $this->index();
         
     }
+    public function view_xml()
+    {   
+        header("Content-Type: application/xml; UTF-8");
+        $xml_file=read_file('./xml_files/oc_product_to_layout_xml.xml');
+        echo $xml_file;
+        //return  $xml_file;
+
+       
+
+    }
 }
 ?>

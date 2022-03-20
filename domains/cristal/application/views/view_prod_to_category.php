@@ -21,5 +21,8 @@
 &nbsp;
 <button type="submit">  Импорт в xml</button>
 
-					</form>
+</form>
+<form  method="POST"  role="form" class="FormLine" action="/index.php/oc_product_to_category_cont/view_xml">
+<button type="submit"> читать   xml</button>
+</form>
 <?php echo("Таблица oc_product_to_category"); ?>

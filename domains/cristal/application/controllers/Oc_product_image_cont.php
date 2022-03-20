@@ -24,6 +24,16 @@ class Oc_product_image_cont extends CI_Controller {
         // redirect('http://cristal:8080/index.php/oc_product_image_cont/index','refresh');
 
     }
+    public function view_xml()
+    {   
+        header("Content-Type: application/xml; UTF-8");
+        $xml_file=read_file('./xml_files/oc_product_image_xml.xml');
+        echo $xml_file;
+        //return  $xml_file;
+
+       
+
+    }
     
 }
 ?>

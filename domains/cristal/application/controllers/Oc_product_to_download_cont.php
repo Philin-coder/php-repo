@@ -23,5 +23,15 @@ class oc_product_to_download_cont extends CI_Controller {
         // redirect('http://cristal:8080/index.php/oc_product_to_download_cont/index','refresh');
         $this->index();
     }
+    public function view_xml()
+    {   
+        header("Content-Type: application/xml; UTF-8");
+        $xml_file=read_file('./xml_files/oc_product_to_downloadel_xml.xml');
+        echo $xml_file;
+        //return  $xml_file;
+
+       
+
+    }
 }
 ?>

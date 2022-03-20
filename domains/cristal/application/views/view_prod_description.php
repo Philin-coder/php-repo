@@ -35,4 +35,7 @@
 
 <button type="submit">  Импорт в xml</button>
 </form>
+<form  method="POST"  role="form" class="FormLine" action="/index.php/Oc_product_description_cont/view_xml" >
+<button type="submit"> читать   xml</button>
+</form>
 <?php echo("Таблица oc_product_discription"); ?>

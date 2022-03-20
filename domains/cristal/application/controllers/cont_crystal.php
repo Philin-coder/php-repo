@@ -25,4 +25,15 @@ class Cont_crystal extends CI_Controller {
 		//redirect('http://cristal:8080/','refresh');
 		
 	}
+	public function view_xml()
+    {   
+        header("Content-Type: application/xml; UTF-8");
+        $xml_file=read_file('./xml_files/oc_product.xml');
+        echo $xml_file;
+        //return  $xml_file;
+
+       
+
+    
+    }
 }

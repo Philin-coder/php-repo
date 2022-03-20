@@ -26,5 +26,15 @@ class Oc_product_filter_cont extends CI_Controller {
 
 
     }
+    public function view_xml()
+    {   
+        header("Content-Type: application/xml; UTF-8");
+        $xml_file=read_file('./xml_files/oc_product_filter_xml.xml');
+        echo $xml_file;
+        //return  $xml_file;
+
+       
+
+    }
 }
 ?>

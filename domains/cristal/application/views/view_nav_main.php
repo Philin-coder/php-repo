@@ -23,11 +23,12 @@
       <a class="nav-item nav-link" href="/index.php/oc_product_to_store_cont/index">Продаваемые</a>
       <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
       <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="https://www.php.net/manual/ru/simplexml.examples-basic.php" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Чтение xml
+    <a class="nav-link dropdown-toggle" href="http://www.sql-tutorial.ru/ru/book_operator_insert.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Тут будут формы ввода
     </a>
+    <!--выпадающее меню -->
     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="/index.php/Cont_oc_product_xml_reader/index">Главная</a>
+        <!--<a class="dropdown-item" href="/index.php/Cont_oc_product_xml_reader/index">Главная</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_attribute_xml_reader/index">Аттрибуты</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_description_xml_reader/index">Описание</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_discount_xml_reader/index">Скидки</a>
@@ -43,7 +44,7 @@
         <a class="dropdown-item" href="/index.php/Cont_oc_oc_product_to_category_xml_reader/index">Категория</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_to_download_xml_reader/index">Скачать</a>
         <a class="dropdown-item" href="/index.php/Cont_oc_product_to_layout_xml_reader/index">Отложенные</a>
-        <a class="dropdown-item" href="/index.php/Cont_oc_product_to_store_xml_reader/index">Продаваемые</a>
+        <a class="dropdown-item" href="/index.php/Cont_oc_product_to_store_xml_reader/index">Продаваемые</a>-->
     </div>
 </li>
     </div>

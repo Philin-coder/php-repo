@@ -24,5 +24,14 @@ class Oc_product_recurring_cont extends CI_Controller {
         $this->index();
 
     }
+    public function view_xml()
+    {   
+        header("Content-Type: application/xml; UTF-8");
+        $xml_file=read_file('./xml_files/oc_product_recurring_xml.xml');
+        echo $xml_file;
+        //return  $xml_file;    
+
+    }
+    
 }
 ?>
