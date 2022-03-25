@@ -17,7 +17,7 @@
     <!-- Intro Content -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="../public/img/s1200.jpg" alt="">
+        <img class="img-fluid rounded mb-4" src="<?php echo base_url();?>/public/img/s1200.jpg" alt="">
       </div>
       <div class="col-lg-6">
         <h2>О агентстве</h2>
@@ -49,8 +49,8 @@
 </body>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="public/js/jquery.min.js"></script>
-  <script src="public/js/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo base_url();?>public/js/jquery.min.js"></script>
+  <script src="<?php echo base_url();?>public/js/bootstrap.bundle.min.js"></script>
   
 
 </html>

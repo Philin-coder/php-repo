@@ -7,19 +7,19 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Установите фоновое изображение для этого слайда в строке ниже -->
-        <div class="carousel-item active" style="background-image: url(img/deposi.jpg);">
+        <div class="carousel-item active" style="background-image: url(../public/img/deposi.jpg")
           <div class="carousel-caption d-none d-md-block">
             
           </div>
         </div>
         <!-- Slide Two - Установите фоновое изображение для этого слайда в строке ниже -->
-        <div class="carousel-item" style="background-image: url(img/aa.jpg)">
+        <div class="carousel-item" style="background-image: url(../public/img/aa.jpg")
           <div class="carousel-caption d-none d-md-block">
            
           </div>
         </div>
         <!-- Slide Three - Установите фоновое изображение для этого слайда в строке ниже -->
-        <div class="carousel-item" style="background-image: url(img/people.png)">
+        <div class="carousel-item" style="background-image: url(../public/img/people.png")
           <div class="carousel-caption d-none d-md-block">
            
           </div>

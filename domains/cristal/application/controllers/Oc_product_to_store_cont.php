@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Oc_product_to_store_cont extends CI_Controller 
-{
+class Oc_product_to_store_cont extends CI_Controller {
     public function index()
     {
         $this->load->helper('url');
@@ -13,7 +12,13 @@ class Oc_product_to_store_cont extends CI_Controller
         $this->load->view('view_prod_to_store',$data);
         $this->load->view('footer');
     }
-    
+    public function view_xml()
+    {   
+        header("Content-Type: application/xml; UTF-8");
+        $xml_file=read_file('./xml_files/oc_product_to_store_xml.xml');
+        echo $xml_file;
+        return  $xml_file;
+    }
     public function oc_product_to_store_cont_get_report()
     {
         $this->load->helper('url');
@@ -27,14 +32,8 @@ class Oc_product_to_store_cont extends CI_Controller
 
     }
 
-    public function view_xml()
-    {   
-        header("Content-Type: application/xml; UTF-8");
-        $xml_file=read_file('./xml_files/oc_product_to_store_xml.xml');
-        echo $xml_file;
-        //return  $xml_file;       
-    }
-    
+
+
    
 }
 ?>
