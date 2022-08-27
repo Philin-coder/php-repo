@@ -19,7 +19,7 @@ class rk_napr_model extends CI_Model{
                 'rezultat'=>$rezultat,
                 'prim'=>$prim
             );
-            $this->db->insert('napravlenie');    
+            $this->db->insert('napravlenie',$data);    
 
         }
 

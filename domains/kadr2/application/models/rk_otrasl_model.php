@@ -13,7 +13,7 @@ class rk_otrasl_model extends CI_Model{
             $data=array(
                 '$naim_o'=>$naim_o
             );
-            $this->db->insert('otrasl');
+            $this->db->insert('otrasl',$data);
 
         }
 
@@ -24,7 +24,7 @@ class rk_otrasl_model extends CI_Model{
     $sql='update napravlenie set nam_o=?';
     $this->db->query($sql,array($naim_o));      
     }
-    
+
     public function del_otrasl(){
     $this->db->empty_table('otrasl');      
     }
