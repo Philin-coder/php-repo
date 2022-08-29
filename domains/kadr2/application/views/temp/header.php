@@ -7,7 +7,8 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Установите фоновое изображение для этого слайда в строке ниже -->
-        <div class="carousel-item active" style="background-image: url(img/deposi.jpg);">
+        <div class="carousel-item active" style="background-image: url(<?php echo base_url('public/img/deposi.jpg')?>);">
+        
           <div class="carousel-caption d-none d-md-block">
             
           </div>

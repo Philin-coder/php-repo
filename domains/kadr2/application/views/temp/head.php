@@ -11,10 +11,12 @@
   <title>РеКадр</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap4.3.1.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/css/bootstrap4.3.1.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/css/style.css" rel="stylesheet">
+  
+  
 
 </head>
 <body>
