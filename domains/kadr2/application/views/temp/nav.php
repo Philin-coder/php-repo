@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="about.php">О нас</a>
+            <a class="nav-link" href="<?php echo base_url();?>about_cont/index">О нас</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.php">Наши услуги</a>
+            <a class="nav-link" href="<?php echo base_url();?>serve_cont/index">Наши услуги</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.php">Контакты</a>

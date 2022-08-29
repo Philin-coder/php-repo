@@ -60,7 +60,7 @@
         <p>В своей практике специалисты нашего рекрутингового агентства используют новейшие технологии для полноценной проверки каждого претендента. </p>
       </div>
       <div class="col-lg-6">
-        <img class="img-fluid rounded" src="img/abs.jpg" alt="">
+        <img class="img-fluid rounded" src="<?php echo base_url();?>public/img/abs.jpg" alt="">
       </div>
     </div>
     <!-- /.row -->

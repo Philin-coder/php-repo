@@ -1,8 +1,4 @@
-<?php 
-include 'temp/head.php';
-include 'temp/nav.php';
 
- ?>
 
   <!-- Page Content -->
   <div class="container">
@@ -13,7 +9,7 @@ include 'temp/nav.php';
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная</a>
+        <a href="<?php echo base_url();?>main_cont/index">Главная</a>
       </li>
       <li class="breadcrumb-item active">О нас</li>
     </ol>
@@ -21,7 +17,7 @@ include 'temp/nav.php';
     <!-- Intro Content -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="img/s1200.jpg" alt="">
+        <img class="img-fluid rounded mb-4" src="<?php echo base_url();?>public/img/s1200.jpg" alt="">
       </div>
       <div class="col-lg-6">
         <h2>О агентстве</h2>
@@ -50,16 +46,5 @@ include 'temp/nav.php';
 
   </div>
   <!-- /.container -->
-</body>
+
   <!-- Footer -->
-  <?php 
-  include 'temp/footer.php'; 
-?>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-
-
-
-</html>

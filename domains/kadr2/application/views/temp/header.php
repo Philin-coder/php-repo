@@ -14,13 +14,13 @@
           </div>
         </div>
         <!-- Slide Two - Установите фоновое изображение для этого слайда в строке ниже -->
-        <div class="carousel-item" style="background-image: url(img/aa.jpg)">
+        <div class="carousel-item" style="background-image: url(<?php echo base_url('public/img/aa.jpg')?>);">
           <div class="carousel-caption d-none d-md-block">
            
           </div>
         </div>
         <!-- Slide Three - Установите фоновое изображение для этого слайда в строке ниже -->
-        <div class="carousel-item" style="background-image: url(img/people.png)">
+        <div class="carousel-item" style="background-image: url(<?php echo base_url('public/img/people.png')?>);">
           <div class="carousel-caption d-none d-md-block">
            
           </div>

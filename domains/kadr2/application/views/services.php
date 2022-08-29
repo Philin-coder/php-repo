@@ -1,9 +1,3 @@
-<?php 
-include 'temp/head.php';
-include 'temp/nav.php';
-
- ?>
-
   <!-- Page Content -->
   <div class="container">
 
@@ -14,13 +8,13 @@ include 'temp/nav.php';
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная</a>
+        <a href="<?php echo base_url();?>main_cont/index">Главная</a>
       </li>
       <li class="breadcrumb-item active">Наши услуги</li>
     </ol>
 
     <!-- Image Header -->
-    <img class="img-fluid rounded mb-4" src="img/per.jpg" alt="">
+    <img class="img-fluid rounded mb-4" src="<?php echo base_url();?>public/img/per.jpg" alt="">
 
     <!-- Marketing Icons Section -->
     <div class="row">
@@ -66,14 +60,9 @@ include 'temp/nav.php';
   <!-- /.container -->
 
   <!-- Footer -->
-  <?php 
-  include 'temp/footer.php'; 
-?>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
 
-</body>
 
-</html>
+
+
