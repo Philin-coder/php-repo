@@ -13,7 +13,7 @@
             <a class="nav-link" href="<?php echo base_url();?>serve_cont/index">Наши услуги</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.php">Контакты</a>
+            <a class="nav-link" href="<?php echo base_url();?>Konter/index">Контакты</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.php">Вход</a>

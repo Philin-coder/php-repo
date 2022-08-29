@@ -1,9 +1,3 @@
-<?php 
-include 'temp/head.php';
-include 'temp/nav.php';
-
- ?>
-
   <!-- Page Content -->
   <div class="container">
 
@@ -14,7 +8,7 @@ include 'temp/nav.php';
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная </a>
+        <a href="<?php echo base_url();?>main_cont/index">Главная </a>
       </li>
       <li class="breadcrumb-item active">Контакты</li>
     </ol>
@@ -24,14 +18,14 @@ include 'temp/nav.php';
       <!-- Map Column -->
       <div class="col-lg-8 mb-4">
         <!-- Embedded Google Map -->
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42572.89783979782!2d40.75086267764268!3d48.17181792285256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411dddad326b2641%3A0x32f4998d8ff780c4!2z0JHQtdC70LDRjyDQmtCw0LvQuNGC0LLQsCwg0KDQvtGB0YLQvtCy0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1585771355095!5m2!1sru!2sru" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>		
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21709.052504823077!2d42.44574743399713!3d47.145483854601785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x410299a6836a3627%3A0xae310263bf4b2bbc!2z0JfQuNC80L7QstC90LjQutC4LCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0Lsu!5e0!3m2!1sru!2sru!4v1661786928553!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
       <!-- Contact Details Column -->
       <div class="col-lg-4 mb-4">
         <h3>Обратная связь</h3>
         <p>
           Россия
-          <br>г. Белая Калитва, Ростовская область
+          <br>п. Зимовники, Ростовская область
           <br>
         </p>
         <p>
@@ -93,15 +87,9 @@ include 'temp/nav.php';
   <!-- /.container -->
 
   <!-- Footer -->
-  <?php 
-  include 'temp/footer.php'; 
-?>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
 
 
-</body>
 
-</html>
+
