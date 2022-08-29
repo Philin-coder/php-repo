@@ -1,9 +1,7 @@
 <?php 
-session_start();
+/*session_start();
 ob_start();
 
-include 'temp/head.php';
-include 'temp/nav.php';
 
 $msg = '';
 $conn = new mysqli('localhost','root','','rekadr');
@@ -39,10 +37,12 @@ else
 $msg  = "Неверный логин или пароль"; 
 } 
 
-}	?>
+}	
+*/
+?>
 
 
-  <!-- Page Content -->
+  
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
@@ -52,7 +52,7 @@ $msg  = "Неверный логин или пароль";
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная </a>
+        <a href="<?php echo base_url();?>main_cont/index">Главная </a>
       </li>
       <li class="breadcrumb-item active">Авторизация</li>
     </ol>
@@ -68,7 +68,8 @@ $msg  = "Неверный логин или пароль";
    <br> 
   
         <form method= "POST" name="sentMessage" id="contactForm" novalidate>
-		<?php echo '<div>' .$msg.'</div>' ?>
+		<?php 
+    /*echo '<div>' .$msg.'</div>'*/ ?>
           <div class="control-group form-group">
             <div class="controls">
               <label>Логин:</label>
@@ -94,8 +95,9 @@ $msg  = "Неверный логин или пароль";
     <!-- /.row -->
 
   </div>
+  </div>
   <!-- /.container -->
-</body>
+
   <!-- Footer -->
   <br> 
    <br> <br> 
@@ -112,15 +114,9 @@ $msg  = "Неверный логин или пароль";
   
   
   
-  <?php 
-  include 'temp/footer.php'; 
-?>
+  
 
   <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
 
 
 
-
-</html>

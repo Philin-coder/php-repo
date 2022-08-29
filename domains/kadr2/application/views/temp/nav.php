@@ -16,7 +16,7 @@
             <a class="nav-link" href="<?php echo base_url();?>Konter/index">Контакты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Вход</a>
+            <a class="nav-link" href="<?echo base_url();?>enter_cont/index">Вход</a>
           </li>                 
         </ul>
       </div>
