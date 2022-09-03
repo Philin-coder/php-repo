@@ -11,7 +11,7 @@
             
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="vak.php">Вакансии</a>
+            <a class="nav-link" href="<?php echo base_url();?>vak_cont/index">Вакансии</a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url();?>kart_cont/index">Личные карточки</a>
