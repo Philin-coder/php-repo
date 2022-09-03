@@ -20,7 +20,7 @@
             <a class="nav-link" href="<?php echo base_url();?> napr_cont/index">Направления на работу</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="rez_napr.php">Результат направления</a>
+            <a class="nav-link" href="<?php echo base_url();?>rez_napr/index">Результат направления</a>
           </li>
              <li class="nav-item">
             <a class="nav-link" href="out.php">Выход</a>

@@ -1,12 +1,6 @@
 <?php 
-session_start();
+/*
  
-$sms=" "; 
-$conn = new mysqli('localhost','root','','rekadr');
-if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-     die("Соединение установлено не было.");}
- //установим кодировку
-$conn  ->set_charset("utf8");
 if (!empty($_POST)) 
 { 
 $id_r=$_POST['naim_r'];
@@ -21,9 +15,7 @@ $sql =$conn->query ("insert into vakansiya(id_r, dolgn, k_mest, oklad, tip_zan, 
 	$sms = "Вакансия введена !"; 
 	 header("Location: http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/vak.php");
 } 	
-include 'temp/head.php';
-include 'temp/nav_u.php';	
-
+*/
  ?>
   <!-- Page Content -->
   <div class="container">
@@ -32,7 +24,7 @@ include 'temp/nav_u.php';
     </h1>
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная</a>
+        <a href="<?php echo base_url(); ?>main_cont/index">Главная</a>
       </li>
       <li class="breadcrumb-item active">Вакансия</li>
     </ol>
@@ -42,18 +34,20 @@ include 'temp/nav_u.php';
 	  <h2>Ввод вакансии</h2>
 	  <br>
        <form method="POST" action="">
-       <?php echo '<div>' .$sms.'</div>' ?>
+       <?php 
+       /*echo '<div>' .$sms.'</div>' 
+       */?>
        <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Работодатель</label>
     <div class="col-sm-10">
 	<select name="naim_r" >
-<?
+<?/*
 $sql =$conn->query("select * from rabotodatel"); 
 	while ($row = mysqli_fetch_array($sql))
  {
    echo '<option value="'.$row['id_r'].'">'.$row['naim_r'].'</option>';
 }
-?>
+*/?>
 </div></div>
 <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Должность </label>
@@ -90,13 +84,13 @@ $sql =$conn->query("select * from rabotodatel");
     <label for="inputEmail3" class="col-sm-2 col-form-label">Профессия</label>
     <div class="col-sm-10">
 	<select name="naim_p" >
-<?
+<?/*
 $sql =$conn->query("select * from prof"); 
 	while ($row = mysqli_fetch_array($sql))
  {
    echo '<option value="'.$row['id_p'].'">'.$row['naim_p'].'</option>';
 }
-?>
+*/?>
 </select>
 </div></div>
 <div class="form-group row">
@@ -119,6 +113,7 @@ $sql =$conn->query("select * from prof");
             <th>Профессия</th>
 			  </tr>
 	<?php 		
+  /*
 		$sql = 'select naim_r, dolgn, k_mest, oklad, tip_zan, data_razm, naim_p from vakansiya, rabotodatel, prof where rabotodatel.id_r=vakansiya.id_r and prof.id_p=vakansiya.id_p';		
 		$result=$conn->query($sql);		
         while (($row = $result->fetch_array())){			
@@ -134,17 +129,13 @@ $sql =$conn->query("select * from prof");
     }   
 mysqli_free_result($result);
 mysqli_close($conn);
+*/
 ?>
 	</table>
 </div>
 </div>
-</body>
+
 <br><br>
   <!-- Footer -->
-  <?php 
-  include 'temp/footer.php'; 
-?>
-  <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-</html>
+  
+  
