@@ -1,15 +1,5 @@
 <?php 
-session_start();
- include 'temp/head.php';
-include 'temp/nav_u.php';
-$sms=" "; 
-
-$conn = new mysqli('localhost','root','','rekadr');
-if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-     die("Соединение установлено не было.");}
-
- //установим кодировку
-$conn  ->set_charset("utf8");
+/*
 if (!empty($_POST)) 
 { 
 $naim_r=$_POST['naim_r'];
@@ -23,7 +13,8 @@ $sql =$conn->query ("insert into rabotodatel(naim_r, tel_r, kl_d, kl_fio, adres_
 ('$naim_r', '$tel_r', '$kl_d', '$kl_fio', '$adres_r')");
 			
 	$sms = "Работодатель введен !"; 
-} 
+  */
+//} 
  ?>
 
   <!-- Page Content -->
@@ -35,7 +26,8 @@ $sql =$conn->query ("insert into rabotodatel(naim_r, tel_r, kl_d, kl_fio, adres_
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная</a>
+      <a href="<?php echo base_url();?>main_cont/index">Главная</a>
+        
       </li>
       <li class="breadcrumb-item active">Работодатель</li>
     </ol>
@@ -47,7 +39,9 @@ $sql =$conn->query ("insert into rabotodatel(naim_r, tel_r, kl_d, kl_fio, adres_
 	  <h2>Ввод работодателя</h2>
 	  <br>
        <form method="POST" action="">
-	   <?php echo '<div>' .$sms.'</div>' ?>
+	   <?php 
+     /*echo '<div>' .$sms.'</div>' */
+     ?>
 	     <div class="form-group row">
          <label for="inputEmail3" class="col-sm-2 col-form-label">Наименование </label>
     <div class="col-sm-10">
@@ -98,7 +92,7 @@ $sql =$conn->query ("insert into rabotodatel(naim_r, tel_r, kl_d, kl_fio, adres_
 			  </tr>
 	<?php 
 	
-	
+	/*
 	
 	
 		$sql = 'select id_r, naim_r, tel_r, kl_d, kl_fio, adres_r from rabotodatel ';
@@ -118,23 +112,14 @@ $sql =$conn->query ("insert into rabotodatel(naim_r, tel_r, kl_d, kl_fio, adres_
     
 mysqli_free_result($result);
 mysqli_close($conn);
+*/
 ?>
 	</table>
 	
      </div> 
   </div> 
   <!-- /.container -->
-</body>
+
 <br><br>
   <!-- Footer -->
-  <?php 
-  include 'temp/footer.php'; 
-?>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-
-
-
-</html>
+  

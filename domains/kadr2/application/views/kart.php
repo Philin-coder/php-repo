@@ -1,15 +1,6 @@
 <?php 
-session_start();
- include 'temp/head.php';
-include 'temp/nav_u.php';
-$sms=" "; 
 
-$conn = new mysqli('localhost','root','','rekadr');
-if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-     die("Соединение установлено не было.");}
-
- //установим кодировку
-$conn  ->set_charset("utf8");
+/*
 if (!empty($_POST)) 
 { 
 $data_reg=$_POST['data_reg'];
@@ -30,6 +21,7 @@ $sql =$conn->query ("insert into soiskatel(data_reg, fio_s, data_rog, pol, gragd
 			
 	$sms = "Соискатель введен !"; 
 } 
+*/
  ?>
   <!-- Page Content -->
   <div class="container">
@@ -40,7 +32,7 @@ $sql =$conn->query ("insert into soiskatel(data_reg, fio_s, data_rog, pol, gragd
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная</a>
+        <a href="<?php echo base_url();?>main_cont/index">Главная</a>
       </li>
       <li class="breadcrumb-item active">Соискатель</li>
     </ol>
@@ -52,7 +44,9 @@ $sql =$conn->query ("insert into soiskatel(data_reg, fio_s, data_rog, pol, gragd
 	  <h2>Ввод соискателя</h2>
 	  <br>
        <form method="POST" action="">
-	   <?php echo '<div>' .$sms.'</div>' ?>
+	   <?php
+     /* echo '<div>' .$sms.'</div>'*/ 
+     ?>
 	     <div class="form-group row">
          <label for="inputEmail3" class="col-sm-2 col-form-label">Дата регистрации </label>
     <div class="col-sm-10">
@@ -151,6 +145,7 @@ $sql =$conn->query ("insert into soiskatel(data_reg, fio_s, data_rog, pol, gragd
 			</tr>
 
       <?php 
+      /*
   $sql = 'select data_reg, fio_s, data_rog, pol, gragd, adres_s, tel_s, obraz, stag, spec, sp FROM soiskatel ';  
   $result=$conn->query($sql);  
   while (($row = $result->fetch_array())){			
@@ -170,18 +165,15 @@ $sql =$conn->query ("insert into soiskatel(data_reg, fio_s, data_rog, pol, gragd
   }  
 mysqli_free_result($result);
 mysqli_close($conn);
+*/
 ?>
+
 </table>	
   </div> 
 </div> 
 <!-- /.container -->
-</body>
+
 <br><br>
 <!-- Footer -->
-<?php 
-include 'temp/footer.php'; 
-?>
+
 <!-- Bootstrap core JavaScript -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-</html>

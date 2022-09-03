@@ -7,16 +7,17 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="rab.php">Работодатели</a>
+            <a class="nav-link" href="<?php echo base_url();?>rab_cont/index">Работодатели</a>
+            
           </li>
           <li class="nav-item">
             <a class="nav-link" href="vak.php">Вакансии</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="kart.php">Личные карточки</a>
+            <a class="nav-link" href="<?php echo base_url();?>kart_cont/index">Личные карточки</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="napr.php">Направления на работу</a>
+            <a class="nav-link" href="<?php echo base_url();?> napr_cont/index">Направления на работу</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="rez_napr.php">Результат направления</a>

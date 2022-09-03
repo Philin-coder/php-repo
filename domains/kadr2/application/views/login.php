@@ -1,43 +1,11 @@
 <?php 
-/*session_start();
-ob_start();
+/*
 
 
-$msg = '';
-$conn = new mysqli('localhost','root','','rekadr');
-if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQL: ").$conn->connect_error."<br>";
-     die("Соединение установлено не было.");}
-
- //установим кодировку
-$conn  ->set_charset("utf8");
-
-if (!empty($_POST['password']) and !empty($_POST['login'])) {
-    $sql = "SELECT * FROM users WHERE login = '".$_POST['login']."' AND password = '".$_POST['password']."'";
-    $query = $conn->query($sql);
-    	$user = mysqli_fetch_assoc( $query);
-    if (!empty($query )) {
-            $data_user = array(
-                'id_user' =>$user['id_user'],
-                'fio_user' =>  $user['fio_user'],
-                'login' =>  $user['login'],
-				'status' =>  $user['status']
-            );			
-            $_SESSION['data_user'] = $data_user;
 			if ($_SESSION['data_user']['status'] == 'Администратор') {
             header('Location: admin.php');
 }}
- if ($_SESSION['data_user']['status'] == 'Специалист') {
-header("Location: upr.php");
-    }
-	if ($_SESSION['data_user']['status'] == 'Директор') {
-		header("Location: dir.php");
-}
-else 
-{ 
-$msg  = "Неверный логин или пароль"; 
-} 
-
-}	
+	
 */
 ?>
 
@@ -66,8 +34,8 @@ $msg  = "Неверный логин или пароль";
         <h3>Форма авторизации</h3>
 		<br> 
    <br> 
-  
-        <form method= "POST" name="sentMessage" id="contactForm" novalidate>
+   
+        <form  action='<?php echo base_url()?>Main/avtoriz' method= 'POST' name="sentMessage" id="contactForm" novalidate>
 		<?php 
     /*echo '<div>' .$msg.'</div>'*/ ?>
           <div class="control-group form-group">

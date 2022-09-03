@@ -5,7 +5,8 @@ class rk_users_model extends CI_Model{
         $this->db->select('id_user,login,password,fio_user,status');
         $this->db->from('users');
         $sql=$this->db->get();
-        return $sql->result_array();
+        //return $sql->result_array();
+        return $sql->row();
     }
     public function ins_rk_users_model($login,$password,$fio_user,$status){
         if(!empty($_POST))
@@ -27,6 +28,14 @@ class rk_users_model extends CI_Model{
     }
     public function del_rk_users_model(){
         $this->db->empty_table('users');
+
+    }
+    public function sel_stat(){
+        $this->db->select('status');
+        $this->db->from('users');
+        $this->db->where('status IS NOT NULL');
+        $sql=$this->db->get();
+        return $sql->row();
 
     }
     
