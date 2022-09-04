@@ -52,8 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] = 'welcome';
 //$route['default_controller'] = 'rc_napr_cont';
 
-//$route['default_controller'] = 'main_cont';
-$route['default_controller'] = 'vak_cont';
+$route['default_controller'] = 'admin_cont';
+//$route['default_controller'] = 'vak_cont';
 //$route['default_controller'] = 'director_cont';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

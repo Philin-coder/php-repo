@@ -30,14 +30,7 @@ class rk_users_model extends CI_Model{
         $this->db->empty_table('users');
 
     }
-    public function sel_stat(){
-        $this->db->select('status');
-        $this->db->from('users');
-        $this->db->where('status IS NOT NULL');
-        $sql=$this->db->get();
-        return $sql->row();
-
-    }
+    
     
 }
 ?>

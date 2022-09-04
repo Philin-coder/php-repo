@@ -7,7 +7,7 @@
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="<?php echo base_url(); ?>index.php">Главная</a>
+        <a href="<?php echo base_url();?>main_cont/index">Главная</a>
       </li>
       <li class="breadcrumb-item active">Страница администратора</li>
     </ol>
