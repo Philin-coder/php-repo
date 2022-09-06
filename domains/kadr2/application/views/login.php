@@ -14,9 +14,7 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Авторизация
-    
-    </h1>
+    <h1 class="mt-4 mb-3">Авторизация</h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">

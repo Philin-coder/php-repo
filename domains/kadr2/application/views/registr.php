@@ -1,18 +1,11 @@
 <?php 
-session_start();
- include 'temp/head.php';
-include 'temp/nav_a.php';
+/*
 $id_user = $_SESSION ['id_user']; 
 $status=$_POST['status'];
-$msg = '';
+*/
 
-//Если массив POST непустой, то добавить запись в базу 
-if (!empty($_POST)) 
-{ 
-$conn = mysqli_connect('localhost','root','','rekadr');
-if (mysqli_connect_errno($conn)) {
-echo "Не удалось подключиться к БД:".mysql_connect_error();
-}
+
+/*
 $fio=$_POST['fio']; 
 $login=$_POST['login']; 
 $password=$_POST['password']; 
@@ -23,6 +16,7 @@ $status=$_POST['status'];
 $result=mysqli_query($conn,$sql); 
 $msg  = "Пользователь успешно зарегистрирован!"; 
 } 
+*/
  ?>
 
   <!-- Page Content -->
@@ -34,7 +28,7 @@ $msg  = "Пользователь успешно зарегистрирован!
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная</a>
+        <a href="<?php echo base_url();?>main_cont/index">Главная</a>
       </li>
       <li class="breadcrumb-item active">Регистрация</li>
     </ol>
@@ -46,7 +40,10 @@ $msg  = "Пользователь успешно зарегистрирован!
 	  <h2>Форма регистрации</h2>
 	  <br>
        <form method="POST" action="">
-	   <?php echo '<div>' .$msg.'</div>' ?>
+	   <?php 
+     /*
+     echo '<div>' .$msg.'</div>'
+     */ ?>
 	     <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">ФИО</label>
     <div class="col-sm-10">
@@ -96,6 +93,7 @@ $msg  = "Пользователь успешно зарегистрирован!
         <th>Статус</th>
                 </tr>
 	<?php 
+  /*
 	$conn = mysqli_connect('localhost','root','','rekadr');
 		$sql = 'select login, password, fio_user, status from users ';
 			
@@ -107,23 +105,19 @@ $msg  = "Пользователь успешно зарегистрирован!
     
 mysqli_free_result($result);
 mysqli_close($conn);
+*/
 ?>
 	</table>
 	
      </div> 
   </div> 
   <!-- /.container -->
-</body>
+
 <br><br>
   <!-- Footer -->
-  <?php 
-  include 'temp/footer.php'; 
-?>
-
+  
   <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
 
 
 
-</html>
+

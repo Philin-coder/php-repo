@@ -1,15 +1,5 @@
 <?php 
-session_start();
- include 'temp/head.php';
-include 'temp/nav_a.php';
-$sms=" "; 
-
-$conn = new mysqli('localhost','root','','rekadr');
-if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-     die("Соединение установлено не было.");}
-
- //установим кодировку
-$conn  ->set_charset("utf8");
+/*
 if (!empty($_POST)) 
 { 
 $naim_o=$_POST['naim_o']; 
@@ -19,6 +9,7 @@ $sql =$conn->query ("insert into otrasl(naim_o) values ('$naim_o')");
 			
 	$sms = "Отрасль введена !"; 
 } 
+*/
  ?>
 
   <!-- Page Content -->
@@ -30,7 +21,7 @@ $sql =$conn->query ("insert into otrasl(naim_o) values ('$naim_o')");
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="index.php">Главная</a>
+        <a href="<?php echo base_url();?>main_cont/index">Главная</a>
       </li>
       <li class="breadcrumb-item active">Отрасль</li>
     </ol>
@@ -42,7 +33,7 @@ $sql =$conn->query ("insert into otrasl(naim_o) values ('$naim_o')");
 	  <h2>Ввод отрасли промышленности</h2>
 	  <br>
        <form method="POST" action="">
-	   <?php echo '<div>' .$sms.'</div>' ?>
+	   <?php /*echo '<div>' .$sms.'</div>'*/ ?>
 	     <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Наименование </label>
     <div class="col-sm-10">
@@ -68,7 +59,7 @@ $sql =$conn->query ("insert into otrasl(naim_o) values ('$naim_o')");
 			  </tr>
 	<?php 
 	
-	
+	/*
 	
 	
 		$sql = 'select id_o, naim_o from otrasl ';
@@ -81,23 +72,20 @@ $sql =$conn->query ("insert into otrasl(naim_o) values ('$naim_o')");
     
 mysqli_free_result($result);
 mysqli_close($conn);
+*/
 ?>
 	</table>
 	
      </div> 
   </div> 
   <!-- /.container -->
-</body>
+
 <br><br>
   <!-- Footer -->
-  <?php 
-  include 'temp/footer.php'; 
-?>
+  
 
   <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  
 
 
 
-</html>

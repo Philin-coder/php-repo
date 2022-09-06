@@ -7,13 +7,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="registr.php">Регистрация сотрудников</a>
+            <a class="nav-link" href="<?php echo base_url();?>reg_cont/index">Регистрация сотрудников</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="otrasl.php">Отрасли</a>
+            <a class="nav-link" href="<?echo base_url();?>otr_cont/index">Отрасли</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="prof.php">Профессии</a>
+            <a class="nav-link" href="<?php echo base_url();?>prof_cont/index">Профессии</a>
           </li>
              <li class="nav-item">
             <a class="nav-link" href="out.php">Выход</a>
