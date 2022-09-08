@@ -30,6 +30,15 @@ class rk_users_model extends CI_Model{
         $this->db->empty_table('users');
 
     }
+    public function sel_stat($login, $password){
+        $this->db->select('id_user,login,password,fio_user,status');
+        $this->db->from('users');
+        $this->db->where('login',$login);
+        $this->db->where('password',$password);
+        $sql=$this->db->get();
+        return $sql->row();
+
+    }
     
     
 }

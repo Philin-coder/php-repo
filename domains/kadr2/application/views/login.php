@@ -33,20 +33,20 @@
 		<br> 
    <br> 
    
-        <form  action='<?php echo base_url()?>Main/avtoriz' method= 'POST' name="sentMessage" id="contactForm" novalidate>
+        <form  action='<?php echo base_url()?>enter_cont/autor' method= 'POST' name="sentMessage" id="contactForm" novalidate>
 		<?php 
     /*echo '<div>' .$msg.'</div>'*/ ?>
           <div class="control-group form-group">
             <div class="controls">
               <label>Логин:</label>
-              <input type="text" name= "login" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+              <input type="text" name= "lgn" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
               <p class="help-block"></p>
             </div>
           </div>
           <div class="control-group form-group">
             <div class="controls">
               <label>Пароль:</label>
-              <input type="password" name="password" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              <input type="password" name="pswd" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
             </div>
           </div>
         

@@ -23,7 +23,7 @@
             <a class="nav-link" href="<?php echo base_url();?>rez_napr/index">Результат направления</a>
           </li>
              <li class="nav-item">
-            <a class="nav-link" href="out.php">Выход</a>
+            <a class="nav-link" href="<?php echo base_url();?>enter_cont/logout">Выход</a>
           </li>             
         </ul>
       </div>

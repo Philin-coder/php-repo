@@ -16,7 +16,7 @@
             <a class="nav-link" href="<?php echo base_url();?>prof_cont/index">Профессии</a>
           </li>
              <li class="nav-item">
-            <a class="nav-link" href="out.php">Выход</a>
+            <a class="nav-link" href="<?php echo base_url();?>enter_cont/logout">Выход</a>
           </li>             
         </ul>
       </div>
