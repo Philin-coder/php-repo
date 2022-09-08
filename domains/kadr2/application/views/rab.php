@@ -1,16 +1,5 @@
 <?php 
 /*
-if (!empty($_POST)) 
-{ 
-$naim_r=$_POST['naim_r'];
-$tel_r=$_POST['tel_r'];
-$kl_d=$_POST['kl_d'];
-$kl_fio=$_POST['kl_fio'];
-$adres_r=$_POST['adres_r']; 
-
-// добавление записи
-$sql =$conn->query ("insert into rabotodatel(naim_r, tel_r, kl_d, kl_fio, adres_r) values 
-('$naim_r', '$tel_r', '$kl_d', '$kl_fio', '$adres_r')");
 			
 	$sms = "Работодатель введен !"; 
   */
@@ -91,14 +80,9 @@ $sql =$conn->query ("insert into rabotodatel(naim_r, tel_r, kl_d, kl_fio, adres_
 			  </tr>
 	<?php 
 	
-	/*
-	
-	
-		$sql = 'select id_r, naim_r, tel_r, kl_d, kl_fio, adres_r from rabotodatel ';
+  if(isset($rabotodatel)){
+	foreach($rabotodatel as $row):{
 		
-		$result=$conn->query($sql);
-		
-			while (($row = $result->fetch_array())){			
     echo '<tr>
     <td>'.$row['id_r'].'</td>
     <td>'.$row['naim_r'].'</td>
@@ -108,17 +92,13 @@ $sql =$conn->query ("insert into rabotodatel(naim_r, tel_r, kl_d, kl_fio, adres_
     <td>'.$row['adres_r'].'</td>
     </tr>';
     }
-    
-mysqli_free_result($result);
-mysqli_close($conn);
-*/
+  endforeach;
+  }
+echo ('</table>');
+echo('</div>' );
+echo('</div>');
+echo('<br><br>');
 ?>
-	</table>
 	
-     </div> 
-  </div> 
-  <!-- /.container -->
-
-<br><br>
-  <!-- Footer -->
-  
+	
+     

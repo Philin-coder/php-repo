@@ -1,23 +1,7 @@
 <?php 
 
 /*
-if (!empty($_POST)) 
-{ 
-$data_reg=$_POST['data_reg'];
-$fio_s=$_POST['fio_s'];
-$data_rog=$_POST['data_rog'];
-$pol=$_POST['pol'];
-$gragd=$_POST['gragd']; 
-$adres_s=$_POST['adres_s'];
-$tel_s=$_POST['tel_s'];
-$obraz=$_POST['obraz'];
-$stag=$_POST['stag'];
-$spec=$_POST['spec'];
-$sp=$_POST['sp'];
-
 // добавление записи
-$sql =$conn->query ("insert into soiskatel(data_reg, fio_s, data_rog, pol, gragd, adres_s, tel_s, obraz, stag, spec, sp) values 
-('$data_reg', '$fio_s', '$data_rog', '$pol', '$gragd', '$adres_s', '$tel_s', '$obraz', '$stag', '$spec', '$sp')");
 			
 	$sms = "Соискатель введен !"; 
 } 
@@ -143,12 +127,9 @@ $sql =$conn->query ("insert into soiskatel(data_reg, fio_s, data_rog, pol, gragd
             <th>Специальность</th>
             <th>Семейное положение</th>
 			</tr>
-
       <?php 
-      /*
-  $sql = 'select data_reg, fio_s, data_rog, pol, gragd, adres_s, tel_s, obraz, stag, spec, sp FROM soiskatel ';  
-  $result=$conn->query($sql);  
-  while (($row = $result->fetch_array())){			
+      if(isset($soiskatel)){
+      foreach ($soiskatel as $row):{
   echo '<tr>
   <td>'.$row['data_reg'].'</td>
   <td>'.$row['fio_s'].'</td>
@@ -163,17 +144,14 @@ $sql =$conn->query ("insert into soiskatel(data_reg, fio_s, data_rog, pol, gragd
   <td>'.$row['sp'].'</td>
   </tr>';
   }  
-mysqli_free_result($result);
-mysqli_close($conn);
-*/
+endforeach;
+}
+echo('</table>'	);
+echo('</div>');
+echo('</div>');
+echo('<br><br>');
 ?>
 
-</table>	
-  </div> 
-</div> 
-<!-- /.container -->
 
-<br><br>
-<!-- Footer -->
+  
 
-<!-- Bootstrap core JavaScript -->

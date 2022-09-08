@@ -26,7 +26,13 @@ public function upd_rabotodatel_model($naim_r,$tel_r,$kl_d,$kl_fio,$adres_r){
 public function del_rabotodatel_model(){
     $this->db->empty_table('rabotodatel');
 }
+public function sel_grid_data(){
+    $this->db->select('id_r, naim_r, tel_r, kl_d, kl_fio, adres_r');
+    $this->db->from('rabotodatel');
+    $sql=$this->db->get();
+    return $sql->result_array();
 
+}
 
 }
 ?>

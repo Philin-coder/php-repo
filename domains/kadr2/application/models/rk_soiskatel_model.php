@@ -35,5 +35,14 @@ class rk_soiskatel_model extends CI_Model{
     public function del_soiskatel_(){
         $this->db->empty_table('soiskatel');
     }
+    public function sel_data_reg(){
+        $this->db->select('data_reg, fio_s, data_rog, pol, gragd, adres_s, tel_s, obraz, stag, spec, sp');
+        $this->db->from('soiskatel');
+        $sql=$this->db->get();
+        return $sql->result_array();
+
+
+
+    }
 }
 ?>
