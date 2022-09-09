@@ -1,19 +1,7 @@
 <?php 
-/*
-$id_user = $_SESSION ['id_user']; 
-$status=$_POST['status'];
-*/
 
 
 /*
-$fio=$_POST['fio']; 
-$login=$_POST['login']; 
-$password=$_POST['password']; 
-$status=$_POST['status'];
-// добавление записи
-		$sql = ("insert into users (login, password, fio_user, status) values ('$login', '$password', '$fio','$status')"); 
-		var_dump($sql);
-$result=mysqli_query($conn,$sql); 
 $msg  = "Пользователь успешно зарегистрирован!"; 
 } 
 */
@@ -93,31 +81,27 @@ $msg  = "Пользователь успешно зарегистрирован!
         <th>Статус</th>
                 </tr>
 	<?php 
-  /*
-	$conn = mysqli_connect('localhost','root','','rekadr');
-		$sql = 'select login, password, fio_user, status from users ';
-			
-		$result= mysqli_query($conn, $sql) or die(mysqli_error($conn));
-		
-			while ($row = mysqli_fetch_array($result)){			
-	echo '<tr><td>'.$row['login'].'</td><td>'.$row['password'].'</td><td>'.$row['fio_user'].'</td><td>'.$row['status'].'</td></tr>';
-    }
-    
-mysqli_free_result($result);
-mysqli_close($conn);
-*/
-?>
-	</table>
-	
-     </div> 
-  </div> 
-  <!-- /.container -->
-
-<br><br>
-  <!-- Footer -->
   
-  <!-- Bootstrap core JavaScript -->
-
-
+	if (isset($users)){
+    foreach($users as $row):{
+	echo '<tr>
+  <td>'.$row['login'].'</td>
+  <td>'.$row['password'].'</td>
+  <td>'.$row['fio_user'].'</td>
+  <td>'.$row['status'].'</td>
+  </tr>';
+    }
+  endforeach;
+}
+echo ('</table>');    
+echo('</div>' );
+echo('</div>' );
+echo('<br><br>');
+?>
+	
+	
+     
+  
+  
 
 

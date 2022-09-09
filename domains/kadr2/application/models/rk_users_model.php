@@ -39,7 +39,12 @@ class rk_users_model extends CI_Model{
         return $sql->row();
 
     }
-    
+    public function sel_grid_data(){
+        $this->db->select('login, password, fio_user, status');
+        $this->db->from('users');
+        $sql=$this->db->get();
+        return $sql->result_array();
+    }
     
 }
 ?>
