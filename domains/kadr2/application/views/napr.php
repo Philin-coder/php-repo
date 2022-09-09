@@ -2,23 +2,9 @@
 
 
 /*
-
-if (!empty($_POST)) 
-{ 
-$n_n=$_POST['n_n'];
-$id_v=$_POST['id_v'];
-$id_s=$_POST['id_s'];
-$data_n=$_POST['data_n'];
-$data_p=$_POST['data_p']; 
-$rezultat=$_POST['rezultat'];
-$prim=$_POST['prim'];
-
-// добавление записи
-$sql =$conn->query ("insert into napravlenie(n_n, id_v, id_s, data_n, data_p) values 
-('$n_n', '$id_v', '$id_s', '$data_n', '$data_p')");
-			
+		
 	$sms = "Направление введено !"; 
-} */
+ */
  ?>
   <!-- Page Content -->
   <div class="container">
@@ -44,7 +30,8 @@ $sql =$conn->query ("insert into napravlenie(n_n, id_v, id_s, data_n, data_p) va
 	   <?php 
      /*
      echo '<div>' .$sms.'</div>'
-     /* ?>
+     */ 
+     ?>
 	     <div class="form-group row">
          <label for="inputEmail3" class="col-sm-2 col-form-label">Номер направления </label>
     <div class="col-sm-10">
@@ -56,14 +43,14 @@ $sql =$conn->query ("insert into napravlenie(n_n, id_v, id_s, data_n, data_p) va
     <div class="col-sm-10">
 	<select name="id_v" >
 <?
-/*
+
 $sql =$conn->query("select * from vakansiya"); 
 
 	while ($row = mysqli_fetch_array($sql))
  {
    echo '<option value="'.$row['id_v'].'">'.$row['dolgn'].'</option>';
 }
-*/
+
 ?>
 </select>
 	    </div>
