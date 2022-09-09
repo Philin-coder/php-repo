@@ -32,5 +32,14 @@ if(!empty($_POST)){
     public function del_vakansiya_model(){
         $this->db->empty_table('vakansiya');
     }
+    public function sel_grid_data(){
+    $this->db->select('naim_r, dolgn, k_mest, oklad, tip_zan, data_razm, naim_p');
+    $this->db->from('vakansiya');
+    $this->db->join('rabotodatel','rabotodatel.id_r=vakansiya.id_r');
+    $this->db->join('prof','prof.id_p=vakansiya.id_p');
+    $sql=$this->db->get();
+    return $sql->result_array();
+    
+    }
 }
 ?>

@@ -1,18 +1,4 @@
-<?php 
-/*
-if (!empty($_POST)) 
-{  
-$rezultat=$_POST['rezultat'];
-$prim=$_POST['prim'];
-$n=$_POST['n_nn'];
-
-// добавление записи
-$sql =$conn->query ("UPDATE napravlenie SET rezultat='$rezultat', prim='$prim' where id_n='$n'" );
-			
-	$sms = "Результат направления введен !"; 
-} 
-*/
- ?>
+ 
   <!-- Page Content -->
   <div class="container">
 
@@ -22,7 +8,7 @@ $sql =$conn->query ("UPDATE napravlenie SET rezultat='$rezultat', prim='$prim' w
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="<?php echo base_url();?>main_cont/index">Главная</a>
+        <a href="<?php echo base_url(); ?>main_cont/index">Главная</a>
       </li>
       <li class="breadcrumb-item active">Направление</li>
     </ol>
@@ -35,21 +21,20 @@ $sql =$conn->query ("UPDATE napravlenie SET rezultat='$rezultat', prim='$prim' w
 	  <br>
       <form method="POST" action="">
 	   <?php 
-     /*echo '<div>' .$sms.'</div>' */
+     //echo '<div>' .$sms.'</div>' 
      ?>
 	     <div class="form-group row">   
     <label for="inputEmail3" class="col-sm-2 col-form-label">Номер направления</label>
     <div class="col-sm-10">
 	<select name="n_nn" >
-<?
-/*
-$sql =$conn->query("select id_n,n_n from napravlenie"); 
+<?php
+$sql=$this->db->get('napravlenie');
 
-	while ($row = mysqli_fetch_array($sql))
- {
-   echo '<option value="'.$row['id_n'].'">'.$row['n_n'].'</option>';
+
+foreach($sql->result_array() as $row):{
+  echo '<option value="'.$row['id_n'].'">'.$row['n_n'].'</option>';
 }
-*/
+endforeach;
 ?>
 </select>
 	    </div></div>
@@ -88,11 +73,8 @@ $sql =$conn->query("select id_n,n_n from napravlenie");
             <th>Примечание</th>
 			  </tr>
 	<?php 	
-  /*
-    $sql = 'select n_n, dolgn, fio_s, data_n, data_p, rezultat, prim from napravlenie, vakansiya, soiskatel 
-    where vakansiya.id_v=napravlenie.id_v and soiskatel.id_s=napravlenie.id_s';		
-		$result=$conn->query($sql);		
-			while (($row = $result->fetch_array())){			
+  if(isset($napravlenie)){
+   foreach($napravlenie as $row):{ 
     echo '<tr>
     <td>'.$row['n_n'].'</td>
     <td>'.$row['dolgn'].'</td>
@@ -103,16 +85,12 @@ $sql =$conn->query("select id_n,n_n from napravlenie");
      <td>'.$row['prim'].'</td>
     </tr>';
     }    
-mysqli_free_result($result);
-mysqli_close($conn);
-*/
-?>
-	</table>	
-     </div> 
-  </div> 
-  <!-- /.container -->
+    endforeach;
+  }
+  echo '</table>';
+  echo '</div>';
+  echo '</div>';
+  echo('<br><br>');
 
-<br><br>
-  <!-- Footer -->
-  
-  <!-- Bootstrap core JavaScript -->
+?>
+	

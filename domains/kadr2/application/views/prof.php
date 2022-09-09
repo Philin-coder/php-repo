@@ -3,18 +3,9 @@
 
 
 //Если массив POST непустой, то добавить запись в базу	
-if (!empty($_POST)) 
-{ 
-$naim_o=$_POST['naim_o']; 
-$naim_p=$_POST['naim_p'];
 
-// добавление записи
-$sql ="insert into prof(id_o, naim_p) values ('$naim_o', '$naim_p')";
-
-$result=$conn->query($sql);
-var_dump ($result);
 	$sms = "Профессия введена !"; 
-} 
+ 
 */
  ?>
 
@@ -44,15 +35,13 @@ var_dump ($result);
     <label for="inputEmail3" class="col-sm-2 col-form-label">Отрасль промышленности</label>
     <div class="col-sm-10">
 	<select name="naim_o" >
-<?
-/*
-$sql =$conn->query("select * from otrasl"); 
+<?php
+  $sql=$this->db->get('otrasl');
+  foreach($sql->result_array() as $row):{
+    echo '<option value="'.$row['id_o'].'">'.$row['naim_o'].'</option>';
 
-	while ($row = mysqli_fetch_array($sql))
- {
-   echo '<option value="'.$row['id_o'].'">'.$row['naim_o'].'</option>';
-}
-*/
+  }
+  endforeach;
 ?>
 </select>
 	    </div>
@@ -73,7 +62,6 @@ $sql =$conn->query("select * from otrasl");
 
     </div>
     </div>
-	 
     <div class="row">
 	<caption> <h2> Профессии</h2></caption> 
 			<table class="table">
@@ -81,20 +69,21 @@ $sql =$conn->query("select * from otrasl");
 			<th>Наименование профессии</th>
 			  </tr>
 	<?php 
-	/*
-		$sql = 'select  naim_o, naim_p from otrasl, prof where otrasl.id_o=prof.id_o';
-		
-		$result=$conn->query($sql);
-		
-			while (($row = $result->fetch_array())){			
-	echo '<tr><td>'.$row['naim_o'].'</td><td>'.$row['naim_p'].'</td></tr>';
+	if(!empty($prof)){
+    foreach($prof as $row):{
+  echo '<tr><td>'.$row['naim_o'].'</td><td>'.$row['naim_p'].'</td></tr>';
     }
+  endforeach;
+  
     
-mysqli_free_result($result);
-mysqli_close($conn);
-*/
+
+  }
+  echo('</table>');
+  echo('</div>');
+  echo('</div>');
+  echo('<br><br>');
 ?>
-	</table>
+	
 	
      </div> 
   </div> 

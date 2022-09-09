@@ -17,10 +17,10 @@
             <a class="nav-link" href="<?php echo base_url();?>kart_cont/index">Личные карточки</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url();?> napr_cont/index">Направления на работу</a>
+            <a class="nav-link" href="<?php echo base_url();?>napr_cont/index">Направления на работу</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url();?>rez_napr/index">Результат направления</a>
+            <a class="nav-link" href="<?php echo base_url();?>rez_napr_cont/index">Результат направления</a>
           </li>
              <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url();?>enter_cont/logout">Выход</a>

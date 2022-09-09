@@ -42,15 +42,12 @@
     <label for="inputEmail3" class="col-sm-2 col-form-label">Вакансия</label>
     <div class="col-sm-10">
 	<select name="id_v" >
-<?
-
-$sql =$conn->query("select * from vakansiya"); 
-
-	while ($row = mysqli_fetch_array($sql))
- {
+<?php
+$sql=$this->db->get('vakansiya');
+foreach($sql->result_array() as $row):{
    echo '<option value="'.$row['id_v'].'">'.$row['dolgn'].'</option>';
 }
-
+endforeach;
 ?>
 </select>
 	    </div>
@@ -59,15 +56,13 @@ $sql =$conn->query("select * from vakansiya");
         <label for="inputEmail3" class="col-sm-2 col-form-label">Соискатель</label>
     <div class="col-sm-10">
 	<select name="id_s" >
-<?
-/*
-$sql =$conn->query("select * from soiskatel"); 
+<?php
 
-	while ($row = mysqli_fetch_array($sql))
- {
+$sql=$this->db->get('soiskatel');
+	foreach($sql->result_array() as $row):{
    echo '<option value="'.$row['id_s'].'">'.$row['fio_s'].'</option>';
 }
-*/
+endforeach;
 ?>
 </select>
 	    </div>
@@ -107,11 +102,10 @@ $sql =$conn->query("select * from soiskatel");
             <th>Дата посещения</th>
 			  </tr>
 	<?php 	
-  /*
-    $sql = 'select n_n, dolgn, fio_s, data_n, data_p from napravlenie, vakansiya, soiskatel 
-    where vakansiya.id_v=napravlenie.id_v and soiskatel.id_s=napravlenie.id_s';		
-		$result=$conn->query($sql);		
-			while (($row = $result->fetch_array())){			
+  if (isset($napravlenie)){
+    foreach($napravlenie as $row):{
+  
+    	
     echo '<tr>
     <td>'.$row['n_n'].'</td>
     <td>'.$row['dolgn'].'</td>
@@ -120,17 +114,11 @@ $sql =$conn->query("select * from soiskatel");
     <td>'.$row['data_p'].'</td>
     </tr>';
     }    
-mysqli_free_result($result);
-mysqli_close($conn);
-*/
+  endforeach;
+  }
+echo '</table>';
+echo '</div>';
+echo '</div>';
+echo('<br><br>');
 ?>
-	</table>	
-     </div> 
-  </div> 
-  <!-- /.container -->
-
-<br><br>
-  <!-- Footer -->
-  <!-- Bootstrap core JavaScript -->
-
 

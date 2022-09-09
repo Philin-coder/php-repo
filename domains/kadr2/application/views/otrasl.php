@@ -1,11 +1,5 @@
 <?php 
 /*
-if (!empty($_POST)) 
-{ 
-$naim_o=$_POST['naim_o']; 
-
-// добавление записи
-$sql =$conn->query ("insert into otrasl(naim_o) values ('$naim_o')");
 			
 	$sms = "Отрасль введена !"; 
 } 
@@ -58,34 +52,21 @@ $sql =$conn->query ("insert into otrasl(naim_o) values ('$naim_o')");
 			<th>Наименование</th>
 			  </tr>
 	<?php 
-	
-	/*
-	
-	
-		$sql = 'select id_o, naim_o from otrasl ';
-		
-		$result=$conn->query($sql);
-		
-			while (($row = $result->fetch_array())){			
-	echo '<tr><td>'.$row['id_o'].'</td><td>'.$row['naim_o'].'</td></tr>';
-    }
-    
-mysqli_free_result($result);
-mysqli_close($conn);
-*/
+	if(isset($otrasl)){
+    foreach($otrasl as $row):{
+      echo '<tr><td>'.$row['id_o'].'</td><td>'.$row['naim_o'].'</td></tr>';
+  }
+endforeach;
+}
+echo('</table>');
+echo('</div>');
+echo('</div>');
+echo('<br><br>');
 ?>
-	</table>
 	
-     </div> 
-  </div> 
-  <!-- /.container -->
+	
+     
 
-<br><br>
-  <!-- Footer -->
-  
-
-  <!-- Bootstrap core JavaScript -->
-  
 
 
 

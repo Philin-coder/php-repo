@@ -7,7 +7,7 @@ class rk_napr_model extends CI_Model{
         $sql=$this->db->get();
         return $sql->result_array();
     }
-    public function ins_napravlenie_model($n_n,$id_v,$id_s,$data_n,$data_p,$rezultat,$prim){
+    public function ins_napravlenie_model($n_n,$id_v,$id_s,$data_n,$data_p){
         if(!empty($_POST))
         {
             $data=array(
@@ -15,9 +15,7 @@ class rk_napr_model extends CI_Model{
                 'id_v'=>$id_v,
                 'id_s'=>$id_s,
                 'data_n'=>$data_n,
-                'data_p'=>$data_p,
-                'rezultat'=>$rezultat,
-                'prim'=>$prim
+                'data_p'=>$data_p
             );
             $this->db->insert('napravlenie',$data);    
 
@@ -35,6 +33,28 @@ public function upd_napravlenie_model($n_n,$id_v,$id_s,$data_n,$data_p,$rezultat
         }
         public function del_napravlenie(){
         $this->db->empty_table('napravlenie'); 
+        }
+        public function sel_data_grid(){
+            $this->db->select('n_n, dolgn, fio_s, data_n, data_p');
+            $this->db->from('napravlenie');
+            $this->db->join('vakansiya','vakansiya.id_v=napravlenie.id_v');
+            $this->db->join('soiskatel','soiskatel.id_s=napravlenie.id_s');
+            $sql= $this->db->get();
+            return $sql->result_array();
+        }
+        public function upd_res($rezultat,$prim,$n){
+            $sql='UPDATE napravlenie SET rezultat=?,prim=? where id_n=?';
+            $this->db->query($sql,array($rezultat,$prim,$n));
+
+
+        }
+        public function sel_napr_grid(){
+            $this->db->select('n_n, dolgn, fio_s, data_n, data_p, rezultat, prim');
+            $this->db->from('napravlenie');
+            $this->db->join('vakansiya','vakansiya.id_v=napravlenie.id_v');
+            $this->db->join('soiskatel','soiskatel.id_s=napravlenie.id_s');
+            $sql= $this->db->get();
+            return $sql->result_array();
         }
 
 }
