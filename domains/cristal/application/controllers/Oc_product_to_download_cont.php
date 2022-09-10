@@ -21,8 +21,8 @@ class oc_product_to_download_cont extends CI_Controller {
         $report=$this->oc_product_to_download_model->oc_product_to_download_model_get_xml();
         $new_report=$this->dbutil->xml_from_result($report);
         write_file('./xml_files/oc_product_to_downloadel_xml.xml',$new_report);
-        // redirect('http://cristal:8080/index.php/oc_product_to_download_cont/index','refresh');
-        $this->index();
+        redirect(base_url().'oc_product_to_download_cont/index','refresh');
+        
     }
     public function view_xml()
     {   

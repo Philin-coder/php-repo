@@ -1,11 +1,4 @@
-<?php 
 
-
-/*
-$msg  = "Пользователь успешно зарегистрирован!"; 
-} 
-*/
- ?>
 
   <!-- Page Content -->
   <div class="container">
@@ -62,7 +55,14 @@ $msg  = "Пользователь успешно зарегистрирован!
   </div>
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Зарегистрировать</button>
+      <button type="submit" class="btn btn-primary" id="btn_user">Зарегистрировать</button>
+      <script type="text/javascript">
+      $(document).ready(function () {
+            $("#btn_user").click(function () {
+                alert("Пользователь успешно зарегистрирован!");
+            });
+        });
+    </script>
     </div>
   </div>
 </form>

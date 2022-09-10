@@ -1,10 +1,10 @@
 <?php 
 
 
-/*
+
 		
-	$sms = "Направление введено !"; 
- */
+	
+ 
  ?>
   <!-- Page Content -->
   <div class="container">
@@ -27,11 +27,7 @@
 	  <h2>Ввод направления</h2>
 	  <br>
       <form method="POST" action="">
-	   <?php 
-     /*
-     echo '<div>' .$sms.'</div>'
-     */ 
-     ?>
+	   
 	     <div class="form-group row">
          <label for="inputEmail3" class="col-sm-2 col-form-label">Номер направления </label>
     <div class="col-sm-10">
@@ -63,6 +59,9 @@ $sql=$this->db->get('soiskatel');
    echo '<option value="'.$row['id_s'].'">'.$row['fio_s'].'</option>';
 }
 endforeach;
+ 
+    
+     
 ?>
 </select>
 	    </div>
@@ -83,7 +82,14 @@ endforeach;
  
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Ввести</button>
+      <button type="submit" class="btn btn-primary" id="btn">Ввести</button>
+      <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                alert("Направление введено!");
+            });
+        });
+    </script>
     </div>
   </div>
 </form>
@@ -101,6 +107,7 @@ endforeach;
             <th>Дата направления</th>
             <th>Дата посещения</th>
 			  </tr>
+        <?php  echo "<div class='alert_div'>.$msg.</div>";?>
 	<?php 	
   if (isset($napravlenie)){
     foreach($napravlenie as $row):{

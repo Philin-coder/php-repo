@@ -21,8 +21,8 @@ class Oc_product_theirsystem_properties_cont extends CI_Controller {
         $report=$this->oc_product_theirsystem_properties_model->oc_product_theirsystem_properties_model_get_xml();
         $new_report=$this->dbutil->xml_from_result($report);
         write_file('./xml_files/oc_product_theirsystem_properties_xml.xml',$new_report);
-        // redirect('http://cristal:8080/index.php/oc_product_theirsystem_properties_cont/index','refresh');
-        $this->index();
+         redirect(base_url().'oc_product_theirsystem_properties_cont/index','refresh');
+        //$this->index();
 
     }
     public function view_xml()

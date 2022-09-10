@@ -1,13 +1,3 @@
-<?php 
-/*
-
-
-//Если массив POST непустой, то добавить запись в базу	
-
-	$sms = "Профессия введена !"; 
- 
-*/
- ?>
 
   <!-- Page Content -->
   <div class="container">
@@ -55,7 +45,14 @@
  
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Ввести</button>
+      <button type="submit" class="btn btn-primary"id= "btn_prof">Ввести</button>
+      <script>
+        $(document).ready(function () {
+            $("#btn_prof").click(function () {
+                alert("Профессия  введена!");
+            });
+        });
+    </script>
     </div>
   </div>
 </form>

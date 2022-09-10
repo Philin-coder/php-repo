@@ -60,7 +60,14 @@
  
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Ввести</button>
+      <button type="submit" class="btn btn-primary" id="btn_rab">Ввести</button>
+      <script type="text/javascript">
+      $(document).ready(function () {
+            $("#btn_rab").click(function () {
+                alert("Работодатель введен");
+            });
+        });
+    </script>
     </div>
   </div>
 </form>

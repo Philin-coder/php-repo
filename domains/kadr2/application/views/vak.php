@@ -1,11 +1,3 @@
-<?php 
-/*
- 
-	$sms = "Вакансия введена !"; 
-	 header("Location: http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/vak.php");
-} 	
-*/
- ?>
   <!-- Page Content -->
   <div class="container">
     <!-- Page Heading/Breadcrumbs -->
@@ -23,9 +15,7 @@
 	  <h2>Ввод вакансии</h2>
 	  <br>
        <form method="POST" action="">
-       <?php 
-       /*echo '<div>' .$sms.'</div>' 
-       */?>
+       
        <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Работодатель</label>
     <div class="col-sm-10">
@@ -85,7 +75,14 @@ endforeach;
 </div></div>
 <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Ввести</button>
+      <button type="submit" class="btn btn-primary"id="vak_btn">Ввести</button>
+      <script type="text/javascript">
+      $(document).ready(function () {
+            $("#vak_btn").click(function () {
+                alert("Вакансия успешно введена");
+            });
+        });
+    </script>
     </div>
   </div>
 </form>

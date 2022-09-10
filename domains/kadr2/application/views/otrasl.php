@@ -1,9 +1,5 @@
 <?php 
-/*
-			
-	$sms = "Отрасль введена !"; 
-} 
-*/
+echo $msg;
  ?>
 
   <!-- Page Content -->
@@ -37,7 +33,14 @@
  
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Ввести</button>
+      <button type="submit" class="btn btn-primary" id="btn_otr">Ввести</button>
+      <script>
+        $(document).ready(function () {
+            $("#btn_otr").click(function () {
+                alert("отрасль введена!");
+            });
+        });
+    </script>
     </div>
   </div>
 </form>

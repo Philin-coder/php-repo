@@ -105,7 +105,14 @@
  
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Ввести</button>
+      <button type="submit" class="btn btn-primary" id="btn_kart">Ввести</button>
+      <script type="text/javascript">
+      $(document).ready(function () {
+            $("#btn_kart").click(function () {
+                alert("Соискатель введен");
+            });
+        });
+    </script>
     </div>
   </div>
 </form>

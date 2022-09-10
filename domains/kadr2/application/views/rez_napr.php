@@ -55,7 +55,14 @@ endforeach;
  
   <div class="form-group row">
     <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Ввести</button>
+      <button type="submit" class="btn btn-primary" id="rez_btn">Ввести</button>
+      <script type="text/javascript">
+      $(document).ready(function () {
+            $("#rez_btn").click(function () {
+                alert("Результвт направления успешно изменен");
+            });
+        });
+    </script>
     </div>
   </div>
 </form>        
