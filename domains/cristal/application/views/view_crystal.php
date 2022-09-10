@@ -1,6 +1,6 @@
-<form  method="POST"  role="form" class="FormLine" action="/index.php/oc_product_cont/oc_product_cont_get_report" >
-<!--<form  method="POST"  role="form" class="FormLine" action="/index.php/cont_crystal/oc_product_cont_get_report"> -->
-<table id="example" class="display" cellspacing="0" width="100%">
+<form    role="form" class="FormLine" action="<?php echo base_url();?>oc_product_cont/oc_product_cont_get_report" method="post">
+<table id="example" class="display " cellspacing="0" width="100%">
+
 	<thead>
 		<tr>
 			<th>Model</th>
@@ -74,10 +74,12 @@
 					<?php endforeach; ?>
 				</tbody>
 </table>
+
 &nbsp;
+
 <button type="submit">  Импорт в xml</button>
 
 </form >
 <form  method="POST"  role="form" class="FormLine" action="/index.php/cont_crystal/view_xml">
-<button type="submit"> читать   xml</button>
+<button type="submit" class="btn-primary"> читать   xml</button>
 </form>

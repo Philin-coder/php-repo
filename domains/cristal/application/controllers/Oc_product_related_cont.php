@@ -11,6 +11,7 @@ class Oc_product_related_cont extends CI_Controller {
         $this->load->view('view_nav_main');
         $this->load->view('view_prod_related',$data);
         $this->load->view('footer');
+        $this->load->view('scripter');
     }
     public function oc_product_related_cont_get_report()
     {

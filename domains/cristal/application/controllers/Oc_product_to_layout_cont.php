@@ -11,6 +11,7 @@ class Oc_product_to_layout_cont extends CI_Controller {
         $this->load->view('view_nav_main');
         $this->load->view('view_prod_to_layout',$data);
         $this->load->view('footer');
+        $this->load->view('scripter');
     }
     public function oc_product_to_layout_cont_get_report()
     {

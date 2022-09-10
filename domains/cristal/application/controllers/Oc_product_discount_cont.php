@@ -11,6 +11,7 @@ class Oc_product_discount_cont extends CI_Controller {
         $this->load->view('view_nav_main');
         $this->load->view('view_prod_discount', $data);
         $this->load->view('footer');
+        $this->load->view('scripter');
     }
     public function oc_product_discount_cont_get_report()
     {

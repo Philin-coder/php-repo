@@ -11,6 +11,7 @@ class Oc_product_to_store_cont extends CI_Controller {
         $this->load->view('view_nav_main');
         $this->load->view('view_prod_to_store',$data);
         $this->load->view('footer');
+        $this->load->view('scripter');
     }
     public function view_xml()
     {   

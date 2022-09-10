@@ -11,6 +11,7 @@ class Oc_product_image_cont extends CI_Controller {
         $this->load->view('view_nav_main');
         $this->load->view('view_prod_image',$data);
         $this->load->view('footer');
+        $this->load->view('scripter');
     }
     public function oc_product_image_cont_get_report()
     {

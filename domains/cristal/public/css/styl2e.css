@@ -100,3 +100,13 @@ fieldset {
     margin-left: 5px;
     margin-right: 10px;
 }
+.paginate_button{
+	background: black;
+   cursor: pointer;
+   }
+   .paginate_button:hover{
+	 background: #b20000;
+   }
+   .paginate_button.current{
+	 background: #b20000;
+   }
