@@ -8,7 +8,7 @@ class otr_cont extends CI_Controller{
         if(!empty($_POST)){
             $this->rk_otrasl_model->ins_otrasl_model($_POST['naim_o']);
         }
-        $data$['msg']='отрасль введена' ;
+        $data['msg']='отрасль введена';
         $data['otrasl']=$this->rk_otrasl_model->sel_otrasl_model();
         $this->load->view('otrasl',$data);
         $this->load->view('temp/footer');

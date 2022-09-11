@@ -77,9 +77,17 @@
 
 &nbsp;
 
-<button type="submit">  Импорт в xml</button>
+<button type="submit" id="main_read">  Импорт в xml</button>
+<script>
+        $(document).ready(function () {
+            $("#main_read").click(function () {
+                alert("Файл прочитан");
+            });
+        });
+    </script>
 
 </form >
 <form  method="POST"  role="form" class="FormLine" action="<?php echo base_url()?>cont_crystal/view_xml" method='POST'>
+
 <button type="submit" class="btn-primary"> читать   xml</button>
 </form>
