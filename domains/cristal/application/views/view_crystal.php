@@ -81,7 +81,7 @@
 <script>
         $(document).ready(function () {
             $("#main_read").click(function () {
-                alert("Файл прочитан");
+                alert("Файл сохранен");
             });
         });
     </script>
