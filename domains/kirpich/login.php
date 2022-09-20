@@ -2,7 +2,7 @@
        include 'temp/head.php';
        include 'temp/header.php';
        
-        $mysqli=new mysqli("localhost", "root", "","kirpich") or die(mysqli_error($link));
+        $mysqli=new mysqli("localhost", "root", "","kirpich");
         $mysqli->set_charset("utf8");
         ?>
     
@@ -63,13 +63,13 @@
                 
             <div class="col-lg-12">
               <div class="col-lg-3">
-12
+<br>
               </div>
               <div class="col-lg-3">
-12
+<br>
             </div>
             <div class="col-lg-6">
-1
+<br>
             </div>
         </div>
             </div>

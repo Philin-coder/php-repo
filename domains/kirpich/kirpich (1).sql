@@ -63,7 +63,7 @@ INSERT INTO `tovar` (`id_tov`, `name_tovar`, `razmer`, `morozost`, `vodopogl`, `
 -- Структура таблицы `user`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE `users` (
   `id_user` int(11) NOT NULL,
   `fio` varchar(100) NOT NULL,
   `email` varchar(25) DEFAULT NULL,
@@ -87,8 +87,7 @@ CREATE TABLE `zakaz` (
   `stat` int(11) NOT NULL,
   `adr` varchar(50) NOT NULL,
   `sp_dost` varchar(100) NOT NULL,
-  `id_tov` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL
+  `id_tov` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -104,7 +103,7 @@ ALTER TABLE `tovar`
 --
 -- Индексы таблицы `user`
 --
-ALTER TABLE `user`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id_user`);
 
 --
@@ -112,7 +111,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `zakaz`
   ADD PRIMARY KEY (`id_zakaz`),
-  ADD KEY `id_user` (`id_user`),
   ADD KEY `id_tov` (`id_tov`);
 
 --
@@ -128,7 +126,7 @@ ALTER TABLE `tovar`
 --
 -- AUTO_INCREMENT для таблицы `user`
 --
-ALTER TABLE `user`
+ALTER TABLE `users`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -145,7 +143,6 @@ ALTER TABLE `zakaz`
 -- Ограничения внешнего ключа таблицы `zakaz`
 --
 ALTER TABLE `zakaz`
-  ADD CONSTRAINT `zakaz_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `zakaz_ibfk_3` FOREIGN KEY (`id_tov`) REFERENCES `tovar` (`id_tov`);
 COMMIT;
 
