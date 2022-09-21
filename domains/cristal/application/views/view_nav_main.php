@@ -23,9 +23,7 @@
       <a class="nav-item nav-link" href="<?php echo  base_url();?>oc_product_to_store_cont/index">Продаваемые</a>
       <!--<a class="nav-item nav-link disabled" href="#">Disabled</a>-->
       <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="http://www.sql-tutorial.ru/ru/book_operator_insert.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Тут будут формы ввода
-    </a>
+    
     <!--выпадающее меню -->
     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <!--<a class="dropdown-item" href="/index.php/Cont_oc_product_xml_reader/index">Главная</a>
