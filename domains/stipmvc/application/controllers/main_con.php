@@ -10,7 +10,7 @@ class main_con extends CI_Controller{
         if(!empty($_POST)){
             $this->st_grup_model->ins_grup($_POST['name_grup'],$_POST['spec']);
         }
-        $data['gruppa'] =$this->st_grup_model->sel_grup();
+        $data['gruppa']=$this->st_grup_model->sel_grup();
         $this->load->view('index',$data);
         $this->load->view('temp/footer');
         $this->load->view('temp/scripter');
