@@ -22,11 +22,11 @@ class st_disc_model extends CI_Model{
     public function udp_dis($naim_d,$ocenka,$id_stud){
         $sql='update disc set naim_d=?,ocenka=?,id_stud=?';
         $this->db->query($sql,array($naim_d,$ocenka,$id_stud));
-    }
+    }       
     public function sel_data_grid(){
-        $this->db->select('');
-        $this->db->from('');
-        $this->db->join('', '');
+        $this->db->select('id_disc,naim_d, ocenka,fio');
+        $this->db->from('disc');
+        $this->db->join('stud','stud.id_stud=disc.id_stud');
         $sql=$this->db->get();
         return $sql->result_array();
 

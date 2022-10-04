@@ -5,5 +5,3 @@ XXXXXXXXXXX, студент(кa) специальности 09.02.03, 4 курс
 </div>
 </footer>
 
-</body>
-</html>
