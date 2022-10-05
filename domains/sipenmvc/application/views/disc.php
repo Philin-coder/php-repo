@@ -9,7 +9,7 @@
                 <input type="text" class="form-control" name="naim_d" placeholder="введите название дисциплины" required>
             </div>
             <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">оценкуа</label>
+    <label for="inputEmail3" class="col-sm-2 col-form-label">оценка</label>
     <div class="col-sm-10">
     <select class="form-control" name="ocenka">
 								      <option>1</option>

@@ -1,10 +1,3 @@
-<?php
-include 'temp/head.php';
-include 'temp/navbar.php';
-include 'temp/header.php';
-$mysqli=new mysqli("localhost", "root","", "stip2");
-$mysqli->set_charset("utf8");
-?>
 <div class="container" >
     <div class="row">
         <div class="col">
@@ -13,11 +6,12 @@ $mysqli->set_charset("utf8");
                 <label for="grup1">выбор группы</label>
             <select name="grup" id="grup1" class="form-control"><br><br>
                 <?php
-                $sql=$mysqli->query("select * from gruppa");
-                while ($row=mysqli_fetch_array($sql))
-                {
+                
+                $sql=$this->db->get('gruppa');
+                foreach($sql->result_array()as$row):{
                     echo '<option value="'.$row['id_grupp'].'">'.$row['name_grup'] .'</option>';
                 }
+                endforeach;
                 ?>
             </select>
             </div>
@@ -50,22 +44,7 @@ $mysqli->set_charset("utf8");
 
 
 
-<?php
-if(!empty($_POST))
-    {
-        $grup=$_POST['grup'];
-        $fio=$_POST['fio'];
-        $ocenka=$_POST['ball'];
-        $date_p=$_POST['data_p'];
-        $date_o=$_POST['date_o'];
-        $nachislenno=$_POST['nachislenno'];
-        $udergano=$_POST['udergano'];
-        $sql=$mysqli->query("insert into  stud(id_grup, fio, oсenka, data_p, date_o, nachislenno, udergano)values ('$grup','$fio','$ocenka','$date_p','$date_o','$nachislenno','$udergano')");
-        $result=$mysqli->query($sql);
 
-    }
-
-?>
 <div class="container">
     <div class="row">
         <table class="table">
@@ -79,27 +58,25 @@ if(!empty($_POST))
                 <th>Удержано</th>
             </tr>
             <?php
-            $result=$mysqli->query("CALL `my`()");
-            while ($row=$result->fetch_array())
-            {
+            if(isset($stud)){
+            foreach ($stud as $row):{
 echo '<tr>
 <td>'.$row['id_stud'].'</td>
-<td>'.$row['id_grupp'].'</td>
 <td>'.$row['fio'].'</td>
-<td>'.$row['ocenka'].'</td>
+<td>'.$row['oсenka'].'</td>
 <td>'.$row['data_p'].'</td>
 <td>'.$row['date_o'].'</td>
 <td>'.$row['nachislenno'].'</td>
 <td>'.$row['udergano'].'</td>
 </tr>';
-            }
-            $result->free();
-            $mysqli->close();
-            ?>
-
-        </table>
-    </div>
-</div>
-<?php
-include  'temp/footer.php';
+        }
+            endforeach;
+        }
+        echo('</table>');
+        echo('</div');
+        echo('</div');
+            
 ?>
+
+        
+    
