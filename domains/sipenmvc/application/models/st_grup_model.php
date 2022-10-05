@@ -25,7 +25,7 @@ class st_grup_model extends CI_Model{
         $this->db->query($sql,array($name_grup,$spec));
     }
     public function del_gruppa(){
-        $this->db->empty_table('del_gruppa');
+        $this->db->empty_table('gruppa');
     }
 }
 ?>
