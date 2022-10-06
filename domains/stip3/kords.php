@@ -53,7 +53,7 @@ if (!empty($_POST))
     $specsel=$_POST['specsel'];
     $upd_spec=$_POST['upd_spec'];
     //UPDATE `gruppa` SET `spec`='koder' WHERE spec='test' and `name_grup`='test'
-    $sql=$mysqli->query("UPDATE gruppa SET spec='$upd_spec' WHERE spec = '$specsel' and name_grup='$grupsel'");
+    $sql=$mysqli->query("UPDATE gruppa SET spec='$upd_spec' WHERE spec = '$specsel' and name_grup='$grupsel' ");
     //$sql =$conn->query ("UPDATE napravlenie SET rezultat='$rezultat', prim='$prim' where id_n='$n'" );
 
     //$result=$mysqli->query($sql);
