@@ -98,10 +98,9 @@ foreach($disc as $row):{
 }
 endforeach;
 }
-
+echo('</table>');
+echo('</div>');
+echo('</div>');
 ?>
 
-    </table>
-    </div>
-</div>
-
+    
