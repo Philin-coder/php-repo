@@ -27,5 +27,22 @@ class st_grup_model extends CI_Model{
     public function del_gruppa(){
         $this->db->empty_table('gruppa');
     }
+    public function change_spec($specsel,$grupsel,$upd_spec){
+        //UPDATE `gruppa` SET `spec`='koder' WHERE spec='test' and `name_grup`='test'
+        if(!empty($_POST)){
+        $data=array(
+            'spec'=>$upd_spec
+        );
+        $this->db->where('spec',$specsel);
+        $this->db->where('name_grup',$grupsel);
+        $this->db->update('gruppa',$data);
+        
+    }
+        
+        
+        
+    }
+    
+    
 }
 ?>

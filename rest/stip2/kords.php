@@ -2,7 +2,7 @@
 include 'temp/head.php';
 include 'temp/navbar.php';
 include 'temp/header.php';
-$mysqli=new  mysqli("localhost","root", "1","stip2");
+$mysqli=new  mysqli("localhost","root", "","stip2");
 $mysqli->set_charset("utf8");
 ?>
 <div class="container">

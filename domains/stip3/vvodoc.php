@@ -47,7 +47,7 @@ while ($row=mysqli_fetch_array($sql))
             ?>
         </select>
         <div class="form-group  mb-2 col-4">
-            <input type="text" class="form-control" name="ocen_d" placeholder="введие оцнгку"  required>
+            <input type="text" class="form-control" name="ocen_d" placeholder="введие оценку"  required>
         </div>
         <div class="form-group mb-2 col-4">
             <button type="submit" class="btn btn-primary"> поставить </button>

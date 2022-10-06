@@ -1,25 +1,17 @@
-<?php
-include 'temp/head.php';
-include 'temp/navbar.php';
-include 'temp/header.php';
-$mysqli=new  mysqli("localhost","root", "","stip2");
-$mysqli->set_charset("utf8");
-?>
 <div class="container">
     <div class="row">
         <div class="col">
-            <form method="post" role="form" class="form-inline">
+            <form method="post" role="form" class="form-inline" action="">
 <div class="form-group mb-2 col-4">
     <label for="grupsel">Выбор группы</label>
     <select id="grupsel" name="grupsel" class="form-control"><br><br>
-        <?php
-        $sql=$mysqli->query("select * from gruppa");
-        while ($row=mysqli_fetch_array($sql))
-        {
+        <?php   
+        $sql=$this->db->get('gruppa');
+        foreach ($sql->result_array() as $row):{
             echo  '<option value="'.$row['id_grupp'].'">'.$row['name_grup'].' </option>';
         }
-
-        ?>
+    endforeach;
+    ?>
     </select>
 </div>
 
@@ -27,11 +19,11 @@ $mysqli->set_charset("utf8");
                     <label for="specsel">Выбор  специальности </label>
                     <select id="specsel" name="specsel" class="form-control"><br><br>
                         <?php
-                        $sql=$mysqli->query("select spec from gruppa");
-                        while ($row=mysqli_fetch_array($sql))
-                        {
+                        $sql=$this->db->get('gruppa');
+                        foreach($sql->result_array() as $row):{
                             echo  '<option value="'.$row['id_grupp'].'">'.$row['spec'].' </option>';
                         }
+                        endforeach;
                         ?>
                     </select>
                 </div>
@@ -47,6 +39,7 @@ $mysqli->set_charset("utf8");
         </div>
 </div>
 <?php
+/*
 if (!empty($_POST))
 {
     $grupsel=$_POST['grupsel'];
@@ -55,8 +48,8 @@ if (!empty($_POST))
     $sql=$mysqli->query("UPDATE gruppa SET spec='".'$upd_spec'."' WHERE spec = '$specsel'");
 
     $result=$mysqli->query($sql);
-
-}
+*/
+//}
 ?>
 
     <div class="container">
@@ -68,22 +61,19 @@ if (!empty($_POST))
                     <th>Специальнотсь</th>
                 </tr>
                 <?php
-                $result=$mysqli->query("select * from gruppa");
-                while ($row=$result->fetch_array())
-                {
+                if(isset($gruppa)){   
+                foreach ($gruppa as $row):{
                     echo '<tr>
 <td>'.$row['id_grupp'].'</td>
 <td>'.$row['name_grup'].'</td>
 <td>'.$row['spec'].'</td>
 </tr>';
                 }
-                $result->free();
-                $mysqli->close();
-
+            endforeach;
+            }
+                echo('</table>');
+                echo('</div>');
+                echo('</div>');
                 ?>
-            </table>
-        </div>
-    </div>
-<?php
-include 'temp/footer.php';
-?>
+            
+        
