@@ -1,10 +1,3 @@
-<?php
-include 'temp\head.php';
-include 'temp\navbar.php';
-include 'temp\header.php';
-$mysqli=new mysqli('locahost', "root", "","stip2");
-$mysqli->set_charset("utf8");
-?>
 <br>
 <br>
 <div class="container" >
@@ -22,10 +15,9 @@ $mysqli->set_charset("utf8");
             <?php
             $min=1500;
             $n='Стипендия не начисляется';
-            $result=$mysqli->query("select fio,name_grup,oc_mat,oc_inf,oc_angl,(oc_mat+oc_inf+oc_angl)/3 as sr_bal from student,gruppa,ocenka where student.id_grup=gruppa.id_grup and ocenka.id_stud=student.id_stud");
-            while($row = $result->fetch_array()){
-
-                echo'<tr>
+            if (isset($rpv)){
+            foreach($rpv as $row):{
+             echo'<tr>
 			<td>'.$row['fio'].'</td>
 			<td>'.$row['name_grup'].'</td>
 			<td>'.$row['oc_inf'].'</td>
@@ -39,14 +31,13 @@ $mysqli->set_charset("utf8");
                     echo'<td>'.$n.'</td>';
                 }
                 echo'</tr>';
-            }
 
-            $result->free();
-            $mysqli->close();
+            }
+        endforeach;
+        }
+
+            
             ?>
         </div>
     </div>
 </div>
-<?php
-include 'temp/footer.php';
-?>

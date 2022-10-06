@@ -7,8 +7,7 @@
 <li><a  class="nav-link text-white"  href="<?php echo base_url();?>coords_cont/index">Корректировка данных о специальности</a></li>
 <li><a  class="nav-link text-white"  href="<?php echo base_url();?>stud_cont/index"> Студенты</a></li>
 <li><a  class="nav-link text-white"  href="<?php echo base_url();?>ins_ocen_cont/index">Ввод оценок</a></li>
-
-<li><a  class="nav-link text-white"  href="ved.php">Расчетная ведомость</a></li>
+<li><a  class="nav-link text-white"  href="<?php echo base_url();?>rpv_cont/index">Расчетная ведомость</a></li>
    </ul>
     </div>
 	</div>
