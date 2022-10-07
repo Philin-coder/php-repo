@@ -38,19 +38,7 @@
         </div>
         </div>
 </div>
-<?php
-/*
-if (!empty($_POST))
-{
-    $grupsel=$_POST['grupsel'];
-    $specsel=$_POST['specsel'];
-    $upd_spec=$_POST['upd_spec'];
-    $sql=$mysqli->query("UPDATE gruppa SET spec='".'$upd_spec'."' WHERE spec = '$specsel'");
 
-    $result=$mysqli->query($sql);
-*/
-//}
-?>
 
     <div class="container">
         <div class="row">
