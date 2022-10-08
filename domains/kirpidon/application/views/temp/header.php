@@ -14,7 +14,7 @@
                             <a class="nav-link"href="<?php echo base_url();?>about_us_cont/index">О НАС</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="contact.php">КОНТАКТЫ</a>
+                                <a class="nav-link" href="<?php echo base_url();?>kontact_cont/index">КОНТАКТЫ</a>
                             </li>
                             <form action="">
                             <a href="login.php"><button type="button" class="btn btn-dark"  >Войти</button> </a>
