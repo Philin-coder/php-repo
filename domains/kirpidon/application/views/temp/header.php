@@ -8,10 +8,10 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="<?php echo base_url();?>main_con/index">ГЛАВНАЯ <span class="sr-only">(current)</span></a>
+                            <a class="nav-link"href="<?php echo base_url();?>main_con/index">ГЛАВНАЯ <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="onas.php">О НАС</a>
+                            <a class="nav-link"href="<?php echo base_url();?>about_us_cont/index">О НАС</a>
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link" href="contact.php">КОНТАКТЫ</a>

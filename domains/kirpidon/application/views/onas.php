@@ -1,13 +1,7 @@
-<?
-       include 'temp/head.php';
-       include 'temp/header.php';
-       
-        
-        ?>
     
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.php">Главная </a></li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url();?>main_con/index">Главная </a></li>
               <li class="breadcrumb-item active" aria-current="page">о нас</li>
             </ol>
           </nav>
@@ -63,48 +57,11 @@
     <li>Индивидуальный подход для максимального </li>
 </ul>
 
-	
-	
-	
-	
-
                       </div>
 
                   </div>
 
               </div>
-              
-            
-          
-              
           </section>
-          
-            
-
     </main>
-<footer class="foot">
     
-
-    
-        <div class="container">
-            <div class="row">
-                
-            <div class="col-lg-12">
-              <div class="col-lg-3">
-12
-              </div>
-              <div class="col-lg-3">
-12
-            </div>
-            <div class="col-lg-6">
-1
-            </div>
-        </div>
-            </div>
-
-        
-    </div>
-        </footer>
-    
-</body>
-</html>

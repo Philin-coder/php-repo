@@ -121,7 +121,6 @@
       if(isset($tovar)){
 			foreach ($tovar as $row):{			
 	echo '<tr><td>'.$row['name_tovar'].'</td><td>'.$row['razmer'].'</td> <td> <img src= '.$row['img'].'</td> </tr>';
-  
     }
   endforeach;
   }
