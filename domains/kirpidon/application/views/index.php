@@ -12,19 +12,19 @@
 
 <div class="card-group">
 <div class="card">
-<img src="images/1.png" class="card-img-top" alt="..." width="60" height="200">
+<img src="<?php echo base_url();?>public/images/1.png" class="card-img-top" alt="..." width="60" height="200">
 
 </div>
 <div class="card">
-<img src="images/2.png" class="card-img-top" alt="..." width="60" height="200">
+<img src="<?php echo base_url();?>public/images/2.png" class="card-img-top" alt="..." width="60" height="200">
 
 </div>
 <div class="card">
-<img src="images/3.png" class="card-img-top" alt="..." width="60" height="200" >
+<img src="<?php echo base_url();?>public/images/3.png" class="card-img-top" alt="..." width="60" height="200" >
 
 </div>
 <div class="card">
-<img src="images/4.png" class="card-img-top" alt="..." width="60" height="200">
+<img src="<?php echo base_url();?>public/images/4.png" class="card-img-top" alt="..." width="60" height="200">
 </div>
 </div>
 </div>
@@ -37,7 +37,7 @@
 
     <div class="card-group">
         <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="..." >
+          <img src="<?php echo base_url();?>public/images/1.jpg" class="card-img-top" alt="..." >
           <div class="card-body">
             <h5 class="card-title">цена за шт: 55.00 руб </h5>
             <p class="card-text">.</p>
@@ -45,7 +45,7 @@
           <button type="button" class="btn btn-dark"> Сделать заказ</button>
         </div>
         <div class="card">
-          <img src="images/2.jpg" class="card-img-top" alt="..." >
+          <img src="<?php echo base_url();?>public/images/2.jpg" class="card-img-top" alt="..." >
           <div class="card-body">
             <h5 class="card-title">цена за шт: 28.00 руб</h5>
             <p class="card-text">
@@ -54,7 +54,7 @@
           <button type="button" class="btn btn-dark"> Сделать заказ</button>
         </div>
         <div class="card">
-          <img src="images/3.jpg" class="card-img-top" alt="...">
+          <img src="<?php echo base_url();?>public/images/3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">цена за шт: 24.00 руб</h5>
             <p class="card-text">
@@ -63,7 +63,7 @@
         </div>
 
         <div class="card">
-            <img src="images/4.jpg" class="card-img-top" alt="...">
+            <img src="<?php echo base_url();?>public/images/4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">цена за шт: 24.00 руб</h5>
               <p class="card-text">
@@ -75,7 +75,7 @@
 
 <div class="card-group">
   <div class="card">
-    <img src="images/11.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo base_url();?>public/images/11.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">цена за шт: 49.00 руб</h5>
       <p class="card-text"> </p>
@@ -84,7 +84,7 @@
     <button type="button" class="btn btn-dark"> Сделать заказ</button>
   </div>
   <div class="card">
-    <img src="images/12.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo base_url();?>public/images/12.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">цена за шт: 49.00 руб</h5>
       <p class="card-text"> </p>
@@ -92,7 +92,7 @@
     <button type="button" class="btn btn-dark"> Сделать заказ</button>
   </div>
   <div class="card">
-    <img src="images/13.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo base_url();?>public/images/13.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">цена за шт: 36.00 руб</h5>
       <p class="card-text"> </p>
@@ -100,7 +100,7 @@
     <button type="button" class="btn btn-dark"> Сделать заказ</button>
   </div>
   <div class="card">
-    <img src="images/14.jpg" class="card-img-top" alt="...">
+    <img src="<?php echo base_url();?>public/images/14.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">цена за шт: 54.00 руб</h5>
       <p class="card-text"> </p>
@@ -118,25 +118,25 @@
         <th>Картинка</th>
 			</tr>
 			<?php
-      
-			$result=$mysqli->query("select name_tovar, razmer, img from tovar");
-		
-			while ($row = $result->fetch_array()){			
+      if(isset($tovar)){
+			foreach ($tovar as $row):{			
 	echo '<tr><td>'.$row['name_tovar'].'</td><td>'.$row['razmer'].'</td> <td> <img src= '.$row['img'].'</td> </tr>';
   
     }
-    $result->free();
-	$mysqli->close();
+  endforeach;
+  }
+  echo ('</table>');
+  for($i=0;$i<3;$i++){
+  echo('</div>');
+  }
+  echo('</main>')
 ?>
-		</table>
-	</div>	
-</div>
-</div>
-</div>
+		
+		
 
 
 
-       </main>
+       
       
        
         

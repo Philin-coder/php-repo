@@ -32,6 +32,12 @@ class kr_tovar_model extends CI_Model {
     public function del_tovar(){
         $this->db->empty_table('tovar');
     }
-
+    public function sel_data_grid(){
+        $this->db->select('name_tovar, razmer, img');
+        $this->db->from('tovar');
+        $sql=$this->db->get();
+        return $sql->result_array();
+        
+    }
 }
 ?>

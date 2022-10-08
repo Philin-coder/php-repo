@@ -5,7 +5,9 @@ class main_con extends CI_Controller {
         $this->load->helper('url');
         $this->load->view('temp/head');
         $this->load->view('temp/header');
-        $this->load->view('index');
+        $this->load->model('kr_tovar_model');
+        $data['tovar']=$this->kr_tovar_model->sel_data_grid();
+        $this->load->view('index',$data);
         $this->load->view('temp/footer');
         $this->load->view('temp/scripter');
     }
