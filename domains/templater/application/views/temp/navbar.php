@@ -5,8 +5,8 @@
         </button>
         <div class="collapse navbar-collapse" id="n_bar">
             <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="first_cont/index">foreach</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">test</a></li>
+                <li class="nav-item active"><a class="nav-link" href="<?php echo base_url();?>first_cont/index">foreach</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>second_cont/index">foreicher</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Links</a></li>
