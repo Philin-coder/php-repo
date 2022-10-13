@@ -8,7 +8,7 @@
                 <li class="nav-item active"><a class="nav-link" href="<?php echo base_url();?>first_cont/index">foreach</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>second_cont/index">foreicher</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>third_cont/index">Calculator</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>fourth_controller/index">Получить IP</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Links</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Join Us</a></li>
