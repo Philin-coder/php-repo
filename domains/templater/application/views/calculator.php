@@ -20,20 +20,20 @@
   </div>
   <div class="mb-3">
   <select class="form-select" aria-label="Default select example" name="op" required>
-  <option selected> Numerous Operation</option>
   <option value="+">+</option>
   <option value="-">-</option>
   <option value="*">*</option>
-  <option value="*">/</option>
+  <option value="/">/</option>
 </select>
 </div>
   <button type="submit" class="btn btn-primary">Подсчитать</button>
 </form>
-<?php      
-   if(!empty($_POST)){
-    echo $result;
+<?php    
+if(isset($res)){
+  echo $res;
 
-   }
+}
+   
 for($i = 0; $i<=2; $i++) {
 echo('</div>');
 }
