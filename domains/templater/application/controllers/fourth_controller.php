@@ -29,10 +29,6 @@ public function create_file() {
             return 'Запись прошла успешно';
         }
     }
-
-
-
-
     public function index(){
         $this->load->helper('url');
         $this->load->helper('file');
