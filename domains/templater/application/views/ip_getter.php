@@ -17,6 +17,9 @@
           if(isset($fp)){
             echo($fp).'<br>';
           }
+          for($i = 0; $i<=2; $i++) {
+            echo('</div>');
+            }
           ?>
           
   
