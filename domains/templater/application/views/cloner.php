@@ -10,16 +10,21 @@
           <form method="POST" action="">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Ввод ссылки</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="num1" required>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="link" required value="http://jewishjokes.narod.ru/chelovekizakon.htm">
     <div id="emailHelp" class="form-text">Enter a web-adres</div>
   </div>
-  <button type="submit" class="btn btn-primary">Подсчитать</button>
+  <button type="submit" class="btn btn-primary">Получить</button>
 </form>
 <?php    
 if(isset($fp)){
   echo $fp;
 
 }
+if(isset($fp1)){
+  echo $fp1;
+
+}
+
    
 for($i = 0; $i<=2; $i++) {
 echo('</div>');
