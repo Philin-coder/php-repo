@@ -7,10 +7,12 @@
               <li class="breadcrumb-item active" aria-current="page">Чтение textarea</li>
             </ol>
           </nav>
-          
-  
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Ввод информации</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea name="area">
+</div>
+<button type="button" class="btn btn-primary">Считать</button>
 <?php
-echo('test');
 for($i = 0; $i<=2; $i++) {
 echo('</div>');
 }
