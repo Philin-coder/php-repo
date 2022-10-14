@@ -34,6 +34,7 @@ public function create_file() {
         $this->load->helper('file');
         $this->load->view('temp/head');
         $data['ip']=$this->get_ip();
+        $data['fp']=$this->create_file();
         $data['agent']=$this->get_agent();
         $data['fp']=$this->create_file();
         $this->load->view('temp/navbar');

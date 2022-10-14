@@ -10,7 +10,7 @@
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>third_cont/index">Calculator</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>fourth_controller/index">Получить IP</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>fith_cont/index">Время(часы и минуты)</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>Pass_cont/index">Генерация пароля</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Join Us</a></li>
             </ul>
         </div>
