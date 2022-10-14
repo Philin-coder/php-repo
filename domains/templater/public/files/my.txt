@@ -1,0 +1,240 @@
+
+<script type="text/javascript" src="//s207.ucoz.net/cgi/uutils.fcg?a=uprdata&r=0.808326152273011"></script>
+<script type="text/javascript">
+try{
+	Object.defineProperty(window, "u_global_data", {
+	   value: {
+   			basic_params:{dcode:"o",ads_lite:0,isadblock:1,user_country:"ru",user_ip:"46.61.33.251",server:"s207",site_type:"narod",site_lng:"RU",rndid:"cfBgUei",ban240pos:"0",ischild:"0",ispolitic:"0",iswarez:"0",isnative:"1",isdoubtful:"0",isabandoned:"1",iscriteo970:"1",isreligion:"0",iswarn:"0",iabcat:"1-4",isgoogle:"0",isyandex:"0",ismobile:"0"},
+   			geo:{city:"Rostov-na-Donu",region:"Rostovskaya oblast'"},
+   			urls:{
+   				adprru:[],
+   				adprci:[]
+   			}
+   		},
+	   writable: false,
+	   configurable: false
+	});
+	/*var u_global_data={
+			basic_params:{dcode:"o",ads_lite:0,isadblock:1,user_country:"ru",user_ip:"46.61.33.251",server:"s207",site_type:"narod",site_lng:"RU",rndid:"cfBgUei",ban240pos:"0",ischild:"0",ispolitic:"0",iswarez:"0",isnative:"1",isdoubtful:"0",isabandoned:"1",iscriteo970:"1",isreligion:"0",iswarn:"0",iabcat:"1-4",isgoogle:"0",isyandex:"0",ismobile:"0"},
+			geo:{city:"Rostov-na-Donu",region:"Rostovskaya oblast'"},
+			urls:{
+				adprru:[],
+				adprci:[]
+			}
+		};*/
+	
+}catch(e){};
+</script>
+<script type="text/javascript" src="https://s207.ucoz.net/bnr/blocks/ads.js?0.162288288165168" onload="u_global_data.basic_params.isadblock=0"></script>
+<script type="text/javascript" src="//jewishjokes.narod.ru/UZmFr3iJhE?ReuyFBmEnOkXREz2wc5I3EEYkaQ5cP9Cfa8W8zjdyQ3a4%217XqGkyiXgUlxqCOncsLXPkFYqOhxUNx%5E2Bdh%3Bo"></script>
+
+	<script type="text/javascript">new Image().src = "//counter.yadro.ru/hit;ucoz_abandoned_sites?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();</script><script type="text/javascript">
+if(typeof(u_global_data)!='object') u_global_data={};
+function ug_clund(){
+	if(typeof(u_global_data.clunduse)!='undefined' && u_global_data.clunduse>0 || (u_global_data && u_global_data.is_u_main_h)){
+		if(typeof(console)=='object' && typeof(console.log)=='function') console.log('utarget already loaded');
+		return;
+	}
+	u_global_data.clunduse=1;
+	if('0'=='1'){
+		var d=new Date();d.setTime(d.getTime()+86400000);document.cookie='adbetnetshowed=2; path=/; expires='+d;
+		if(location.search.indexOf('clk2398502361292193773143=1')==-1){
+			return;
+		}
+	}else{
+		window.addEventListener("click", function(event){
+			if(typeof(u_global_data.clunduse)!='undefined' && u_global_data.clunduse>1) return;
+			if(typeof(console)=='object' && typeof(console.log)=='function') console.log('utarget click');
+			var d=new Date();d.setTime(d.getTime()+86400000);document.cookie='adbetnetshowed=1; path=/; expires='+d;
+			u_global_data.clunduse=2;
+			new Image().src = "//counter.yadro.ru/hit;ucoz_desktop_click?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();
+		});
+	}
+	
+			(function(){
+				var ud;
+				try { ud = localStorage.getItem('ef590c47d1_uid'); } catch (e) { }
+
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.charset = 'utf-8';
+				script.async = 'true';
+				script.src = 'https://absoluteroute.com/bens/vinos.js?23434&u=' + ud + '&a=' + Math.random();
+				document.body.appendChild(script);
+			 })();
+		
+	new Image().src = "//counter.yadro.ru/hit;desktop_click_load?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();
+}
+
+setTimeout(function(){
+	if(typeof(u_global_data.preroll_video_57322)=='object' && u_global_data.preroll_video_57322.active_video=='adbetnet') {
+		if(typeof(console)=='object' && typeof(console.log)=='function') console.log('utarget suspend, preroll active');
+		setTimeout(ug_clund,8000);
+	}
+	else ug_clund();
+},3000);
+</script>
+	<script type="text/javascript">new Image().src = "//counter.yadro.ru/hit;narodadst1?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();</script>
+	<script type="text/javascript">new Image().src = "//counter.yadro.ru/hit;narod_desktop_ad?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();</script><script type="text/javascript" src="//jewishjokes.narod.ru/.s/src/jquery-3.3.1.min.js"></script><script type="text/javascript" src="//s207.ucoz.net/cgi/uutils.fcg?a=uSD&ca=2&ug=999&isp=0&r=0.881063672863949"></script>
+<html>
+
+<head>
+
+<META keywords="еврейские анекдоты, рабинович, мойша, сара, абрам, еврей, еврейский юмор, еврейские шутки">
+<META 
+description="Отборные еврейские анекдоты - самые смешные, самые остроумные и самые весёлые.">
+
+<title>Отборные еврейские анекдоты — «Наш человек» и закон</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+-->
+</style>
+</head>
+
+<body>
+
+<p class="MsoNormal" align="justify">
+<img border="0" src="title.gif" alt="Отборные еврейские анекдоты" width="411" height="30"></p>
+
+<p class="MsoNormal" align="justify"><span lang="ru">
+<a href="index.htm">&#1050; &#1086;&#1075;&#1083;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1102;</a></span></p>
+
+<p class="MsoNormal" align="justify">&nbsp;</p>
+
+<p class="MsoNormal" align="justify"><font face="Tahoma"><b>
+<span lang="RU">«Наш человек» и закон. Будни правоохранительных органов</span></b></font></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">&nbsp;</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Рабинович дома?</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Он на даче...</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Как, он купил дачу? </span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Нет, он на даче показаний.</span></p>
+<p class="MsoNormal"><span lang="RU">&nbsp;</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">В аэропорту таможенник спрашивает у Рабиновича: </span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Откуда прибыли? </span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Какие прибыли, что вы? Одни убытки...</span></p>
+<p class="MsoNormal"><span lang="RU">&nbsp;</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">Звонок в <a href="glossary.htm">ОБХСС</a>:</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Это Рабинович. Скажите, который час?</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Ноль часов ноль минут.</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Алле, это ОБХСС? Это Рабинович. Который час?</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Ноль часов три минуты…</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Алле, это ОБХСС?</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Послушайте, Рабинович, заберите обратно свой поганый 
+конфискованный будильник и не морочьте нам голову.</span></p>
+<p class="MsoNormal"><span lang="RU">&nbsp;</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">Рабиновича вызвали в <a href="glossary.htm">ОБХСС</a>. </span>
+</p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Где вы взяли деньги на «Волгу»? </span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— У меня был «Москвич». Я его продал, приодолжил и купил 
+«Волгу». </span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— А где вы взяли деньги на «Москвич»? </span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— Был у меня «ИЖ», я его продал, приодолжил и купил «Москвич».
+</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— А где вы взяли деньги на «ИЖ»? </span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— У меня был велосипед. Я его продал, приодолжил и купил «ИЖ».
+</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— А где вы взяли деньги на велосипед? </span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">— А за это я уже сидел.</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+&nbsp;</p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="RU">С Рабиновичем беседуют в <a href="glossary.htm">ОБХСС</a>:</span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="RU">— У вас есть дача!</span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="RU">— Так разве это плохо?</span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="RU">— У вас есть машина!</span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="RU">— Так разве это плохо?</span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="RU">— У вашей жены — норковая шуба!</span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="RU">— Так разве это плохо?</span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="RU">— Но ваша зарплата — всего сто пятьдесят рублей!</span></p>
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+<span lang="EN-US">— </span><span lang="RU">Т</span><span lang="EN-US">ак разве 
+это хорошо?</span></p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+&nbsp;</p>
+<p class="MsoNormal" style="text-align: justify; text-indent: 18.0pt">
+<span lang="RU">Приходят как-то к Рабиновичу из компетентных органов с обыском. 
+И говорят: «Мы знаем, что у тебя что-то есть. Сам отдашь или будем искать?». 
+Рабинович отвечает: «Ищите». Ребята перерывают всю квартиру, но ничего не 
+находят. Но замечают под паркетом нечто подозрительное. Следует вопрос: «Сам 
+паркет вскроешь или как?». «Вскрывайте», — пожимает плечами Рабинович. В 
+считанные минуты паркет отдирается от пола и глазам удивленных комитетчиков 
+предстает огромных размеров ржавая гайка, намертво прикрученная к полу. «Ну что, 
+— спрашивают, — сам открутишь или нам открутить? Рабинович: «Откручивайте». С 
+огромным трудом, вспоминая все богатство русского языка, затратив уйму времени, 
+комитетчики все-таки откручивают заржавевшую гайку, под которой в полу 
+обнаруживается отверстие, виден свет и слышен шум. «Что там такое?» — спрашивают 
+гэбэшники. «Внизу — филармония, — говорит Рабинович. — А на гайке люстра 
+держалась».</span></p>
+
+<p class="MsoNormal" style="text-align:justify;text-indent:18.0pt">
+&nbsp;</p>
+
+<p>
+
+<a href="index.htm">&#1050; &#1086;&#1075;&#1083;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1102;</a>
+</p>
+
+<!--Rating@Mail.ru COUNTER--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=858884"'+
+' target=_blank><img src="http://top.list.ru/counter'+
+'?id=858884;t=136;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=40 width=88/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript>
+<a
+target="_blank" href="http://top.mail.ru/jump?from=858884"><img
+src="http://top.list.ru/counter?js=na;id=858884;t=136"
+border=0 height=31 width=88
+alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+
+
+<!-- copyright (t3) --><div align="center">Хостинг от <a href="http://www.ucoz.ru/" title="Создать сайт бесплатно">uCoz</a><br /></div><!-- /copyright -->
+</body>
+
+</html>
+</html>

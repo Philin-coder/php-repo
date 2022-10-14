@@ -12,6 +12,7 @@
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>fith_cont/index">Время(часы и минуты)</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>Pass_cont/index">Генерация пароля</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>echo_cont/index">Простой применр передачи данных (POST)</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>collect_cont/index">Сбор информации с web-страницы</a></li>
             </ul>
         </div>
     </div>
