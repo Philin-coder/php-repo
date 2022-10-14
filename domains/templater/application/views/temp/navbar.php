@@ -11,7 +11,7 @@
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>fourth_controller/index">Получить IP</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>fith_cont/index">Время(часы и минуты)</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>Pass_cont/index">Генерация пароля</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Join Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>echo_cont/index">Простой применр передачи данных (POST)</a></li>
             </ul>
         </div>
     </div>
