@@ -3,7 +3,6 @@ if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 class collect_cont extends CI_Controller {
     public function get_html (){
         $lnk='http://jewishjokes.narod.ru/chelovekizakon.htm';
-        //$link=$_POST['link'];
         if(isset($_POST['link'])){
             $link=$_POST['link'];
             $data=file_get_contents($link);
