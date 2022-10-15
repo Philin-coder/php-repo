@@ -9,4 +9,6 @@
 <link rel="stylesheet" href="<?php echo base_url();?>public/css/bootstrap.min.css">
 </head>
 <link rel="stylesheet" href="<?php echo base_url();?>public/css/nastile.css">
+<link rel="stylesheet" href="<?php echo base_url();?>public/css/marin_class.css">
+<link rel="stylesheet" href="<?php echo base_url();?>public/css/marin_id.css">
 <body>

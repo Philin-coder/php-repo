@@ -16,6 +16,17 @@
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>clone_cont/index">Вывод  информации с web-страницы на Local</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>text_area_reader_cont/index">Чтение textarea</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>another_counter_cont/index">Еше один калькулятор</a></li>
+                <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+   Статические контроллеры
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="<?php echo base_url();?>first_static_cont/index">Первый </a></li>
+    <li><a class="dropdown-item" href="<?php echo base_url();?>second_static_cont/index">Второй</a></li>
+    
+  </ul>
+</div>
             </ul>
         </div>
     </div>
