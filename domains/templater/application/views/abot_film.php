@@ -8,19 +8,24 @@
             </ol>
           </nav>
           <form method="POST" action="">
+  
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Ввод информации</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea name="im">
+  <label for="exampleFormControlTextarea1" class="form-label">Пример текстового поля</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="im"></textarea>
 </div>
-<button type="submit" class="btn btn-primary">Считать</button>
-</form>
+  <button type="submit" class="btn btn-primary">Показать коммент</button>
+  <button type="reset" class="btn btn-primary">Очистить</button>
+</form>  
 <?php
-if(isset($im)) {
-  echo($im);
+if (isset($naim)){
+  echo($naim);
 }
-// if(isset($fp)){
-//   echo $fp;
-// }
+if(isset($fp)){
+  echo($fp);
+}
+if (isset($ab)){
+  echo($ab);
+}
 for($i = 0; $i<=2; $i++) {
 echo('</div>');
 }
