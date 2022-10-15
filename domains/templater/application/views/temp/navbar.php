@@ -15,6 +15,7 @@
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>collect_cont/index">Сбор информации с web-страницы</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>clone_cont/index">Вывод  информации с web-страницы на Local</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>text_area_reader_cont/index">Чтение textarea</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>another_counter_cont/index">Еше один калькулятор</a></li>
             </ul>
         </div>
     </div>

@@ -20,7 +20,7 @@ case '-':$output .=$number1-$number2; break;
 case '*':$output .=$number1*$number2; break;
 case'/':
 if($number2==0)  
-$output="Деление на ноль запрроещается";
+$output="Деление на ноль запрещается";
 else 
 $output.=$number1/$number2;
 break;
