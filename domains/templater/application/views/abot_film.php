@@ -8,7 +8,9 @@
             </ol>
           </nav>
           <form method="POST" action="">
-  
+          <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+</div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Пример текстового поля</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="im"></textarea>
