@@ -15,8 +15,9 @@
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>collect_cont/index">Сбор информации с web-страницы</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>clone_cont/index">Вывод  информации с web-страницы на Local</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>text_area_reader_cont/index">Чтение textarea</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>another_counter_cont/index">Еше один калькулятор</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>another_counter_cont/index">Еше один калькулятор(валидация)</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>date_cont/index">Дата(день, месяц, год)</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>hello_cont/index">Простй hello world</a></li>
                 <div class="dropdown">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
    Статические контроллеры
