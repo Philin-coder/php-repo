@@ -22,7 +22,7 @@
     <p> <font size="3" color="#191970" face="Arial">Вас интересуют услуги для соискателей от агентства «Фаворит» ?</p>
 	
    <center> <p> <font size="3" color="red" face="Arial">Добавить свое резюме в собственную базу кадрового агентства РеКадр: </p></center> 
-	<center><a href="soisk.php"> <img class="img-fluid rounded mb-4" src="<?php echo base_url();?>public/images/send_resume.png" alt="" ></a></center> 
+	<center><a href="<?php echo base_url();?>add_resume_cont/index"> <img class="img-fluid rounded mb-4" src="<?php echo base_url();?>public/images/send_resume.png" alt="" ></a></center> 
 	</div>
    
     <br>
