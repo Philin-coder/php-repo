@@ -1,14 +1,14 @@
 <?php 
-session_start();
-$sms=" "; 
-$conn = new mysqli('localhost','root','','rekadr');
-if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-     die("Соединение установлено не было.");}
-//установим кодировку
-$conn  ->set_charset("utf8");
+//session_start();
+//$sms=" "; 
+// $conn = new mysqli('localhost','root','','rekadr');
+// if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
+//      die("Соединение установлено не было.");}
+// //установим кодировку
+// $conn  ->set_charset("utf8");
 
-include 'temp/head.php';
-include 'temp/header.php';
+// include 'temp/head.php';
+// include 'temp/header.php';
  ?>
   <div class="slider">
     <div class="container">
@@ -16,7 +16,7 @@ include 'temp/header.php';
         <h2>ВАКАНСИИ</h2>
     </div>
     <?php
-if (isset($_GET['page_no']) && $_GET['page_no']!="") {
+if ((isset($_GET['page_no']) && $_GET['page_no']!="" && isset($res))) {
     $page_no = $_GET['page_no'];
     } else {
         $page_no = 1;
@@ -28,10 +28,11 @@ $offset = ($page_no-1) * $total_records_per_page;
 $previous_page = $page_no - 1;
 $next_page = $page_no + 1;
 $adjacents = "2";
-$result_count = mysqli_query($conn,"SELECT COUNT(*) as total_records FROM vakansiya");
-	$total_records = mysqli_fetch_array($result_count);
-	$total_records = $total_records['total_records'];
-    $total_no_of_pages = ceil($total_records / $total_records_per_page);
+//$result_count = mysqli_query($conn,"SELECT COUNT(*) as total_records FROM vakansiya");
+$result_cont=$res;
+	$total_records=$res; //mysqli_fetch_array($result_count);
+	//$total_records = $total_records['total_records'];
+    $total_no_of_pages = ceil($res / $total_records_per_page);
 	$second_last = $total_no_of_pages - 1; // total page minus 1
 
 /* 
@@ -57,13 +58,20 @@ $total_no_of_pages = ceil($total_records / $total_records_per_page); */
 			<th>Занятость</th>
 			  </tr>
 <?php 
-
-$result = mysqli_query($conn,"SELECT dolgn,oklad,tip_zan FROM vakansiya LIMIT $offset, $total_records_per_page");
-
+if(isset($sel_vak)){
+	foreach($sel_vak as $row):
+		{
+			echo '<tr><td>'.$row['dolgn'].'</td><td>'.$row['oklad'].'&nbsp; руб.</td><td>'.$row['tip_zan'].'</td></tr>';
+		}
+		endforeach;
+}
+//$result = mysqli_query($conn,"SELECT dolgn,oklad,tip_zan FROM vakansiya LIMIT $offset, $total_records_per_page");
+/*
 while($row = mysqli_fetch_array($result)){			
 	echo '<tr><td>'.$row['dolgn'].'</td><td>'.$row['oklad'].'&nbsp; руб.</td><td>'.$row['tip_zan'].'</td></tr>';
     }
 	mysqli_close($conn);
+	*/
   ?>	
 </table>
 	
@@ -146,17 +154,3 @@ while($row = mysqli_fetch_array($result)){
 </div>
     </div>
   </div>
-<?php 
-include 'temp/footer.php'; 
-?>
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
-</html>
