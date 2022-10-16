@@ -2,7 +2,6 @@
 if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
 
 class another_counter_cont extends CI_Controller {
-
     public function index(){
         $this->load->helper('url');
         $this->load->view('temp/head');
