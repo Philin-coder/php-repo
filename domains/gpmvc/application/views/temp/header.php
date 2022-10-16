@@ -17,7 +17,7 @@
             <li class="active"><a href="<?php echo base_url();?>main_con/index">Главная</a></li>
             <li><a href="<?php echo base_url();?>about_compamy_cont/index">О компании</a></li>
             <li><a href="<?php echo base_url();?>vac_cont/index">Вакансии</a></li>
-            <li><a href="soisk_r.php">Соискателю</a></li>
+            <li><a href="<?php echo base_url();?>applicant_cont/index">Соискателю</a></li>
             <li><a href="kon.php">Контакты</a></li>
             <li><a href="avt.php">Вход</a></li>
           </ul>

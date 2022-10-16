@@ -1,7 +1,3 @@
-<?php 
-include 'temp/head.php';
-include 'temp/header.php'; 
- ?>
 <div class="slider">
 <div class="container">  
 <div class="row">
@@ -26,7 +22,7 @@ include 'temp/header.php';
     <p> <font size="3" color="#191970" face="Arial">Вас интересуют услуги для соискателей от агентства «Фаворит» ?</p>
 	
    <center> <p> <font size="3" color="red" face="Arial">Добавить свое резюме в собственную базу кадрового агентства РеКадр: </p></center> 
-	<center><a href="soisk.php"> <img class="img-fluid rounded mb-4" src="images/send_resume.png" alt="" ></a></center> 
+	<center><a href="soisk.php"> <img class="img-fluid rounded mb-4" src="<?php echo base_url();?>public/images/send_resume.png" alt="" ></a></center> 
 	</div>
    
     <br>
@@ -36,17 +32,4 @@ include 'temp/header.php';
  
   <!-- /.container -->
     <!-- Footer -->
-    <?php 
-  include 'temp/footer.php'; 
-?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
-</html>
+    
