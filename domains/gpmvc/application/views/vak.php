@@ -51,7 +51,8 @@ $total_no_of_pages = ceil($total_records / $total_records_per_page); */
  ?>	
 <div class="row">
 	<caption> <h2> Вакансии</h2></caption> 
-			<table class="table table-striped">
+			<table id="example" class="table table-striped" cellspacing="0" width="100%">
+			
 			<tr>
 			<th>Наименование должности</th>	
 			<th>Зарплата от</th>
