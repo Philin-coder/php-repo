@@ -5,7 +5,6 @@ class another_counter_cont extends CI_Controller {
 
     public function index(){
         $this->load->helper('url');
-        $this->load->library('form_validation');
         $this->load->view('temp/head');
         $this->load->view('temp/navbar');
         $this->load->view('another_counter');

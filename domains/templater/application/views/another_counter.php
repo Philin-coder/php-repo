@@ -10,12 +10,12 @@
           <form method="POST" action="">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Раз число</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="num1" required>
+    <input type="text" class="form-control input-number" id="exampleInputEmail1" aria-describedby="emailHelp" name="num1" required>
     <div id="emailHelp" class="form-text">Enter first number</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Два число</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="num2" required>
+    <input type="text" class="form-control input-number" id="exampleInputEmail1" aria-describedby="emailHelp" name="num2" required>
     <div id="emailHelp" class="form-text">Enter second number</div>
   </div>
   <div class="mb-3">
