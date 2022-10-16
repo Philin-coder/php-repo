@@ -7,6 +7,15 @@
 <script>
 $('body').on('input', '.input-number', function(){
 	this.value = this.value.replace(/[^0-9\.\,]/g, '');
+    
+    
+});
+</script>
+<script>
+    $('body').on('input', '.text_only', function(){
+
+    this.value = this.value.replace(/[^*//+-]/gi, '');
+
 });
 </script>
 </html>
