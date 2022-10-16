@@ -1,7 +1,3 @@
-<?php 
-include 'temp/head.php';
-include 'temp/header.php'; 
- ?>
   <div class="slider">
     <div class="container">
      <!-- Content Row -->
@@ -9,7 +5,7 @@ include 'temp/header.php';
       <!-- Map Column -->
       <div class="col-lg-8 mb-4">
         <!-- Embedded Google Map -->
-		<iframe src="images/kart.png" class="img-fluid" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>		
+		<iframe src="<?php echo base_url();?>public/images/kart.png" class="img-fluid" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>		
           </div>
       <!-- Contact Details Column -->
       <div class="col-lg-4 mb-4">
@@ -81,19 +77,4 @@ include 'temp/header.php';
   </div>
   </div>
   <!-- /.container -->
-  </body>
-      <!-- Footer -->
-      <?php 
-  include 'temp/footer.php'; 
-?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-
-
-
-</html>
+  
