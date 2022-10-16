@@ -1,13 +1,8 @@
-
-<?php 
-include 'temp/head.php';
-include 'temp/header.php'; 
- ?>
 <div class="slider">
 <div class="container">  
 <div class="row">
       <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="images/oco.jpg" alt="" width="550px" height="300px">
+        <img class="img-fluid rounded mb-4" src="<?php echo base_url();?>public/images/oco.jpg" alt="" width="550px" height="300px">
       </div>
       <div class="col-lg-6">
       <div class="center wow fadeInDown">
@@ -41,17 +36,4 @@ include 'temp/header.php';
   </div>
   <!-- /.container -->
     <!-- Footer -->
-    <?php 
-  include 'temp/footer.php'; 
-?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
-</html>
+    

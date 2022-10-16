@@ -4,6 +4,6 @@
   <script src="<?php echo base_url();?>public/js/jquery.prettyPhoto.js"></script>
   <script src="<?php echo base_url();?>public/js/jquery.isotope.min.js"></script>
   <script src="<?php echo base_url();?>public/js/wow.min.js"></script>
-  <script src="public/js/main.js"></script>
+  <script src="<?php echo base_url();?>public/js/main.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
             <li class="active"><a href="<?php echo base_url();?>main_con/index">Главная</a></li>
-            <li><a href="ocom.php">О компании</a></li>
+            <li><a href="<?php echo base_url();?>about_compamy_cont/index">О компании</a></li>
             <li><a href="vak.php">Вакансии</a></li>
             <li><a href="soisk_r.php">Соискателю</a></li>
             <li><a href="kon.php">Контакты</a></li>
