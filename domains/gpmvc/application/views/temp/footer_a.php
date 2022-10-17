@@ -41,11 +41,11 @@
         </div>
         <div class="col-sm-6">
           <ul class="pull-right">
-          <li><a href="admin.php">Главная</a></li>
+          <li><a href="<?php echo base_url();?>admin_cont/index">Главная</a></li>
             <li><a href="reg_s.php">Регистрация сотрудников</a></li>
             <li><a href="otr.php">Отрасли</a></li>
             <li><a href="prof.php">Профессии</a></li>
-            <li><a href="out.php">Выход</a></li>
+            <li><a href="<?php echo base_url();?>avt_cont/logout">Выход</a></li>
           </ul>
         </div>
       </div>

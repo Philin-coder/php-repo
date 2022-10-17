@@ -46,7 +46,7 @@
             <li><a href="<?php echo base_url();?>vac_cont/index">Вакансии</a></li>
             <li><a href="<?php echo base_url();?>applicant_cont/index">Соискателю</a></li>
             <li><a href="<?php echo base_url();?>kon_cont/index">Контакты</a></li>
-            <li><a href="avt.php">Вход</a></li>
+            <li><a href="<?php echo base_url();?>avt_cont/index">Вход</a></li>
           </ul>
         </div>
       </div>
