@@ -53,8 +53,7 @@
   <div class="row">
   <div class="col-sm-10">
   <form action='<?php echo base_url()?>avt_cont/autor' method= 'POST' name="sentMessage" id="contactForm" novalidate>
-  
-    <?php //echo '<div>' .$msg.'</div>' ?>
+      <?php //echo '<div>' .$msg.'</div>' ?>
       <div class="control-group form-group">
         <div class="controls">
           <label>Логин:</label>
