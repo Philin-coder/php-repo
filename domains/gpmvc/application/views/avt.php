@@ -58,14 +58,14 @@
       <div class="control-group form-group">
         <div class="controls">
           <label>Логин:</label>
-          <input type="text" name= "login" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+          <input type="text" name= "login" class="form-control" id="log" required data-validation-required-message="Please enter your name." required>
           <p class="help-block"></p>
         </div>
       </div>
       <div class="control-group form-group">
         <div class="controls">
           <label>Пароль:</label>
-          <input type="password" name="password" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+          <input type="password" name="password" class="form-control" id="pass" required data-validation-required-message="Please enter your phone number." required>
         </div>
       </div>
     

@@ -33,7 +33,7 @@ class avt_cont extends CI_Controller {
         
 }
 public function autor(){
-    if(!empty($_POST['password'])and !empty($_POST['password'])){
+    if(!empty($_POST['login'])and (!empty($_POST['password']))){
         $this->load->model('rk_users_model');
         $data['status']=$this->rk_users_model->sel_stat($_POST['login'],$_POST['password']);
         if(!empty($data['status'])){
