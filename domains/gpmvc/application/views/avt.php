@@ -52,19 +52,19 @@
   </div>
   <div class="row">
   <div class="col-sm-10">
-  <form action='<?php echo base_url()?>avt_cont/autor' method= 'POST' name="sentMessage" id="contactForm" novalidate>
+  <form action='<?php echo base_url()?>avt_cont/autor' method= 'POST' name="sentMessage" id="contactForm" >
       <?php //echo '<div>' .$msg.'</div>' ?>
       <div class="control-group form-group">
         <div class="controls">
           <label>Логин:</label>
-          <input type="text" name= "login" class="form-control" id="log" required data-validation-required-message="Please enter your name." required>
+          <input type="text" name= "login" class="form-control is-valid" id="validationServer01" id="log" required data-validation-required-message="Please enter your name." required>
           <p class="help-block"></p>
         </div>
       </div>
       <div class="control-group form-group">
         <div class="controls">
           <label>Пароль:</label>
-          <input type="password" name="password" class="form-control" id="pass" required data-validation-required-message="Please enter your phone number." required>
+          <input type="password" name="password" class="form-control is-valid" id="validationServer01" id="pass" required data-validation-required-message="Please enter your phone number." required>
         </div>
       </div>
     
