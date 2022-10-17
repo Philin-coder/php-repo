@@ -1,6 +1,6 @@
 <?php 
-include 'temp/head.php';
-include 'temp/header_s.php'; 
+//include 'temp/head.php';
+//include 'temp/header_s.php'; 
  ?>
  <br>
   <div class="slider">
@@ -10,7 +10,7 @@ include 'temp/header_s.php';
        </div>
      <div class="row">
       <div class="col-lg-12">
-        <center><img class="img-fluid rounded mb-4" src="images/sp.jpg" alt="" ></center>
+        <center><img class="img-fluid rounded mb-4" src="<?php echo base_url();?>public/images/sp.jpg" alt="" ></center>
       </div>
      <div class="col-lg-12">
         <h2>Страница специалиста</h2>
@@ -23,15 +23,5 @@ include 'temp/header_s.php';
     </div>
   </div>
         <!-- Footer -->
-        <?php 
-          include 'temp/footer_s.php'; 
-        ?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+        
+  

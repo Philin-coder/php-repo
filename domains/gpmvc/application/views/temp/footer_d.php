@@ -41,7 +41,7 @@
         </div>
         <div class="col-sm-6">
           <ul class="pull-right">
-          <li><a href="dir.php">Главная</a></li>
+          <li><a href="<?php echo base_url();?>director_cont/index">Главная</a></li>
             <li><a href="spisok_s.php">Список клиентов (по профессии)</a></li>
             <li><a href="vak_po_pr.php">Вакансии по профессии на дату</a></li>
             <li><a href="otchet_r.php">Список работодателей</a></li>
@@ -49,7 +49,7 @@
             <li><a href="reiting_p.php">Рейтинг профессий</a></li>
             <li><a href="reiting_r.php">Рейтинг работодателей</a></li>
             <li><a href="sv.php">Сводный отчет по агентству</a></li>
-            <li><a href="out.php">Выход</a></li>
+            <li><a href="<?php echo base_url();?>avt_cont/logout">Выход</a></li>
           </ul>
         </div>
       </div>

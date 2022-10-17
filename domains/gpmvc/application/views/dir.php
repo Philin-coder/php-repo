@@ -1,7 +1,3 @@
-<?php 
-include 'temp/head.php';
-include 'temp/header_d.php'; 
- ?>
   <br>
  <br>
  <br>
@@ -13,7 +9,7 @@ include 'temp/header_d.php';
      </div>
      <div class="row">
       <div class="col-lg-12">
-        <center><img class="img-fluid rounded mb-4" src="images/12.jpg" alt="" width="1140" height="550"></center>
+        <center><img class="img-fluid rounded mb-4" src="<?php echo base_url();?>public/images/12.jpg" alt="" width="1140" height="550"></center>
       </div>
       <div class="col-lg-12">
         <h2>Страница директора</h2>
@@ -23,15 +19,4 @@ include 'temp/header_d.php';
     </div>
   </div>
       <!-- Footer -->
-  <?php 
-  include 'temp/footer_d.php'; 
-?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+  
