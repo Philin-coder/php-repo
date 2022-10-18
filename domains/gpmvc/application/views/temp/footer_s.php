@@ -42,7 +42,7 @@
         <div class="col-sm-6">
           <ul class="pull-right">
           <li><a href="<?php echo base_url();?>spec_cont/index">Главная</a></li>
-            <li><a href="rab.php">Работодатели</a></li>
+            <li><a href="<?php echo base_url();?>work_cont/index">Работодатели</a></li>
             <li><a href="vak_s.php">Вакансии</a></li>
             <li><a href="soisk_s.php">Соискатели</a></li>
             <li><a href="napr.php">Направления</a></li>
