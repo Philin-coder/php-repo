@@ -1,28 +1,3 @@
-<?php 
-session_start(); 
-$sms=" "; 
-$conn = new mysqli('localhost','root','','rekadr');
-if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-     die("Соединение установлено не было.");}
- //установим кодировку
-$conn  ->set_charset("utf8");
-if (!empty($_POST)) 
-{ 
-$id_r=$_POST['naim_r'];
-$dolgn=$_POST['dolgn'];
-$k_mest=$_POST['k_mest'];
-$oklad=$_POST['oklad'];
-$tip_zan=$_POST['tip_zan']; 
-$data_razm=$_POST['data_razm'];
-$id_p=$_POST['naim_p'];
-// добавление записи
-$sql =$conn->query ("insert into vakansiya(id_r, dolgn, k_mest, oklad, tip_zan, data_razm, id_p) values ('$id_r', '$dolgn', '$k_mest', '$oklad', '$tip_zan', '$data_razm', '$id_p')");			
-	$sms = "Вакансия введена !"; 
-	 header("Location: http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/vak_s.php");
-} 	
-include 'temp/head.php';
-include 'temp/header_s.php';	
- ?>
   <br>
   <div class="slider">
     <div class="container">
@@ -30,17 +5,17 @@ include 'temp/header_s.php';
         <h2>Ввод вакансии</h2>
      </div>
        <form method="POST" action="">
-       <?php echo '<div>' .$sms.'</div>' ?>
+       
        <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Работодатель</label>
     <div class="col-sm-10">
 	<select name="naim_r" >
-<?
-$sql =$conn->query("select * from rabotodatel"); 
-	while ($row = mysqli_fetch_array($sql))
- {
+<?php
+$sql=$this->db->get('rabotodatel'); 
+	foreach($sql->result_array() as $row ):{
    echo '<option value="'.$row['id_r'].'">'.$row['naim_r'].'</option>';
 }
+endforeach;
 ?>
 </select>
 </div></div> 
@@ -79,12 +54,12 @@ $sql =$conn->query("select * from rabotodatel");
     <label for="inputEmail3" class="col-sm-2 col-form-label">Профессия</label>
     <div class="col-sm-10">
 	<select name="naim_p" >
-<?
-$sql =$conn->query("select * from prof"); 
-	while ($row = mysqli_fetch_array($sql))
- {
+<?php
+$sql=$this->db->get('prof'); 
+	foreach ($sql->result_array() as $row):{
    echo '<option value="'.$row['id_p'].'">'.$row['naim_p'].'</option>';
 }
+endforeach;
 ?>
 </select>
 </div></div>
@@ -107,9 +82,8 @@ $sql =$conn->query("select * from prof");
             <th>Профессия</th>
 			  </tr>
 	<?php 		
-		$sql = 'select naim_r, dolgn, k_mest, oklad, tip_zan, data_razm, naim_p from vakansiya, rabotodatel, prof where rabotodatel.id_r=vakansiya.id_r and prof.id_p=vakansiya.id_p';		
-		$result=$conn->query($sql);		
-        while (($row = $result->fetch_array())){			
+  if(isset($vak)){
+          foreach($vak as $row):{			
     echo '<tr>
     <td>'.$row['naim_r'].'</td>
     <td>'.$row['dolgn'].'</td>
@@ -120,24 +94,12 @@ $sql =$conn->query("select * from prof");
     <td>'.$row['naim_p'].'</td>
     </tr>';
     }   
-mysqli_free_result($result);
-mysqli_close($conn);
+  endforeach;
+  }
+  echo('</table>');
+  for($i=0;$i<=3;$i++){
+    echo('</div>');
+  }
 ?>
-	</table>
-</div>
-</div>
-</div>
-</div>
-      <!-- Footer -->
-      <?php 
-  include 'temp/footer_s.php'; 
-?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+	
+

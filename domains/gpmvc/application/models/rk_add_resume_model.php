@@ -23,6 +23,7 @@ class rk_add_resume_model extends CI_Model{
 
     }
     
+    
 }
 
 ?>
