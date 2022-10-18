@@ -1,20 +1,16 @@
 <?php 
-session_start();
-$conn = new mysqli('localhost','root','','rekadr');
-if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-     die("Соединение установлено не было.");}
- //установим кодировку
-$conn  ->set_charset("utf8");
-if (!empty($_POST)) 
-{ 
-$search=$_POST['search'];	
+
+//$search=$_POST['search'];	
+if(isset($search)){
+  $search=$_POST['search'];	
 $search = trim($search);
 $search = strip_tags($search);
-$sql ="select fio_s from soiskatel where fio_s  LIKE '%$search%' "; 
+}
+//$sql ="select fio_s from soiskatel where fio_s  LIKE '%$search%' "; 
 /* header("Location: http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/search.php"); */
-} 
-include 'temp/head.php';
-include 'temp/header_s.php';
+//} 
+//include 'temp/head.php';
+//include 'temp/header_s.php';
  ?>
   <br>
   <div class="slider">
@@ -50,10 +46,8 @@ include 'temp/header_s.php';
 			<th>Семейное положение</th>
 			  </tr>
 	<?php 	
- 	$sql ="select  data_reg, fio_s, data_rog, pol, gragd, adres_s, tel_s, obraz, stag, spec, sp from soiskatel where fio_s='$search'";
-		$result=$conn->query($sql);		
-			while (($row = $result->fetch_array()))
-			{			
+  if (isset($find)){
+ 			foreach($find as $row):{			
     echo '<tr>
     <td>'.$row['data_reg'].'</td>
    <td>'.$row['fio_s'].'</td>
@@ -68,8 +62,8 @@ include 'temp/header_s.php';
    <td>'.$row['sp'].'</td>
     </tr>';
 	}	
-	mysqli_free_result($result);
-mysqli_close($conn);
+  endforeach;
+}
 ?>
 	</table>	
      </div> 
@@ -78,15 +72,4 @@ mysqli_close($conn);
 </div> 
 </div>
       <!-- Footer -->
-      <?php 
-  include 'temp/footer_s.php'; 
-?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html> 
+  
