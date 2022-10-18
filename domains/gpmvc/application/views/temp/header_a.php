@@ -17,7 +17,7 @@
             <li><a href="<?php echo base_url();?>admin_cont/index">Главная</a></li>
             <li><a href="<?php echo base_url();?>reg_emp_cont/index">Регистрация сотрудников</a></li>
             <li><a href="<?php echo base_url();?>otr_cont/index">Отрасли</a></li>
-            <li><a href="prof.php">Профессии</a></li>
+            <li><a href="<?php echo base_url();?>prof_cont/index">Профессии</a></li>
             <li><a href="<?php echo base_url();?>avt_cont/logout">Выход</a></li>
           </ul>
         </div>
