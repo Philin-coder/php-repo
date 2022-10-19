@@ -8,6 +8,7 @@ class search_cont extends CI_Controller {
         $this->load->model('rk_searcher_model');
         if (!empty($_POST)){
             $this->rk_searcher_model->finder($_POST['search']);
+            //redirect(base_url().'search_cont/index','refresh');
         }
         if(!empty($_POST)){
             $data['find']=$this->rk_searcher_model->sel_grid_data($_POST['search']);
