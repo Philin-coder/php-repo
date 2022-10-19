@@ -7,8 +7,9 @@ class rk_searcher_model extends CI_Model{
         $this->db->from('soiskatel');
         $this->db->like('fio_s',$search,'before');
         $sql=$this->db->get();
-        return $sql->result_array();
+        //return $sql->result_array();
         //return $sql->row();
+        return $sql->result_array();
 
     }
     public function sel_grid_data($search){
