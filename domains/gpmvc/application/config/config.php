@@ -36,6 +36,7 @@ $config['base_url'] = 'http://gpmvc/';
 |
 */
 $config['index_page'] = 'index.php';
+//$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

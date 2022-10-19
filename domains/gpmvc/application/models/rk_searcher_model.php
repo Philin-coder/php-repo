@@ -9,7 +9,8 @@ class rk_searcher_model extends CI_Model{
         $sql=$this->db->get();
         //return $sql->result_array();
         //return $sql->row();
-        return $sql->result_array();
+        return $sql->result_array();    
+        //redirect(base_url().'search_cont/index','refresh');
 
     }
     public function sel_grid_data($search){
