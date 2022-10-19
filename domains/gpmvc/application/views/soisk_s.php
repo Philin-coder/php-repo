@@ -1,11 +1,11 @@
 <?php 
 
 //$search=$_POST['search'];	
-if(isset($search)){
-  $search=$_POST['search'];	
-$search = trim($search);
-$search = strip_tags($search);
-}
+// if(isset($search)){
+  //$search=$_POST['search'];	
+// $search = trim($search);
+// $search = strip_tags($search);
+//}
 //$sql ="select fio_s from soiskatel where fio_s  LIKE '%$search%' "; 
 /* header("Location: http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/search.php"); */
 //} 
