@@ -14,6 +14,7 @@
   <link href="<?php echo base_url();?>public/css/prettyPhoto.css" rel="stylesheet">
   <link href="<?php echo base_url();?>public/css/style.css" rel="stylesheet">
   <link href="<?php echo base_url();?>public/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
   <!-- =======================================================
     Theme Name: Gp
     Theme URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-templat/
