@@ -40,7 +40,7 @@
         <div class="col-sm-10">
 	      <select name="id_v" class="form-control" id="inputEmail3" >
         <?php
-         $sql=$this->db->get(' vakansiya'); 
+         $sql=$this->db->get('vakansiya'); 
 
 	       foreach ($sql->result_array() as $row ):{
          echo '<option value="'.$row['id_v'].'">'.$row['dolgn'].'</option>';
@@ -78,21 +78,22 @@
     </form>	    
     </div> 
     </div> 
-   
+	<?php foreach($napr as $row):?>
     <?php        
 	// $result=$conn->query( "select n_n, dolgn, fio_s, data_n, naim_r from napravlenie, vakansiya, soiskatel, rabotodatel  where
 	// vakansiya.id_v=napravlenie.id_v and soiskatel.id_s=napravlenie.id_s  and rabotodatel.id_r=vakansiya.id_r ");
 		
 	// $row = mysqli_fetch_array($result);	
-              
+         
 		?>
+
 <div class="slider">
     <div class="container">    
     <div class="row">
       <div class="col-lg-12">
  <table align="center" style="border-color: #FF9900"  border="2" cellpadding="1" cellspacing="1" style="width: 900px">
 	<tbody>
-	<?php foreach  ($napr as $row):?>
+	
 		<tr>
 			<td style="text-align: center; vertical-align: middle;"><span style="font-family: Arial, Helvetica, sans-serif;"><img class="img-responsive" src="<?php echo base_url();?>public/images/logo.png" alt="">&nbsp;</span></td>
 			<td style="text-align: right;">
@@ -105,21 +106,17 @@
 			<td colspan="2" style="text-align: justify;">&nbsp;</td>
 		</tr>
 		<tr>
-  
-		
-			<td colspan="2" style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif;">&nbsp; &nbsp;&nbsp; &nbsp;<font size="5">НАПРАВЛЕНИЕ НА РАБОТУ №  <?php $row['n_n']?>  </font></span>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+  <?php
+		echo '
+			<td colspan="2" style="text-align: center;"><span style="font-family: Arial, Helvetica, sans-serif;">&nbsp; &nbsp;&nbsp; &nbsp;<font size="5">НАПРАВЛЕНИЕ НА РАБОТУ №  '.$row['n_n'].'  </font></span>&nbsp; &nbsp; &nbsp; &nbsp;</td>'?>
 		</tr>
 		<tr>
 			<td colspan="2" style="text-align: center;">&nbsp;</td>
 		</tr>
 		<tr>
-		
-		
-			<td colspan="2" style="text-align: center;"><font size="5"><u>   <php $row['data_n'];?>  </u></font></td>
-			
-		
-			
-			
+		<?php
+		echo '
+			<td colspan="2" style="text-align: center;"><font size="5"><u>   '.$row['data_n'].'  </u></font></td>'?>
 	
 		</tr>
 		<tr>
@@ -130,8 +127,8 @@
 			<td colspan="2" style="text-align: center;">&nbsp;</td>
 		</tr>
 		<tr>
-		
-			<td colspan="2" style="text-align: center;"><font size="5"><u><php $row['naim_r'];?>  </u></font></td>
+		<?php echo '
+			<td colspan="2" style="text-align: center;"><font size="5"><u>' .$row['naim_r'].'  </u></font></td>'?>
 		</tr>
 		<tr>
 			<td colspan="2" style="text-align: center;"><font size="4">(наименование учреждения куда направляется работник)</font></td>
@@ -146,19 +143,17 @@
 			<td colspan="2">&nbsp;</td>
 		</tr>
 		<tr>
-		
-			<td colspan="2"><font size="5"><font face="Arial, Helvetica, sans-serif">гр. ___ФИО: <?php   $row['fio_s']?>   </font></font></td>
-			
+		<?php echo '
+			<td colspan="2"><font size="5"><font face="Arial, Helvetica, sans-serif">гр. ___ФИО: ' .  $row['fio_s'].'   </font></font></td>'?>
 		</tr>
 		<tr>
-			
 			<td colspan="2">&nbsp;</td>
 		</tr>
 		<tr>
-		
-			<td colspan="2"><font size="5"><font face="Arial, Helvetica, sans-serif">в качестве <u> <?php $row['dolgn'];?>  &nbsp;</u></font></font></td>
+		<?php echo'
+			<td colspan="2"><font size="5"><font face="Arial, Helvetica, sans-serif">в качестве <u> ' . $row['dolgn'].'  &nbsp;</u></font></font></td>'?>
 		</tr>
-		<?php endforeach;?>
+	
 		<tr>
 			<td colspan="2" style="text-align: center;"><font size="4"><font face="Arial, Helvetica, sans-serif">  </font></font></td>
 		</tr>
@@ -177,7 +172,7 @@
 		<tr>
 			<td colspan="2" style="text-align: justify;">&nbsp;</td>
 		</tr>
-		
+		<?php endforeach;?>
 	</tbody>
 </table>
 
@@ -190,4 +185,4 @@
 
 
 </section> 	
-  <!-- Footer -->
+  
