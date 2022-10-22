@@ -1,6 +1,6 @@
 <?php 
-include 'temp/head.php';
-include 'temp/header_d.php'; 
+// include 'temp/head.php';
+// include 'temp/header_d.php'; 
  ?>
   <br>
  <br>
@@ -35,16 +35,17 @@ include 'temp/header_d.php';
 			  </tr>
        
 <?php 
- $conn = new mysqli('localhost','root','','rekadr');
- if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-      die("Соединение установлено не было.");}
+//  $conn = new mysqli('localhost','root','','rekadr');
+//  if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
+//      die("Соединение установлено не было.");}
   //установим кодировку
- $conn  ->set_charset("utf8");
-   $prof=$_POST['prof']; 
+ //$conn  ->set_charset("utf8");
+   //$prof=$_POST['prof']; 
   //-Запрос к таблице базы данных  
-  $sql="SELECT fio_s, tel_s, spec, stag, obraz, pol, sp FROM soiskatel WHERE  spec LIKE '%".$prof."%'"; 
-  $result=$conn->query($sql);				
-  while (($row = $result->fetch_array())){			
+  //$sql="SELECT fio_s, tel_s, spec, stag, obraz, pol, sp FROM soiskatel WHERE  spec LIKE '%".$prof."%'"; 
+  //$result=$conn->query($sql);				
+  if(isset($list)){
+  foreach($list as $row):{
 echo '<tr>
 <td>'.$row['fio_s'].'</td>
 <td>'.$row['tel_s'].'</td>
@@ -55,23 +56,14 @@ echo '<tr>
 <td>'.$row['sp'].'</td>
 </tr>';
 }  
-mysqli_free_result($result);
-mysqli_close($conn);  
+endforeach;
+  }
+// mysqli_free_result($result);
+// mysqli_close($conn);  
 ?> </table>
       </div>
     </div>
     </div>
     </div>
       <!-- Footer -->
-  <?php 
-  include 'temp/footer_d.php'; 
-?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+  
