@@ -43,7 +43,7 @@
           <ul class="pull-right">
           <li><a href="<?php echo base_url();?>director_cont/index">Главная</a></li>
             <li><a href="<?php echo base_url();?>list_cont/index">Список клиентов (по профессии)</a></li>
-            <li><a href="vak_po_pr.php">Вакансии по профессии на дату</a></li>
+            <li><a href="<?php echo base_url();?>vakan_prof_cont/index">Вакансии по профессии на дату</a></li>
             <li><a href="otchet_r.php">Список работодателей</a></li>
             <li><a href="otchet_s.php">Список трудоустроенных</a></li>
             <li><a href="reiting_p.php">Рейтинг профессий</a></li>

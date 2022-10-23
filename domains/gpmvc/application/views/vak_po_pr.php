@@ -1,7 +1,3 @@
-<?php 
-include 'temp/head.php';
-include 'temp/header_d.php'; 
- ?>
   <br>
  <br>
  <br>
@@ -39,19 +35,20 @@ include 'temp/header_d.php';
 			  </tr>
        
 <?php 
- $conn = new mysqli('localhost','root','','rekadr');
- if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
-      die("Соединение установлено не было.");}
-  //установим кодировку
- $conn  ->set_charset("utf8");
-   $proff=$_POST['proff']; 
-   $d_v=$_POST['d_v'];
+  if(isset($reports)){
+//  $conn = new mysqli('localhost','root','','rekadr');
+//  if ($conn->connect_error){ echo ("Ошибка соединения с сервером MySQLI: ").$conn->connect_error."<br>";
+//       die("Соединение установлено не было.");}
+//   //установим кодировку
+//  $conn  ->set_charset("utf8");
+//   $proff=$_POST['proff']; 
+  // $d_v=$_POST['d_v'];
   //-Запрос к таблице базы данных  
-  $sql="SELECT naim_r, tel_r, kl_fio, k_mest, dolgn, oklad FROM vakansiya, rabotodatel WHERE 
-  rabotodatel.id_r=vakansiya.id_r and 
-   dolgn LIKE '%".$proff."%' and data_razm<='$d_v'"; 
-  $result=$conn->query($sql);				
-  while (($row = $result->fetch_array())){			
+//   $sql="SELECT naim_r, tel_r, kl_fio, k_mest, dolgn, oklad FROM vakansiya, rabotodatel WHERE 
+//   rabotodatel.id_r=vakansiya.id_r and 
+//    dolgn LIKE '%".$proff."%' and data_razm<='$d_v'"; 
+//   $result=$conn->query($sql);				
+  foreach($reports as $row):{			
 echo '<tr>
 <td>'.$row['naim_r'].'</td>
 <td>'.$row['tel_r'].'</td>
@@ -61,8 +58,9 @@ echo '<tr>
 <td>'.$row['oklad'].'</td>
 </tr>';
 }  
-mysqli_free_result($result);
-mysqli_close($conn);  
+endforeach;
+  }
+
 ?> 
 </table>
       </div>
@@ -70,15 +68,3 @@ mysqli_close($conn);
     </div>
     </div>
       <!-- Footer -->
-  <?php 
-  include 'temp/footer_d.php'; 
-?>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
