@@ -48,7 +48,7 @@
             <li><a href="<?php echo base_url();?>woekrs_list_cont/index">Список трудоустроенных</a></li>
             <li><a href="<?php echo base_url();?>prof_rate_cont/index">Рейтинг профессий</a></li>
             <li><a href="<?php echo base_url();?>woker_rate_cont/index">Рейтинг работодателей</a></li>
-            <li><a href="sv.php">Сводный отчет по агентству</a></li>
+            <li><a href="<?php echo base_url();?>main_report_cont/index">Сводный отчет по агентству</a></li>
             <li><a href="<?php echo base_url();?>avt_cont/logout">Выход</a></li>
           </ul>
         </div>
