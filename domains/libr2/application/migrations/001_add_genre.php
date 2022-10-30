@@ -1,6 +1,6 @@
 <?php
 if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
-class Migration_add_author extends CI_Migration{
+class Migration_add_genre extends CI_Migration{
     public function up(){
         $this->dbforge->add_field(array(
             'ID_Genre'=>array(
@@ -11,7 +11,7 @@ class Migration_add_author extends CI_Migration{
                 'auto_increment'=>TRUE
 
             ),
-            'Name_A' =>array(
+            'Name_G' =>array(
                 'type' => 'VARCHAR',
                 'null'=>FALSE,
                 'constraint'=>70
