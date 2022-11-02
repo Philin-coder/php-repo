@@ -72,7 +72,9 @@ $config['migration_auto_latest'] = TRUE;
 // $config['migration_version'] = 0;
 // $config['migration_version'] = 1;
 //$config['migration_version'] = 2;
-$config['migration_version'] = 3;
+//$config['migration_version'] = 3;
+// $config['migration_version'] = 4;
+$config['migration_version'] = 5;
 
 /*
 |--------------------------------------------------------------------------
