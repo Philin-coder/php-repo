@@ -4,23 +4,25 @@ class Migration_add_del extends CI_Migration{
     public function up(){
         $this->dbforge->add_field(array(
             'ID_Delivery'=>array(
-                'type' =>'INT(11)',
+                'type' =>'INT',
                 'constraint' =>11,
                 'auto_increment' =>TRUE,
                 'null'=>FALSE,
-                
+                'unsigned' =>TRUE
             ),
             //3 last
             'ID_Doc'=>array(
-                'type' =>'INT(11)',
+                'type' =>'INT',
                 'constraint'=>11,
+                'unsigned' =>TRUE,
                 'null'=>FALSE
             ),
             'CONSTRAINT produk_ibfk_4 FOREIGN KEY(`id_doc`) REFERENCES `doc`(`id_doc`) ON DELETE CASCADE ON UPDATE CASCADE',
             
             'ID_reader'=>array(
-                'type' =>'INT(11)',
+                'type' =>'INT',
                 'constraint'=>11,
+                'unsigned' =>TRUE,
                 'null'=>FALSE
             ),
             'CONSTRAINT produk_ibfk_5 FOREIGN KEY(`ID_reader`) REFERENCES `Reader`(`ID_reader`) ON DELETE CASCADE ON UPDATE CASCADE',
