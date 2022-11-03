@@ -4,11 +4,11 @@ class Migration_add_reader extends CI_Migration{
     public function up(){
         $this->dbforge->add_field(array(
             'ID_Reader'=>array(
-                'type'=>'INT',
+                'type'=>'INT(11)',
                 'constraint'=>11,
                 'auto_increment'=>TRUE,
                 'null'=>FALSE,
-                'unsigned'=>TRUE
+                
 
             ),
             'Name_R'=>array(

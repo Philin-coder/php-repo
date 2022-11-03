@@ -4,10 +4,9 @@ class Migration_add_genre extends CI_Migration{
     public function up(){
         $this->dbforge->add_field(array(
             'ID_Genre'=>array(
-                'type'=>'INT',
+                'type'=>'INT(11)',
                 'constraint'=> 11,
                 'NULL'=>FALSE,
-                'unsigned'=>TRUE,
                 'auto_increment'=>TRUE
 
             ),

@@ -3,10 +3,9 @@ class Migration_add_book extends CI_Migration{
     public function up(){
         $this->dbforge->add_field(array(
          'ID_Book'=>array(
-            'type' =>'INT',
+            'type' =>'INT(11)',
             'constraint'=> 11,
             'auto_increment' =>TRUE,
-            'unsigned' =>TRUE,
             'Null'=>FALSE
          ),
          'Name_B'=>array(
@@ -26,7 +25,7 @@ class Migration_add_book extends CI_Migration{
 
          ),
          'COUNT'=>array(
-            'type' => 'INT',
+            'type' => 'INT(11)',
             'constraint' =>11,
             'null'=>FALSE
          ),
@@ -36,18 +35,17 @@ class Migration_add_book extends CI_Migration{
             'null'=>FALSE
          ),
          'ID_Genre'=>array(
-            'type' => 'INT',
+            'type' => 'INT(11)',
             'constraint' =>11,
             'null'=>FALSE,
-            'unsigned'=>TRUE
          ),
          'CONSTRAINT produk_ibfk_1 FOREIGN KEY(`id_author`) REFERENCES `Author`(`id_author`) ON DELETE CASCADE ON UPDATE CASCADE',
          'CONSTRAINT produk_ibfk_2 FOREIGN KEY(`id_genre`) REFERENCES `Genre`(`ID_Genre`)ON DELETE CASCADE ON UPDATE CASCADE',
          'ID_Author'=>array(
-            'type' => 'INT',
+            'type' => 'INT(11)',
             'constraint' =>11,
             'null'=>FALSE,
-            'unsigned'=>TRUE
+            
             
          ),
          'Publisher'=>array(
@@ -57,7 +55,7 @@ class Migration_add_book extends CI_Migration{
             
          ),
          'Number_of_P'=>array(
-            'type' =>'INT',
+            'type' =>'INT(11)',
             'constraint' =>11,
             'null'=>FALSE
          ),

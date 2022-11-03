@@ -4,25 +4,23 @@ class Migration_add_dock extends CI_Migration{
     public function up(){
         $this->dbforge->add_field(array(
             'ID_Doc'=>array(
-                'type' =>'INT',
+                'type' =>'INT(11)',
                 'constraint'=>11,
                 'auto_increment' =>TRUE,
-                'unsigned' =>TRUE,
                 'null'=>FALSE
             ),
             'id_Book' =>array(
-                'type' =>'INT',
+                'type' =>'INT(11)',
                 'constraint' =>11,
                 'null'=>FALSE,
-                'unsigned' =>TRUE
+                
 
             ),
             'CONSTRAINT produk_ibfk_3 FOREIGN KEY(`id_book`) REFERENCES `Book`(`id_book`) ON DELETE CASCADE ON UPDATE CASCADE',
             'status' =>array(
-                'type' =>'INT',
+                'type' =>'INT(11)',
                 'constraint' =>11,
                 'null'=>FALSE,
-                'unsigned' =>TRUE,
                 'default' =>0
             )
 
