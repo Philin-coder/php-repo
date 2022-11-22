@@ -1,6 +1,6 @@
 <?php
 if (! defined ('BASEPATH')) EXIT ('No direct script access aliwed');
-class mt_genre_model extends CI_Controller {
+class mt_genre_model extends CI_Model {
     public function sel_genre() {
         $this->db->select('ID_Genre,Name_G');
         $this->db->from('Genre');
