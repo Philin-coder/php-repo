@@ -24,10 +24,11 @@ class mt_reader_model extends CI_Model {
     }
     public function upd_reader($Name_R,$Date_B,$Adres,$Tel,$Date_R){
         $sql='update reader set Name_R=?,Date_B=?,Adres=?,$Tel=?,$Date_R=?';
-        $this->db->where($sql,array(Name_R,$Date_B,$Adres,$Tel,$Date_R));
+        $this->db->query($sql,array(Name_R,$Date_B,$Adres,$Tel,$Date_R));
     }
     public function del_reader(){
         $this->db->empty_table('reader');
     }
+
 }
 ?>
